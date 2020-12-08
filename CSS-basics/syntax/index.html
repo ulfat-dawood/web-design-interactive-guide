@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Cascading Style Sheets (CSS)</h1>
+        <section>
+            <h2>REMEMBER:</h2>
+
+            <ul>
+                <li> The terms: <b>Tag</b> and <b>Element</b> are  used interchangeably</li>
+                <li>In HTML nested tags have a parent / child relationship.</li>
+                <li>Parent elements have children, and children elements are also parents to the tags nested within them.</li>
+            </ul>
+
+            <h2>HTML vs CSS</h2>
+
+            <ul>
+                <li>HTML: provides only the hierarchical structure of elements in your document.</li>
+                <li>CSS: layered on top of that structure to modify visual appearance of those elements.</li>
+            </ul>
+        </section>
+
+        <h1 class="title">CSS Syntax</h1>
+        <section>
+            <h2>CSS Declerations</h2>
+            <ul>
+                <li><code>property: value;</code><br></li>
+                <ul><li><code>color: red;</code></li><li><code>font-size: 18px;</code></li></ul>
+            </ul>
+        </section>        
+            
+        <section>    
+            <h2>CSS Selectors</h2>
+            <ul>
+                <li>
+                    <code>element{...}</code><br>
+                    <ul><li><code>p{...}</code></li><li><code>h1{...}</code></li></ul>
+                </li>
+                <br>
+                <li>
+                    <code>.class{...}</code><br>
+                    <ul><li><code>&lt;div class="card" &gt;&lt;div/&gt;</code></li><li><code>.card{...}</code></li></ul>
+                </li>
+                <br>
+                <li>
+                    <code>#id{...}</code>
+                    <ul><li><code>&lt;div id="main-section" &gt;&lt;div/&gt;</code></li><li><code>#main-section{...}</code></li></ul>
+                </li>
+                <br>
+                <li>
+                    <code>[attribute='value']{...}</code>
+                    <ul>
+                        <li><code>&lt;input type="password" /&gt;</code></li>
+                        <li><code>[type:"password"]{...}</code></li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <code>*{...}</code>
+                    <ul>
+                        <li>Universal Selector</li>
+                        <li>Selects all elements in the document.</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>CSS Rules</h2>
+            <ul>
+                <li>
+                    <code>seletor{set of declerations}</code>
+                    <pre><br>
+                        h1{
+                            color:grey; 
+                            font-weight:bold;
+                            text-decoration: underline;
+                        }
+                    </pre>
+                    <pre><br> 
+                        .card{
+                            background :lightgrey; 
+                            border-color: black;
+                            font-size:5px;
+                        }
+                    </pre>
+                </li>
+                
+
+            </ul>
+            
+
+        </section>
+
+        <h1 class="title">Adding CSS to HTML</h1>
+        <section>
+            <h2>Inline CSS</h2>
+            <ul>
+                <li>CSS declerations written as a value for the global attribute: <code>style="set of CSS decleratios"</code></li><br>
+                <li><code>&lt;p style="font-size:18px; color:blue;"&gt; some text &lt;p/&gt;</code></li><br>
+            </ul>
+            <h4 class="title left">precedence :</h4> 
+            <p >Highest priority, overrides other internal and external CSS styles.</p>
+            
+            
+        </section>
+        <section>
+            <h2>Internal CSS</h2>
+            <ul>
+                <li>CSS rules written within the HTML paired tag: <br><code>&lt;style&gt; CSS Rules &lt;style/&gt;</code></li><br>
+                <li><code>&lt;style&gt;</code> tag is placed inside the <code>&lt;head&gt;</code> tag.</li><br>
+                <li><code>&lt;head&gt;</code><br>
+                    <code>&lt;style&gt; 
+                        <br>
+                        p{ <br>
+                        font-size:18px; <br>
+                        color:blue;<br>
+                        } <br><br>
+                        #main-section{<br>
+                        background: grey; <br>
+                        } <br>
+                        <br> 
+                        &lt;style/&gt;</code><br>
+                    <code>&lt;head/&gt;</code>
+                </li><br>
+            </ul>
+            
+            <h4 class="title left">precedence :</h4>
+            <p>Second in priority, overrides external CSS styles.</p>
+        </section>
+        <section>
+            <h2>External CSS</h2>
+            <ul>
+                <li>HTML self-closing tag: <code>&lt;link/&gt;</code></li><br>
+                <li>CSS rules written in seprate file that has the extention .css</li><br>      
+                <li><code>&lt;link href="./style.css" type="text/css" rel="stylesheet" /&gt; </code></li><br>
+            </ul>
+            
+            <h4 class="title left">precedence :</h4>
+            <p>If no inline or internal style found, external CSS style is applied. </p>
+        </section>
+
+        
+
+        
+
+    </div>
+
+</body>
+</html>
