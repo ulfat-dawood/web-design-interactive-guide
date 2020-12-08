@@ -154,6 +154,35 @@
             <p>If no inline or internal style found, external CSS style is applied. </p>
         </section>
 
+        <h1 class="title">Order &nbsp; Counts</h1>
+        <section>
+            <h2>Order of Rules</h2>
+            <ul><li> The latter CSS rules override the previous ones.</li></ul>
+
+            <p><code>p{color: blue; <br>&nbsp;font-weight:bold; <br>&nbsp;text-decoration:underline; <br> }</code></p>
+            <p><code>p{ <br> &nbsp; color:red <br> }</code></p>
+            <br>
+            <p>Only color property is overriden by the last rule.</p>
+            <div class="text-box" id="main-p">
+                    Praragraphs color changed
+            </div>
+            <p>*If order of rules is reversed, paragraphs would appear blue.  </p>
+            <div id="p" class="text-box">
+                    color not changed
+                </div>
+
+        </section>
+        <section>
+            <h2>Order of Declerations</h2>
+            <ul><li> The latter CSS declerations override the previous ones.</li></ul>
+
+            <p><code>p{color: blue;  &nbsp;&nbsp;&nbsp;&nbsp;/*fallback value*/<br>&nbsp;&nbsp;color: var(--blue);<br> }</code></p>
+            <br>
+            <p>The vairable <code>var(--blue)</code> will overeide the value <code>blue</code></p>
+            <p>The previous decleration is used as a fallback value, in case some properties or values have browser compatibility issues or not supported.</p>
+
+        </section>
+
         
 
         
