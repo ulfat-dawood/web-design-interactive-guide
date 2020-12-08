@@ -99,6 +99,11 @@
     color: var(--blue); 
 }
 
+#first-line::first-line{
+    font-size: 150%;
+    color: var(--blue); 
+}
+
 #text-indent{
     text-indent: 50px; 
 }
