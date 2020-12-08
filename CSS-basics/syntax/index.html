@@ -182,6 +182,19 @@
             <p>The previous decleration is used as a fallback value, in case some properties or values have browser compatibility issues or not supported.</p>
 
         </section>
+        <h1 class="tilte">Specificity</h1>
+        <section>
+            <p>The more specific the CSS selector is, the higher is the precedence of the CSS property declarations.</p>
+            <p>Specificity hierarchy follow the following order</p>
+
+            <ol>
+                <li><code> anySelector{background:orange !important;}</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more specific</li>
+                <li><code> #id{background:red;}</code></li>
+                <li><code> .class{background: blue;}</code></li>
+                <li><code> element{background: pink;}</code></li>
+                <li><code> *{background:white; }</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; least specific</li>
+            </ol>
+        </section>
 
         
 
