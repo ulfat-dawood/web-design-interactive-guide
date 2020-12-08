@@ -195,6 +195,22 @@
                 <li><code> <b style="color:#abced4;">*</b>{background:white; }</code><span style="float: right; color:#abced4;">least specific</span></li>
             </ol>
         </section>
+        <section>
+            <h2>Order counts! But specificity matters!</h2>
+
+            <p><code>&lt;div class="my-class" id="my-id" &gt;TEXT&lt;/div&gt;</code></p>
+            
+            <br>
+            <p><code>#my-id{ color:blue; }</code></p>
+            <p><code>.my-class{ color:red; }</code></p>
+            <br>
+            <p><b>.myClass{} is the last rule. Will it override #my-id{}?</b> <br>No, because #id has higher precedence than .class</p>
+
+
+            
+
+
+        </section>
 
         
       
