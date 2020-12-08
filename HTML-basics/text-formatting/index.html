@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Text Formatting</h1>
+        <section>
+            <h2>Bold Italic</h2>
+            <p>
+                The following text will appear <b>BOLD</b> to highlight <b>important words</b>. <br>
+                this <i>WROD</i> is italic. <br><br>
+            </p>
+                <h2>Semantic Tags</h2> 
+                <ul><li>Communicate with the browser and add meaning to the text. </li>
+                    <li>Imporoves accessibility. </li>
+                </ul>
+                &lt;em&gt; tells the browser <i>this is emphasized text</i> <br>
+                &lt;strong&gt; tells the browser <strong>this is an important text</strong>
+            
+        
+        </section>
+
+        <section>
+            <h2>More Semantics</h2>
+            <ul>
+                <li>
+                    &lt;blockquote&gt; allows to quote text, and cite refference. <br> 
+                    <blockquote cite="https://www.thefactsite.com/facts-about-apples/">if you plant the seeds from an apple, it will grow into a new variety.</blockquote></li>
+                    <li>&lt;p&gt; Shorter qoutes.<br> 
+                    <q>To be, or not to be</q> -shakespeare
+                </li><br>
+                
+                <li>
+                    &lt;abbr&gt; hover over this abbreviation <abbr title="Gross Domestic Product">GDP</abbr>
+                </li><br>
+                <li>
+                    &lt;cite&gt; to cite a piece of work <br>
+                    <cite>The Fault In Our Stars</cite> by john green. 
+                </li><br>
+                <li>
+                    &lt;dfn&gt; Definitions <br>
+                    <dfn>Entropy</dfn> is the measure of the unavailable energy in a closed thermodynamic system.
+                </li><br> 
+                <li>
+                    &lt;address&gt; Address information <br>
+                    <address>
+                        <p><a href="mailto:ulfat@icapm.dev">ulfat@icapm.dev</a>
+                               Hyderabad, India.</p>
+                    </address>
+                </li><br> 
+                <li>
+                    &lt;ins&gt; &lt;del&gt;  &lt;s&gt; indicate change to a text <br>
+                    this <ins>WORD</ins> was inserted, this <del>WORD</del> was deleted and this <s>WORD</s> is no longer accurate.
+                </li><br> 
+
+            </ul>
+
+        </section>
+        
+        <section>
+            <h2>Character Formatting</h2>
+            <ul>
+                <li>
+                    &lt;sup&gt;  superscript: This is the 21<sup>st</sup> century.
+                </li>
+                <li>
+                    &lt;sub&gt;  subscript: CO<sub>2</sub> levels today are relatively higher.
+                </li>
+            </ul>
+
+        </section>
+
+        <h1 class="title">Document Appearance</h1>
+
+        <section>
+            <h2>White Spacing</h2>
+
+            <p>
+                Inspect the following text. Notice, new lines and extra spaces are omitted by the broswer. 
+                new       line
+                new       line
+                new       line
+            </p>
+
+            <p>
+                &lt;br&gt; adds  <br> new  <br> lines <br>
+                & nbsp ;  &nbsp; &nbsp; &nbsp;Adds &nbsp; &nbsp; &nbsp; extra  &nbsp; &nbsp; &nbsp; speaces.
+            </p> 
+
+            <h2>&lt;pre&gt;</h2>
+            <pre>
+                Alernatively, use &lt;pre&gt;
+                to preserves 
+                both      spaces      and
+                line breaks
+            </pre>
+
+        </section>
+
+        <section>
+            <h2>Horizontal Line</h2>
+            <p>Separate content by adding a horizontal line</p>
+
+            <h2>Content #1</h2>
+            <hr>
+            <h2>Content #2</h2>
+        </section>
+
+        <h1 class="title">HTML Entities</h1>
+
+        <section>
+            <p>Reserved characters in HTML must be replaced with character entities. <br>
+                inspect the following symbols in the editor</p>
+
+            <div id="entities">
+                <h2> '&nbsp;' </h2> <p>non-breaking space</p>
+
+                <h2> &lt; </h2> <p>less than</p>
+
+                <h2> &gt; </h2> <p>greater than</p>
+
+                <h2> &amp; </h2> <p>ampersand</p>
+
+                <h2> &quot; </h2> <p>double quotation mark</p>
+
+                <h2> &apos; </h2> <p>single quotation mark</p>
+                
+                <h2> &cent; </h2> <p>cent</p>
+
+                <h2> &pound; </h2> <p>pound</p>
+
+                <h2> &yen; </h2> <p>yen</p>
+
+                <h2> &euro; </h2> <p>euro</p>
+
+                <h2> &copy; </h2> <p>copyright</p>
+
+                <h2> &reg; </h2> <p>registered trademark</p>
+
+                <h2> &#128151; </h2> <p>Heart Emoji</p>
+
+                <h2> &#128512; </h2> <p>Smile Emoji</p>
+                
+                <h2></h2>
+                <p><a href="https://www.w3schools.com/charsets/ref_emoji.asp">Emoji Unicode Reference</a></p>
+
+                
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

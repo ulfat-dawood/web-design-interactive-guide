@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">HTML Tags </h1>
+        <!-- This is a comment, won't apprear in the document  -->
+        <section>
+                <h1>This is heading 1</h1>
+                <h2>This is heading 2</h2>
+                <h3>This is heading 3</h3>
+                <h4>This is heading 4</h4>
+                <h5>This is heading 5</h5>
+                <h6>This is heading 6</h6>
+        </section>
+        
+
+        <section>
+            <p>
+                This is a paragraph:<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde eius distinctio ipsum dicta corporis est, nihil blanditiis consectetur aspernatur.
+            </p>
+        </section>
+        
+
+        <section>
+            <h2>This is an unordered list of elements</h2>
+
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+
+            </ul>  
+        </section>
+        
+
+        <section>
+            <h2>This is an ordered list of elements</h2>
+
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ol>
+        </section>
+        
+
+        <section>
+            <h2>This is a discription list:</h2>
+
+            <dt>Term:</dt>
+            <dd>The definition of the term here</dd>
+        </section>
+
+        <h1 class="title">HTML Attributes </h1>
+
+        <section>
+            <h2>Two types of Attributes:</h2>
+            <ol>
+                <li>Global atrributes: <ul>
+                    <li><code>style</code></li>
+                    <li><code>class</code></li>
+                    <li><code>id</code></li>
+                    <li>data-* custom attribute</li>
+                    <li>Event atrributes</li>
+                </ul>
+                <li>Tag specific attributes.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>STYLE attribute</h2>
+            <p>it's a global attribute, added to any tag:</p>
+            <p style="color:#abced4;">This paragraph will appear blue</p>
+        </section>
+        
+        <section>
+            <h1>&lt;span&gt;</h1>
+            <p>used to mark up a part of a text. <br> Adding style only to <span style="background:#38e9e9; color:#eee;">this part</span> of the prargraph without breaking the line.</p>
+        </section>
+        
+  
+        <section>
+            <h1>&lt;division&gt;</h1>
+            <p>Defines a division or a section in an HTML document. <br>
+               &lt;div&gt; tag is easily styled by using the <code>class</code>  or <code>id</code>  attribute. <br>
+               Adding style only to <div style="background:#38e9e9; color:#eee;">this part</div> but on a new line.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="heading for-class">CLASS attribute</h2>
+            <p class="para for-class">t's a global attribute, specifies one or more class names for an element. <br>
+                mostly used to point to a class in a style sheet.</p>
+        </section>
+
+        <section>
+            <h2 id="id-heading">ID attribute</h2>
+            <p id="id-para">t's a global attribute, specifies a <span style="color:#abced4;">unique</span> id for an HTML element. <br>
+                mostly used to point to a style in a style sheet.
+            </p>
+        </section>
+
+        <section>
+            <h2>data-* Custom Attribute</h2>
+            <p>
+                Used to store custom data other than HTML defined attribute. 
+            </p>
+            <h3 class="person" data-age="25" data-gender="female">Shayla Nico</h3>
+        </section>
+
+        <section>
+            <h2>Even Attributes</h2>
+            <ul>
+                <li>Mouse Events</li>
+                    <ul><li onclick="script">onclick</li></ul>
+                <li>Keyboard Events</li>
+                    <ul><li onkeydown="script">onkeydown</li></ul>
+                <li>Window Events</li>
+                    <ul><li onload="script">onload</li></ul>
+                <li>Form Events</li>
+
+            </ul>
+        </section>
+
+ 
+        <h1 class="title">Tag Specific Attributes</h1>
+        <section>
+            <h2>Anchor tag &lt;a&gt;  :</h2>
+            <p>defines a hyperlink.
+                <ul>Tag specific attributes: <li>href: defines the URL</li> <li>target</li> </ul>
+            <a href="https://www.google.com" target="_blank"> Click me</a>  to visit Google.com in another tab </p>
+            
+        </section>
+
+        
+  
+        <section>
+            <h2>Image tag &lt;img&gt;  :</h2>
+            <p>embed an image in an HTML page.
+                <ul>Tag specific attributes: <li>src: defines the URL</li> <li>alt: for accessibilty</li> <li>width/height</li></ul>
+            <img src="./img/img-icon.png" alt="icone for an image" width="150" height="150"><br>
+            <p>if image is not available alternative text appears:</p>
+            <img src="./img/not-available.png" alt="icone for an image" width="150" height="150">
+            
+        </section>
+        
+
+
+    </div>
+</body>
+</html>

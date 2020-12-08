@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+    <title>Fine Dine</title>
+    <style>
+        body{background: black;color:#f9fae4;font-family: 'Noto Serif JP', serif;}
+        .container{width:80%; margin:auto;text-align: center;}
+        .center{margin: auto; }
+        img{display: block;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FINE DINE </h1><h6>- since 1994 -</h6><h4>Make Delicious Memories</h4>
+        </header>
+        <hr>
+        <table class="center">
+            <tr >
+                <td><h2>HOME | </h2></td> 
+                <td><h2> ABOUT US | </h2></td>
+                <td><h2> AMBIENCE | </h2></td>
+                <td><h2> RESERVE</h2></td>
+            </tr>
+        </table>
+    </div>
+    <img width="1400" src="./img/banner.png" class="center">
+    <div class="container">
+        <br>
+        <h1>WHY <span style="color:#f9d681;">FINE DINE</span> ?</h1>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste qui dolorum impedit iusto, modi expedita reiciendis corrupti. Natus nesciunt facilis voluptates earum sequi dolorum nam dolorem excepturi. Aliquam minima eaque consectetur quae error pariatur consequuntur repudiandae optio quibusdam. Repudiandae.</p>
+        <br>
+        <hr>
+        <br>
+
+        <table class="center">
+            <caption><h2>AMBIENCE</h2></caption>
+
+            <tr>
+                <td ><img src="./img/ambience11.jpeg" height="350"> </td>
+
+                <td><img src="./img/ambience22.jpg" height="350">  </td>
+                <td colspan="2"><img src="./img/ambience33.jpeg" height="350"></td>
+
+
+            </tr>
+            
+            <tr>
+                    <td colspan="2"><img src="./img/ambience44.jpeg" height="350"></td>
+
+                    <td ><img src="./img/ambience55.jpeg" height="350"></td>
+                    <td ><img src="./img/ambience66.jpeg" height="350"></td>
+    
+                </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        
+        <form id="reservation">
+            <label form="reservation"><h2>MAKE A RESERVATION</h2></label>
+            
+            
+            <br><br>
+
+            <label for="name">*Reservation for:</label><br>
+            <input type="text" id="name" placeholder="Enter Your Name" required><br><br>
+
+
+            <label for="date">*Day of the reservation:</label><br>
+            <input type="date" id="date" required><br><br>
+
+            <label for="time">*Time of the reservation: (9 am - 10 pm)</label><br>
+            <input type="time" id="time" min="09:00" max="22:00" required><br><br>
+
+            <label for="peopl">*For how many people:</label><br>
+            <input type="number" id="people" min="1" max="15" required><br><br>
+
+            <label for="req">Any special requirments: (optional)</label><br>
+            <textarea id="req" cols="30" rows="5"></textarea><br><br>
+
+            <input type="submit" value="BOOK MY TABLE">
+
+        </form>
+        
+    </div>
+    
+    <br><br><br>
+
+    <footer style="text-align: center;" >
+        <h2 >See you soon!</h2>
+
+       
+        <img class="center" src="./img/footer.png" width="1400">
+    </footer>
+
+
+
+
+
+
+
+
+    
+    <div style="height: 0px; overflow: hidden;">
+            <iframe src="./assets/silence.mp3" allow="autoplay" id="audio">
+            </iframe>
+            <audio autoplay loop controls >
+                <source src="./assets/piano2.mp3" type="audio/mp3">
+            </audio>
+    </div>
+        
+    
+   
+ 
+    
+
+    
+</body>
+</html>

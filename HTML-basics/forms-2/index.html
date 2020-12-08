@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">HTML Forms</h2><br>
+
+        <h1 class="title">Temporal Input tag</h1>
+
+        <section>
+            <h2>Date</h2>
+
+            <form>
+                <label for="dob">Enetr you DOB to verify you're +10</label><br>
+                <input type="date" id="dob" max="2011-01-01">
+
+                <input type="submit" value="SUBMIT">
+            </form>
+
+            <h2>Time</h2>
+            <form>
+                <label for="tm">Select a your class time, and submit: <br>
+                    (between 8:00 am - 1:00 pm)</label><br>
+                <input type="time" id="tm" min="08:00" max="13:00">
+
+                <input type="submit" value="SUBMIT">
+
+            </form>
+
+            <h2>date time</h2>
+            <form>
+                <label for="dt-tm">Select a date and time:</label><br>
+                <input type="datetime-local" id="dt-tm">
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+            <h2>Week</h2>
+            <form>
+                <label for="week">Select a week in 2021:</label><br>
+                <input type="week" id="week" min="2021-W18" max="2021-W26" >
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+
+            <h2>Month</h2>
+            <form>
+                <label for="month">Course starts in Dec. <br> If you want to change select another month:</label><br>
+                <input type="month" id="month" value="2021-12">
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+        </section>
+
+        <h1 class="title">Other Input Tags</h1>
+        <section>
+            <h2>File / Tel / URL / Reset</h2>
+                file validation attribute:
+                <ul><li>accept: file_extension | audio/* | video/* | image/* | media_type</li>
+                <li>multiple: accpets multiple files</li></ul>
+               
+                
+                <form id="job">
+                    <label form="job"><h3>Developer Job Opening</h3></label><br>
+
+                    <label for="cv">*Upload your CV: (pdf only)</label>
+                    <input type="file" accept="application/pdf" required><br><br>
+
+                    <label for="github">Show us your work:</label><br>
+                    <input type="url"  id="github" placeholder="Github URL"><br><br>
+
+                    <label for="contact">Your contact:</label><br>
+                    <input type="tel"  id="contact" required value="+91"><br><br>
+
+                    <input type="reset" value="RESET FORM">
+                    <input type="submit" value="APPLY">
+
+                </form>
+        </section>
+
+        <section>
+
+            <h2>Search</h2>
+                <input type="search" name="" id="">
+            <h2>Image</h2>
+                <input type="image" src="./img/submit.png" width="100px">
+            <h2>Color</h2>
+                <input type="color" value="#FFFFFF">
+            <h2>Range</h2>
+            <label for="volum">Set the volume:</label><br>
+            <input type="range" id="volume" value="8" min="0" max="10">
+        </section>
+
+        <h1 class="title">Other Form Tags</h1>
+
+        <section>
+            <h2>&lt;textarea&gt;</h2>
+            <p>Multi-line text input</p>
+            <ul>
+                <li>rows</li>
+                <li>cols</li>
+            </ul>
+
+            <form>
+                <label for="cmnt">Leave your comments below:</label><br>
+                <textarea id="cmnt" cols="30" rows="5"></textarea><br>
+                
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+
+        <section>
+            <h2>&lt;fieldset&gt;</h2>
+            <form >
+                <fieldset>
+                 <legend>Personal info:</legend>
+                 <label for="name">Your name:</label>
+                 <input type="text" id="name" value="Jacob"><br><br>
+
+                 <label for="date">Your age:</label>
+                 <input type="date" id="date" value="2010-11-11"><br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset disabled>
+                 <legend>Application info:</legend>
+                 <h5>*underaged can't apply</h5>
+                 <label for="name">Your qualification:</label>
+                 <input type="text" id="name" ><br><br>
+
+                 <label for="exp">Years of experience</label>
+                 <input type="range" id="exp" min="0" max="30"><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+
+               </form>
+        </section>
+
+        <section>
+            <h2>&lt;select&gt; &lt;option&gt; Dropdown Menu</h2>
+            
+            <form>
+                <label for="level">Did you enjoy learning html?</label><br>
+                <select id="level">
+                    <option value="yes">yaaas! HTML is fun</option>
+                    <option value="not-sure">Not sure</option>
+                    <option value="No">No, I quit HTML</option>
+                </select>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>

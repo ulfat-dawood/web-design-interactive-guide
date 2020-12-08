@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">HTML Forms</h1>
+
+        <section>
+            <h2>3 Main Tags :</h2>
+        
+                <code>
+                &lt;form&gt;  <br>
+                &nbsp;&lt;label&gt;&lt;/label&gt;  <br>
+                &nbsp;&lt;input/&gt; <br>
+                &lt;/form&gt;
+                </code> 
+
+            <h2>Other Tags</h2>
+            <code>
+                &lt;button&gt; <br>
+                &lt;textarea&gt; <br>
+                &lt;select&gt; <br>
+                &lt;option&gt; <br>
+                &lt;fieldset&gt; <br>
+                &lt;output&gt; <br>
+            </code>
+        </section>
+
+        <section>
+            <h2>Simple form</h2>
+
+            <form >
+                <label for="name">Name:</label>
+                <input id="name" type="number" max="5" placeholder="Enter name" />
+                
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+
+        <h1 class="title">Attributes</h1>
+        <section>
+            <h2>&lt;form&gt;</h2>
+            <ul>
+                <li>action: URL</li>
+                <li>method: HTTP method</li>
+                <li>name: form name</li>
+            </ul>
+
+            <h2>&lt;label&gt;</h2>
+            defines label for &lt;input&gt;
+            <ul>
+                <li>for: &lt;input&gt; id</li>
+                <li>form: &lt;form&gt; id</li>
+            </ul>
+
+            <h2>&lt;input&gt;</h2>
+            <ul>
+                
+                <li>name: name for the input</li>
+                <li>placeholder: placeholder text</li>
+                <li>value: default input value</li>
+                <li>size: width</li>
+                <li>disabled</li>
+                <li>autofocus</li>
+                <li>autocomplete: on/off</li>
+                <li>form: &lt;form&gt; id</li>
+                <li>type: text | number | email | password | checkbox | radio | date | time | datetime-local | week | month | tel | 
+                          search | file | button | submit | image | url | color | range | reset | hidden</li>
+                <p>validation:</p>
+                <li>required</li>
+                <li>pattern: regular expression validation</li>
+                <li>max/min: max/min number/date</li>
+                <li>maxlength/minlength: max/min number of characters</li>
+            </ul>
+        </section>
+
+        <h1 class="title">Input Tag</h1>
+        <section>
+            <h2>text / password</h2>
+
+            <form>
+                <p>Fill the required field and submit</p>
+                <label for="username">*Username: ( 3-7 char)</label><br>
+                <input type="text" id="username" placeholder="username" minlength="3" maxlength="7" required><br>
+                
+                <label for="pswrd">*Password: (numbers & characters only)</label><br>
+                <input type="password" id="pswrd" placeholder="password" pattern="^[0-9a-zA-Z \-'_]+$"  required><br>
+
+                <input type="submit" value=SUBMIT>
+            </form>
+            <br>
+        </section>
+        <section>
+
+            <h2>number</h2>
+            <form>
+                    <label for="qty">Enter Quantity: (between 1-8)</label><br>
+                    <input type="number" id="qty"  min="1" max="8" size="100">
+            </form>
+            <br>
+
+    
+            <h2>email</h2>
+
+            <form>
+                
+                <label for="email">*Enter a valid email and submit:</label><br>
+                <input type="email" id="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="submit" value=SUBMIT>
+            </form>
+            <br>
+        </section>
+
+        <section>
+            <h2>checkbox / radio</h2>
+            Special attribute: <code>checked</code>
+<br><br>
+        <form>
+            <p>SELECT YOUR PIZZA:</p>
+            <h3>Size :</h3>
+            <input type="radio" id="small" name="size">
+            <label for="small">Small</label><br>
+
+            <input type="radio" id="meduim" name="size" checked>
+            <label for="meduim">Meduim</label><br>
+
+            <input type="radio" id="large" name="size">
+            <label for="large">Large</label><br>
+
+            <h3>Toppings :</h3>
+            <input type="checkbox" id="Pepperoni" checked>
+            <label for="Pepperoni">Pepperoni</label><br>
+
+            <input type="checkbox" id="Mushrooms" >
+            <label for="Mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="Onions" >
+            <label for="Onions">Onions</label><br>
+
+            <input type="checkbox" id="Cheese" checked>
+            <label for="Cheese">Cheese</label><br>
+
+            <input type="checkbox" id="Olives" >
+            <label for="Olives">Olives</label><br><br>
+
+            <input type="checkbox" id="pay" required>
+            <label for="pay">I'll pay cash</label><br>
+            <input type="submit" value="ORDER" >
+        </form>
+        </section>
+
+    </div>
+
+</body>
+</html>

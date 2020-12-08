@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Types of HTML Tags</h1>
+        <section>
+            <h2>Paired Tags</h2>
+                <ol> 
+                    <li>Have an opening Tag.</li>
+                    <li>Have content / children tags.</li>
+                    <li>Have a closing Tag.</li>
+                </ol>
+                <code>E.g. &lt;p&gt; &lt;/p&gt;   &lt;ul&gt; &lt;/ul&gt; </code>
+        </section>
+        <section>
+                <h2>Unaired Tags</h2>
+                <ul>
+                    <li>Have an opening tag.</li>
+                    <li>No content / children tags.</li>
+                    <li>No closing tag.</li>
+                </ul>
+            <code>E.g. &lt;br&gt;   &lt;hr&gt;</code>
+        </section>
+        <section>
+                <h2>Self-closing Tags</h2>
+                <ul>
+                    <li>Only one tag that closes itself.</li>
+                    <li>No content / children tags.</li>
+                    <li>Require attributes.    </li>
+                </ul>
+                <code>E.g. &lt;img src="img.png" /&gt;  &nbsp; &nbsp;  &lt;input type="text" /&gt; </code>
+        </section>
+
+        <h1 class="title">Media Tags</h1>
+        <section>
+            <h2>Image Tag</h2>
+            <p>Self-closing tag  <code>&lt;img/&gt;</code></p>
+            Attributes:
+            <ul>
+                <li>src</li>
+                <li>alt</li>
+                <li>height/width in pixels</li>
+            </ul>
+            <img src="./img/img-icon.png" alt="icon for an image" height="200" width="200">
+        </section>
+        <section>
+            <h2>Audio Tag </h2>
+            <p>Paired Tag <code>&lt;audio&gt;&lt;audio/&gt;</code> Has one or multiple <code>&lt;source&gt;</code> tag</p>
+            <code>&lt;audio&gt;</code> attributes:
+            <ul>
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>muted</li>
+            </ul>
+
+            <p></p>
+            <p><code>&lt;source&gt;</code> attributes:</p>
+            <ul>
+                <li>src</li>
+                <li>type</li>
+            </ul>
+
+            <audio controls>
+                <source src="assets/hp-theme.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section>
+                <h2>Video Tag </h2>
+                <p>Paired Tag <code>&lt;video&gt;&lt;video/&gt;</code> Has one or multiple <code>&lt;source&gt;</code> tag</p>
+                <code>&lt;video&gt;</code> attributes:
+                <ul>
+                    <li>width</li>
+                    <li>height</li>
+                    <li>controls</li>
+                    <li>autoplay</li>
+                    <li>loop</li>
+                    <li>muted</li>
+                </ul>
+    
+                <p></p>
+                <p><code>&lt;source&gt;</code> attributes:</p>
+                <ul>
+                    <li>src</li>
+                    <li>type</li>
+                </ul>
+    
+                <video width="300" controls>
+                    <source src="assets/sky.mp4" type="video/mp4">
+                </video>
+                <!-- Video by Kelly Lacy from Pexels -->
+                
+        </section>
+
+        <h1 class="title">Tables</h1>
+        <section>
+            <table border="1" style="border-collapse: collapse;" >
+                <caption><h2>&lt;table&gt;&lt;/table&gt;</h2></caption>
+                
+                <thead>
+                    <tr>
+                        <th>#</th>  <th>Semantic Tags</th>  <th>row</th>  <th>cell</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>  <td colspan="3">&lt;caption&gt;</td>  
+                    </tr>
+
+                    <tr>
+                        <td>2</td>  <td>&lt;thead&gt;</td>  <td>&lt;tr&gt;</td>  <td>&lt;th&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>  <td>&lt;tbody&gt;</td>  <td>&lt;tr&gt;</td>  <td>&lt;td&gt;</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>4</td>  <td>&lt;tfoot&gt;</td>  <td>&lt;tr&gt;</td>  <td>&lt;td&gt;</td>
+                    </tr>
+                </tfoot>
+                <!-- Grouping columns and styling them  -->
+                <colgroup>
+                    <col span="1" style="background: #abced4">
+                    <col span="3" style="background: #f0f0f0">
+                </colgroup>
+            </table>
+
+
+
+            <br>
+            <ul>
+                <p><code>&lt;td&gt;</code> attributes:</p>
+                <li>copspan</li>
+                <li>rowspan</li>
+            </ul>
+
+            <br>
+            <ul>
+                <p>Grouping/styling columns</p>
+                <li><code>&lt;colgroup&gt;</code></li>
+                <li><code>&lt;col span="n" style="property:value;"&gt;</code></li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
