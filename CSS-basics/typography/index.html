@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Text styling</h1>
+
+        <section>
+            <h2>Text Color</h2>
+            <ul>
+                <li><code>color: color keyword | hex | rgb() | hsl();</code></li>
+            </ul>
+            <div id="text-color" class="text-box">This text is grey</div>
+        </section>
+
+        <section>
+            <h2>Text Shadow</h2>
+
+            <ul>
+                <li><code>text-shadow: x -y;</code></li>
+            </ul>
+            <div id="text-shadow1" class="text-box">This text has an inherit color shadow</div>
+
+            <ul>
+                <li><code>text-shadow: x -y blur;</code></li>
+            </ul>
+            <div id="text-shadow2" class="text-box">This text has an inherit color, blurred shadow</div>
+
+            <ul>
+                <li><code>text-shadow: x -y blur color;</code></li>
+            </ul>
+            <div id="text-shadow3" class="text-box">This text has a blue, blurred shadow</div>
+
+
+        </section>
+
+
+        <h1 class="title">Font</h1>
+
+        <section>
+            <h2>Font Style</h2>
+            <ul>
+                <li><code>font-style: normal | italic | oblique;</code></li>
+            </ul>
+            <div id="font-style" class="text-box">Italic text</div>
+
+
+        </section>
+
+        <section>
+            <h2>Font Variant</h2>
+            <ul>
+                <li><code>font variant: normal | small-caps;</code></li>
+                <br>
+                <li>small-caps:</li>
+                    <ul>
+                        <li>Converts lowercase letterrs to uppercase.</li>
+                        <li>Previous lowercase letters appear smaller.</li>
+                    </ul>
+            </ul>
+            <div id="font-variant" class="text-box">Small-caps Text Appear Like This</div>
+
+        </section>
+
+        <section>
+            <h2>Font Weight</h2>
+            <ul>
+                <li><code>font-weight: normal | bold | bolder | lighter | [Numeric keyword];</code></li>
+                <br>
+                <li>Numeric keyword can be:</li>
+                <ul><li>100 | 200 | 300 | 400 (normal) | 500 | 600 | <br> 700 (bold) | 800 | 900</li></ul>
+            </ul>
+            <div id="font-weight" class="text-box">This text is bold</div>
+
+        </section>
+
+        <section>
+            <h2>Font Size</h2>
+            <ul><li><code>font-size: [number][unit];</code></li></ul>
+            <h6>HINT: unit can be px, pt, rem or em.</h6>
+            <div id="font-size" class="text-box">This text is 50 px large</div>
+
+        </section>
+
+        <section>
+            <h2>Line Height</h2>
+            <ul><li><code>line-height: normal(default) | [scale] | [number][unit];</code></li>
+                <br>
+                <li>defines the 'leading' of text, the white space between each line.</li>
+            </ul>
+            <h6>HINT: unit can be % or px ...etc.</h6>
+            <div id="line-height" class="text-box">Lines are separated by 1.75 of the actual font-size</div>
+
+
+        </section>
+
+        <section>
+            <h2>Font family</h2>
+            <ul><li><code>font-family: ['font-name'] , [fallback-font];</code>
+                <br>
+                <li>fall back fonts are usually generic-family fonts, such as:</li>
+                <ul><li>sans-serif</li><li>serif</li><li>cursive</li><li>fantasy</li><li>monospace </li></ul>
+            </li></ul>
+            <h6>HINT: generic-family fonts don't need to be qouted. </h6>
+
+            <div id="font-family" class="text-box">"Times New Roman" is the font of this text. <br>
+            serif, is the fallback font.</div>
+        </section>
+
+       
+
+        <section>
+            <h2>Font Stretch </h2>
+            <ul><li><code>font-stretch: ultra-condensed | extra-condensed | condensed | semi-condensed | normal | semi-expanded | expanded | extra-expanded | ultra-expanded;</code></li>
+                <br>
+                <li>Defines how streched each letter will apprear.</li>
+                <li>Only Variable fonts like "League Mono Variable" support font-strech .</li>
+                <li>Not supported by older browsers.</li>
+            </ul>
+           
+
+        </section> 
+
+         
+        <section>
+            <h2>Shorthand</h2>
+            <ul>
+                <li><code>font: font-size font-family;</code> (mandatory values)</li><br>
+                <li><code>font: font-stretch font-style font-variant font-weight font-size/line-height font-family</code> (optional values)</li>
+            </ul>
+
+            <div id="font-shorthand" class="text-box">This text is italic with default font variant, 500 font weight, 1.5 line height, Helvetica font and 30px large.</div>
+
+        </section>
+
+
+        <h1 class="title">Text Formatting</h1>
+        <section>
+            <h2>Horizontal Alignment</h2>
+            <ul>
+                <li><code>text-align: left | right | center | justify;</code></li>
+                <br>
+                <li>Aligns (text) AND (children elemnts) horizontally, relative to the parent element. </li>
+                <br>
+                <li><code>text-align</code> property is assigned to the parent element.</li>
+            </ul>
+
+            <div id="text-align" class="text-box">
+                This text is horizontally aligned to the right. <br>
+                <h6> child element<br>aligned to<br>the right</h6>
+            </div><br>
+
+            <h2>Vertical Alignment</h2>
+            <ul>
+                <li><code>vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom;</code></li>
+                <br>
+                <li>Works only: <ul><li>with (inline) or (inline-block) elements.</li><li>And if <code>float:none</code>.</li></ul></li>
+                <br>
+                <li>Aligns (children elemnts only) (not text) vertically, relative to their other siblings (NOT parent). </li>
+                <br>
+                <li><code>vertical-align</code> property is assigned to each individual children (NOT to the parent)</li>
+                <br>
+                <li>elements below are aligned to the bottom of each other, not relative to the bottom of their parent</li>
+
+            </ul>
+            <div id="vertical-align" class="text-box">
+                <h6>fist <br>text</h6>
+                <h6>second <br>text is <br>longer</h6>
+                <h6>third</h6>
+            </div><br>
+
+        </section>
+
+        <section>
+            <h2>Text Decoration</h2>
+
+            <ul>
+                <li><code>text-decoration-line: underline | overline | line-through;</code></li>
+                <li><code>text-decoration-color: keyword | hex | rgb() | hsl();</code></li>
+                <li><code>text-decoration-style: solid | double | dotted | dashed | wavy;</code></li>
+            </ul>
+
+            <h2>Shorthand</h2>
+            <ul><li><code>text-decoration: line | multiple-lines;</code></li></ul><br>
+            <div id="text-decoration1" class="text-box">text</div><br><br>
+            
+                <ul><li><code>text-decoration: [line | multiple-lines] color; </code></li></ul><br>
+            <div id="text-decoration2" class="text-box">text</div><br><br>
+
+                <ul><li><code>text-decoration: [line | multiple-lines] color style;</code></li></ul><br>
+            <div id="text-decoration3" class="text-box">text</div><br><br>
+
+
+            
+        </section>
+
+        <section>
+            <h2>Text Tranformation</h2>
+            <ul><li><code>text-transform: none(default) | capitalize | uppercase | lowercase;</code></li></ul>
+            <div id="text-transform" class="text-box">text is transformed to uppercase. </div>
+
+        </section>
+        <section>
+            <h2>First Letter</h2>
+            <ul>
+                <li>Special type of selectors. Allows to style only the first letter of the text.</li>
+                <br>
+                <li><code>selector::first-letter{ set of declerations}</code></li><br>
+                <div id="first-letter" class="text-box">The first letter is blue and larger </div>
+
+            </ul>
+        </section>
+
+            <h1 class="title">White Spacing</h1>
+        <section>
+            <h2>Text Indentation</h2>
+            <ul><li><code>text-indent: [number][unit]</code></li></ul>
+            <ul><li>indentation on the first line</li></ul>
+            <div id="text-indent" class="text-box">The first line of this text has indentation of 50px.</div>
+
+        </section>
+
+        <section>
+            <h2>Letter Spacing</h2>
+            <ul><li><code>letter-spacing: [number][unit]</code></li></ul>
+            <ul><li>spesify the tracking (spacing between letters in a word)</li></ul>
+            <div id="letter-spacing1" class="text-box">Words are loose.</div><br>
+            <div id="letter-spacing2" class="text-box">Words are compact closly.</div>
+
+        </section>
+
+        <section>
+            <h2>Line Height</h2>
+            <ul><li><code>line-height: normal(default) | [scale] | [number][unit];</code></li>
+                <br>
+                <li>defines the 'leading' of text, the white space between each line.</li>
+            </ul>
+            <h6>HINT: unit can be % or px ...etc.</h6>
+            <div id="line-height" class="text-box">Lines are separated by 1.75 of the actual font-size</div>
+
+
+        </section>
+
+
+
+
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

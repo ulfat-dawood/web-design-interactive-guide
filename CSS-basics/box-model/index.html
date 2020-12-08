@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">CSS Box Model</h1>
+    <section>
+        <p>All HTML elements follow the Box Modle, which consist of:
+            <ol>
+                <li>Content: where child elements, text, images are placed.</li>
+                <li>Padding: adds extra area around the content, before the border.</li>
+                <li>Border</li>
+                <li>outline: a line outside the border, used to highlight an element when focused. <input type="text" placeholder="focus to see the outline"></li>
+                <li>Margin: area outside the border.</li>
+            </ol>
+        </p>
+        <p>Color can be spesified for content background, border and outline. <br>
+        Both padding and margin are transparent. </p>
+        <br>
+        <img src="./img/box-model.svg" width="600" style="display: block; margin:auto">
+    </section>
+
+    <h1 class="title">content</h1>
+    <section>
+        <p>Content's properties can be set with the following CSS properties</p>
+        <ol>
+            <li><code>background-color:color keyword | hex code | rgb() | hsl(); </code></li>
+            <li><code>width: [number][unit];</code></li>
+            <li><code>height: [number][unit];</code></li>
+            <h5>HINT: unites can be pixels(px) percentage(%) points(pt) ...etc.</h5>
+            <p>Text content:</p>
+            <li><code>font-size: [number][unit];</code></li>
+            <li><code>color: color keyword | hex code | rgb() | hsl() ;</code></li>
+        </ol>
+        <p>
+            Change content properties of the box below: 
+        </p>
+        <div class="content center">this div has text content <br> But it doesn't have padding, border, outline or margin </div>
+    </section>
+    <section>
+        <h2>Rounded Corners</h2>
+        <ul>
+            <li><code>border-top-left-radius: [number][unit];</code></li>
+            <li><code>border-top-right-radius: [number][unit];</code></li>
+            <li><code>border-bottom-right-radius: [number][unit];</code></li>
+            <li><code>border-bottom-left-radius: [number][unit];</code></li>
+        </ul>
+        <div class="border-radius content center">This div has rounded corners</div>
+        <br><h5 class="title left">Shorthand:</h5>
+        <ul><li><code>border-radius: TL TR BR BL;</code></li></ul>
+        <div class="border-radius-shorthand content center">
+            This div has rounded corners 
+            <img src="./img/border-raduis.png" width="150" class="center " style="display: block;">
+        </div>
+        <ul><li><code>border-radius: [number][unit];</code></li></ul>
+        <div class="border-radius-shorthand-2 content center">This div has unified rounded corners</div>
+    </section>
+
+    <h1 class="title">Padding</h1>
+    <section>
+        <h2>Clockwise Notation</h2>
+        <p>Clockwise Notation used to Specify the Padding of an Element</p>
+
+        <ul>
+            <li><code>padding-top: [number][unit] | auto;</code></li>
+            <li><code>padding-right: [number][unit] | auto;</code></li>
+            <li><code>padding-bottom: [number][unit] | auto;</code></li>
+            <li><code>padding-left: [number][unit] | auto;</code></li>
+        </ul>
+
+        <div class="padding content center">This div has padding of 20px from top and bottom <br>
+        and padding of 40px from left and right</div>
+
+        <br><h5 class="title left">Shorthand :</h5>
+
+        <ul>
+            <li><code>padding: TopRightBottonLeft</code></li>
+                <ul><li><code>padding:10px;</code></li></ul><br>
+            <li><code>padding: Top  RighLeft  Botton;</code></li>
+                <ul><li><code>padding: 5px 10px 5px;</code></li></ul><br>
+            <li><code>padding: TopBotton  RightLeft</code></li>
+                <ul><li><code>padding: 5px 10px;;</code></li></ul>
+
+        </ul>
+
+        <div class="padding-clockwise content center">This div has padding of 20px from top and bottom <br>
+            and padding of 40px from left and right using Clockwise Notation</div>
+    </section>
+
+    <h1 class="title">Margin</h1>
+    <section>
+        <h2>Clockwise Notation</h2>
+        <p>Clockwise Notation used to Specify the margin of an Element</p>
+
+
+        <ul>
+            <li><code>margin-top: [number][unit] | auto;</code></li>
+            <li><code>margin-right: [number][unit] | auto;</code></li>
+            <li><code>margin-bottom: [number][unit] | auto;</code></li>
+            <li><code>margin-left: [number][unit] | auto;</code></li>
+        </ul>
+
+        <div class="margin content ">This div has margin of 50px from top and bottom <br>
+        and margin of 200px from left and right</div>
+
+        <br><h5 class="title left">Shorthand :</h5>
+
+        <ul>
+            <li><code>margin: TopRightBottonLeft</code></li>
+                <ul><li><code>margin:10px;</code></li></ul><br>
+            <li><code>margin: Top  RighLeft  Botton;</code></li>
+                <ul><li><code>margin: 5px 10px 5px;</code></li></ul><br>
+            <li><code>margin: TopBotton  RightLeft</code></li>
+                <ul><li><code>margin: 5px 10px;;</code></li></ul>
+
+        </ul>
+
+        <div class="margin-clockwise content ">This div has margin of 50px from top and bottom <br>
+            and margin of 200px from left and right using Clockwise Notation</div>
+
+    </section>
+
+    <h1 class="title">Border</h1>
+    <section>
+        <h2>Border Width</h2>
+        <ul><li><code>border-width: thing | thick | medium | [number][unit];</code></li></ul>
+
+        <h2>Border Color</h2>
+        <ul><li><code>border-color:color keyword | hex code | rgb() | hsl();</code></li></ul>
+
+        <h2>Border Style</h2>
+        <ul><li><code>border-style: solid | dashed | double | groove | ridge | inset | outset | hidden | none;</code></li></ul>
+
+        <h2>Border Sides</h2>
+        <ul>
+            <li><code>border-top-color: red ;</code></li>
+            <li><code>border-right-style: double;</code></li>
+            <li><code>border-botton-width: 3px;</code></li>
+            <li><code>border-left-style: solid;</code></li>
+        </ul>
+
+        <div class="border center padding content ">This div has a thic, blue, double and dashed border  </div>
+
+
+        <br><h5 class="title left">Shorthand :</h5>
+        <p>Sets all properties of all sides</p>
+        <ul><li><code>border: width style color;</code></li></ul>
+        <div class="border-shorthand center padding content ">This div has a 20px, blue and solid border with rounded corners </div> 
+    </section>
+
+    <h1 class="title">Outline</h1>
+    <section>
+        <h2>Outline Width</h2>
+        <ul><li><code>outline-width: thin | thick | medium | [number][unit];</code></li></ul>
+
+        <h2>Outline Color</h2>
+        <ul><li><code>outline-color:color keyword | hex code | rgb() | hsl();</code></li></ul>
+
+        <h2>Outline Style</h2>
+        <ul><li><code>outline-style: solid | dashed | double | groove | ridge | inset | outset | hidden | none;</code></li></ul>
+
+        <br><h5 class="title left">Shorthand :</h5>
+        <ul><li><code>outline: width style color;</code></li></ul>
+
+        <h2>Outline Offset</h2>
+        <p>space between an outline and the edge of an element</p>
+
+        <ul><li><code>outline-offset: [number][unit];</code></li></ul>
+
+        <div class="outline border-shorthand center padding content ">This div is highlighted with an outline <br>
+             outline offset is set to 2px 
+        </div>   
+    </section>
+
+    <h1 class="title">Drop Shadow</h1>
+    <section>
+        <ul><li><code>box-shadow: x -y;</code></li></ul>
+        <div class=" shadow-1 center padding content ">This div has shadow with default color, blur and spread</div>
+
+        <ul><li><code>box-shadow: x -y blur; </code></li></ul>
+        <div class=" shadow-2 center padding content ">This div has a blured shadow with default color and spread</div>
+
+        <ul><li><code>box-shadow: x -y blur spread;</code></li></ul>
+        <div class=" shadow-3 center padding content ">This div has a blured shadow with extra spread and default color</div>
+
+        <ul><li><code>box-shadow: x -y blur spread color;</code></li></ul>
+        <div class=" shadow-4 center padding content ">This div has a blured shadow with extra spread and lightgray color</div>
+
+        <ul><li><code>box-shadow: x -y blur spread color inset;</code></li></ul>
+        <div class=" shadow-5 center padding content ">This div has a blured inner shadow with extra spread and lightgray color</div>
+    </section>
+
+
+    <h1 class="title">Box Sizing</h1>
+    <section>
+        <p><code>box-sizing: border-box | content-box</code></p>
+
+        <h2>border-box</h2>
+        <p>width and heigh of an element is set while <br> 
+            including BORDER and PADDING as part of the width and height.</p>
+            <img src="./img/border-box.png" width="300" style="display: block; margin:auto">
+
+        
+        <h2>contetn-box</h2>
+        <p>width and heigh of an element is set while <br> 
+            excluding BORDER and PADDING from the width and height.</p>
+            <img src="./img/content-box.png" width="300" style="display: block; margin:auto">
+
+
+
+        
+    </section>
+</div>
+
+</body>
+</html>

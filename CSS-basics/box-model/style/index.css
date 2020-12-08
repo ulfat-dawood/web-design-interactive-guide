@@ -1,0 +1,92 @@
+.content {
+  background-color: #abced4;
+  width: 500px;
+  min-height: 150px;
+  font-size: 30px;
+  color: grey;
+}
+
+.border-radius {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.border-radius-shorthand {
+  border-radius: 20px 20px 5px 5px;
+}
+
+.border-radius-shorthand-2 {
+  border-radius: 20px;
+}
+
+.padding {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+.padding-clockwise {
+  padding: 20px 40px 20px 40px;
+}
+
+.margin {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.margin-clockwise {
+    margin: 50px 100px 50px 100px;
+}
+
+.border{
+    border-width: thick;
+    border-color: #6db9c0;
+    border-style: dashed; 
+    border-left-style: double ;
+    border-right-style: double ;
+}
+
+.border-shorthand{
+    border: 20px solid #6db9c0; 
+    border-radius: 20px;
+}
+
+.outline{
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+.shadow-1{
+    box-shadow: 5px 5px;
+}
+.shadow-2{
+    box-shadow: 5px 5px 5px;
+}
+.shadow-3{
+    box-shadow: 5px 5px 5px 5px;
+}
+.shadow-4{
+    box-shadow: 5px 5px 5px 5px lightgray ;
+}
+
+.shadow-5{
+    box-shadow: 5px 5px 5px 5px lightgray inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+.center {
+  margin: auto;
+  text-align: center;
+}

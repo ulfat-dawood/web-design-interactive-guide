@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Width & Height</h1>
+        <section>
+            <p><code>width</code> and <code>height</code> properties accept the following values: </p>
+            <ul>
+                <li><code>[number] % | px | vh | vw | em | rem; </code></li>
+                <li>max-content</li>
+                <li>min-content</li>
+                <li>fit-content</li>
+            </ul>
+        </section>
+        <section>
+            <p><code>box-sizing: border-box | content-box</code></p>
+
+            <h2>border-box</h2>
+            <p>width and heigh of an element is set while <br>
+                including <span class="highlight">BORDER</span> and <span class="highlight">PADDING</span> as part of the width and height.</p>
+            <img src="./img/border-box.png" width="300" style="display: block; margin:auto">
+
+
+            <h2>contetn-box</h2>
+            <p>width and heigh of an element is set while <br>
+                excluding BORDER and PADDING from the width and height.</p>
+            <img src="./img/content-box.png" width="300" style="display: block; margin:auto">
+            </p>
+
+            <p>Both div below have <span class="highlight">width of 300px</span> , <span class="highlight">height of
+                    150</span> & <span class="highlight">padding of 1em</span></p>
+            <div id="border-box" class="text-box">
+                BORDER BOX
+            </div>
+            <br>
+            <div id="content-box" class="text-box">
+                CONTENT BOX
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Width</h2>
+            <p>Use <code>px</code> to set fixed width.</p>
+
+            <p>Or use % with <code>width</code>, if you want to allow it to grow and shrink relative to the <span
+                    class="highlight">parent width</span> or browser <span class="highlight">window width</span> .</p>
+
+            <div id="width" class="text-box">
+                width of this div is relative to the parent div which is relative to the window width
+            </div>
+        </section>
+
+        <section>
+            <h2>Height</h2>
+            <p>Use <code>px</code> to set fixed height.</p>
+            <p>Or use <code>hv</code> to set the height relative to the <span class="highlight">viewport height</span> ,
+                and to allow it to grow/ shrink relative to it.</p>
+
+            <br>
+            <div id="height" class="text-box">
+                height of this div is set relative to the viewport height.
+            </div>
+        </section>
+        <section>
+            <h2>fit-content</h2>
+            <ul>
+                <li><code>width: fit-contetn;</code></li><br>
+                <li>Set the width to <code>fit-content</code> to force it to wrap the content.</li>
+            </ul>
+            <p>There're two type of elements in CSS</p>
+            <div class="grid">
+                <div></div><div><b>Block Elements</b></div><div><b>Inline Elements</b></div> 
+                <div>Default Width</div><div>-takes 100% of parent width</div><div>-wraps the content <br>-width cannot be set</div>
+                <div>elements</div> 
+                <div>
+                    &lt;div&gt;
+                    &lt;p&gt;
+                    &lt;h1&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;          
+                </div>
+                <div>
+                    &lt;span&gt;
+                    &lt;a&gt;
+                    &lt;img&gt;
+                    &lt;input&gt;
+                    &lt;button&gt;
+                </div>
+
+            </div>
+            <br>
+            <div id="default-width" class="text-box">div{ width:auto; }</div>
+            <br>
+            <div id="fit-width" class="text-box">div{ width:fit-content; }</div>
+            <br>
+            <span class="text-box">&lt;span&gt;</span>
+            <br>
+        </section>
+
+        <h1 class="title">Max / min &nbsp;&nbsp;Width / height</h1>
+        <section>
+            <h2>min height/width</h2>
+            <ul>
+            </ul>
+            <li><code>min-height: [number][unit];</code></li>
+            <li><code>min-width: [number][unit];</code></li>
+            <br>
+            <li>spesify a minimum width/height, and allow element to grow in height or width if content increaes or if
+                viewport
+                enlarges.</li>
+            <br>
+            <div id="min-width" class="text-box">
+                width of this div won't shrink less than 500px, even if browser window keep reducing.
+            </div>
+            <br>
+            <div id="min-height" class="text-box">
+                <button id="long-text">long text</button> <button id="short-text">short text</button> <button
+                    id="no-text">&#8634;</button>
+                <div>This is short text</div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>max height/width</h2>
+            <ul>
+            </ul>
+            <li><code>max-height: [number][unit];</code></li>
+            <li><code>max-width: [number][unit];</code></li>
+            <br>
+            <li>spesify a max width/height, and allow the element to shrink down in height or width if content or
+                viewport
+                decrease.</li>
+            <br>
+            <div id="max-width" class="text-box">
+                width of this div won't grow more than 600px, even when browser window keeps increasing.
+            </div>
+            <br>
+            <div id="max-height" class="text-box">
+                <button id="max-long-text">long text</button> <button id="max-short-text">short text</button> <button
+                    id="max-no-text">&#8634;</button>
+                <div>This is short text</div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

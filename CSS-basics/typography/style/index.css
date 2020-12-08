@@ -1,0 +1,113 @@
+.text-box{
+    min-height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px dashed #abced4;
+    background: #abced444;
+    margin:auto; 
+    padding: 1rem; 
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: -5px -5px #abced444;
+
+   
+}
+#text-color{
+    color: grey; 
+}
+#text-shadow1{
+    text-shadow: 2px 2px;
+}
+
+#text-shadow2{
+    text-shadow: 0px 0px 5px;
+}
+
+#text-shadow3{
+    text-shadow: 0px 0px 5px #5ac5d8;
+}
+
+#font-style{
+    font-style: italic;
+}
+
+#font-variant{
+    font-variant: small-caps; 
+}
+
+#font-weight{
+    font-weight: bold; 
+}
+
+#font-size{
+    font-size: 50px; 
+}
+
+#line-height{
+    line-height: 1.75;
+}
+
+#font-family{
+    font-family: "Times New Roman", serif;
+}
+
+
+#font-shorthand{
+    font: italic normal 500 30px/1.5 Helvetica, sans-serif;
+}
+
+#text-align{
+    text-align: right;
+
+}
+
+#text-align h6{
+    border: 1px solid var(--text); 
+    display: inline-block;
+
+}
+
+#vertical-align{
+    height: 300px;
+    width: 500px; 
+}
+
+#vertical-align h6{
+    
+    display: inline-block;
+    vertical-align: bottom;
+    border: 1px solid var(--text); 
+}
+
+#text-decoration1{
+    text-decoration: underline overline ;
+}
+
+#text-decoration2{
+    text-decoration: underline var(--blue) ;
+}
+
+#text-decoration3{
+    text-decoration: underline var(--blue) dashed ;
+}
+
+#text-transform{
+    text-transform: uppercase;
+}
+#first-letter::first-letter{
+    font-size: 200%;
+    color: var(--blue); 
+}
+
+#text-indent{
+    text-indent: 50px; 
+}
+
+#letter-spacing1{
+    letter-spacing: 7px;
+}
+#letter-spacing2{
+    letter-spacing: -4px;
+}
+
+#

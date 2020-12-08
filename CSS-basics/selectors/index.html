@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">CSS Selectors</h1>
+        <section>
+            <h2>Element Selector</h2>
+            <ul>
+                <li>
+                    <code>element{...}</code><br>
+                    <ul>
+                        <li><code>p{...}</code></li>
+                        <li><code>h1{...}</code></li>
+                    </ul>
+                </li>
+                <h2>class Selector</h2>
+                <li>
+                    <code>.class{...}</code><br>
+                    <ul>
+                        <li><code>&lt;div class="card" &gt;&lt;div/&gt;</code></li>
+                        <li><code>.card{...}</code></li>
+                    </ul>
+                </li>
+                <h2>id Selector</h2>
+                <li>
+                    <code>#id{...}</code>
+                    <ul>
+                        <li><code>&lt;div id="main-section" &gt;&lt;div/&gt;</code></li>
+                        <li><code>#main-section{...}</code></li>
+                    </ul>
+                </li>
+                <h2>Attribute Selector</h2>
+                <li>
+                    <code>[attribute='value']{...}</code>
+                    <ul>
+                        <li><code>&lt;input type="password" /&gt;</code></li>
+                        <li><code>[type:"password"]{...}</code></li>
+                    </ul>
+                </li>
+                <h2>Universal Selector</h2>
+                <li>
+                    <code>*{...}</code>
+                    <ul>
+                        <li>Selects all elements in the document.</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+        <h1 class="title">Chaining</h1>
+        <section>
+            <h2>element.class</h2>
+            <ul>
+                <li><code>div.btn{...}</code></li>
+                <li>select all &lt;div&gt; elemnts with the class .btn</li>
+            </ul>
+
+            <h2>element#id</h2>
+            <ul>
+                <li><code>div#main{...}</code></li>
+                <li>select the &lt;div&gt; element having id #main</li>
+            </ul>
+
+            <h2>element[attribute='value']</h2>
+            <ul>
+                <li><code>input[type='text']{...}</code></li>
+                <li>select all &lt;input&gt; elements with type=text</li>
+            </ul>
+
+            <h2>.class.class</h2>
+            <ul>
+                <li><code>.btn.warning{...}</code></li>
+                <li>select all elemnts having both classes .btn and .warning</li>
+            </ul>
+
+            <h2>.class#id</h2>
+            <ul>
+                <li><code>.btn#signup{...}</code></li>
+                <li>select the element having the class .btn and id #signup</li>
+            </ul>
+        </section>
+
+        <h1 class="title">Combinators</h1>
+
+        <section>
+            <h2>selector ⎵ selector</h2>
+            <ul>
+                <li><code>ul li{...}</code></li>
+                <li>Within ul, select all il.</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><code>div  div.card{...}</code></li>
+                <li>Within div, select all descendant &lt;div&gt; elements with the class .cards (not only direct
+                    children elements).</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><code>body table td{...}</code></li>
+                <li>Select all cells within tables inside body.</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><code>header nav .btn{...}</code></li>
+                <li>Within the header, inside nav, select all descendant elements with the class .btn</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Selecto > Selector</h2>
+
+            <ul>
+                <li><code>div > h1{...}</code></li>
+                <li>Select all &lt;h1&gt; elements that are direct children of &lt;div&gt;.</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><code>div.article > p{..}</code></li>
+                <li>Select all &lt;p&gt; elements that are direct children of &lt;div&gt; with class .article</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <code>
+                <p>&lt;div&gt;</p>
+                <p>&nbsp; &nbsp; &lt;h1 class="title"&gt;Topic&lt;/h1&gt;</p>
+                <p>&nbsp; &nbsp; &lt;p&gt;article 1&lt;/p&gt;</p>
+                <p>&nbsp; &nbsp; &lt;p&gt;article 2&lt;/p&gt;</p>
+                <p>&lt;/div&gt;</p>
+        </code>
+            <h2>Selector + Selector</h2>
+            <ul>
+                <li><code>h1.title + p{...}</code></li>
+                <li>Selects the next immediate sibling to h1.</li>
+                <li><span class="highlight">article 1</span> is selected</li>
+            </ul>
+
+            <h2>Selector ~ Selector</h2>
+            <ul>
+                <li><code>h1.title ~ p{...}</code></li>
+                <li>Selects all siblings after h1.</li>
+                <li> <span class="highlight">article 1</span> and <span class="highlight">article 2</span> are selected
+                </li>
+            </ul>
+        </section>
+
+        <h1 class="title">pseudo Classes</h1>
+
+        <section>
+            <h2>:first</h2> or <h2>:first-child</h2>
+            <ul>
+                <li>Style applied on the first element.</li>
+            </ul>
+            <div id="first" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>:last</h2> or <h2>:last-child</h2>
+            <ul>
+                <li>Style applied on the last element.</li>
+            </ul>
+            <div id="last" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+        </section>
+        <section>
+            <h2>:nth-child(nth)</h2>
+            <ul>
+                <li>where <code>(nth): odd | even | (order) | (hops n +order)</code></li>
+            </ul>
+
+            <h2>(odd)</h2>
+            <ul>
+                <li><code>:nth-child(odd)</code></li>
+                <li>every element whose index is odd</li>
+            </ul>
+            <div id="odd" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+            <h2>(even)</h2>
+            <ul>
+                <li><code>:nth-child(even)</code></li>
+                <li>every elememt whose index is even</li>
+            </ul>
+            <div id="even" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+            <h2>(order)</h2>
+            <ul>
+                <li><code>:nth-child(4)</code></li>
+                <li>4<sup>th</sup> element</li>
+            </ul>
+            <div id="fourth" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+            <h2>(hops n +order)</h2>
+            <ul>
+                <li><code>:nth-child(2n+1)</code></li>
+                <li>every second element (2 hopes) after the 1st element</li>
+            </ul>
+            <div id="hops" class="text-box">
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+                <div class="cir"></div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>:hover</h2>
+            <ul>
+                <li>Style applied when element is hovred over</li>
+            </ul>
+            <div id="hover" class="text-box">
+                Hover here.
+            </div>
+        </section>
+        <section>
+            <h2>:active</h2>
+            <ul>
+                <li>Style applied when element is clicked on</li>
+            </ul>
+            <div id="active" class="text-box">
+                Click here.
+            </div>
+        </section>
+
+        <h1 class="title">pseudo Classes For &lt;input&gt;</h1>
+        <section>
+            <h2>:focus</h2>
+            <ul>
+                <li>Style applied when &lt;input&gt; element is focused on</li>
+            </ul>
+            <input id="focus" class="text-box" placeholder="when focused, style applied" />
+
+
+
+        </section>
+
+        <section>
+            <h2>:valid</h2>
+            <h2>:invalid</h2>
+            <ul>
+                <li>Style applied when &lt;input&gt; element's user input is either valid or invalid</li>
+            </ul>
+
+
+            <input type="email" id="valid" class="text-box" placeholder="Enter a valid email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> <br>
+
+        </section>
+
+        <section>
+            <h2>:disabled</h2>
+
+            <h2>:enabled</h2>
+            <input type="text" id="disabled" class="text-box" placeholder="Disabled input" disabled>
+        </section>
+        <section>
+            <h2>:checked</h2>
+            <form id="checked">
+                <input type="radio" id="one" name="checked">
+                <label for="one">ONE</label><br>
+
+                <input type="radio" id="two" name="checked">
+                <label for="two">TWO</label><br>
+
+                <input type="radio" id="three" name="checked">
+                <label for="three">THREE</label><br>
+            </form>
+
+        </section>
+
+        <h1 class="title">pseudo Classes For &lt;a&gt;</h1>
+
+        <section>
+            <h2>:visited</h2>
+            <p>selects all visted links</p>
+
+            <h2>:link</h2>
+            <p>selects all unvisted links</p>
+
+            <ul id="links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+                <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+
+        </section>
+
+        <h1 class="title">pseudo Elements</h1>
+        <section>
+            <h2>::before</h2>
+            <h2>::after</h2>
+            <p>adds extra content before or after the element.</p>
+
+            <div id="before-after">THE ELEMENT</div>
+        </section>
+
+        <section>
+            <h2>::first-letter</h2>
+            <ul><li>style applied to only the first letter in the text.</li></ul>
+            <div class="text-box" id="first-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quas.</div>
+            <br>
+            <h2>::first-line</h2>
+            <ul><li>style applied to only the first line in the text.</li></ul>
+            <div class="text-box" id="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quas.</div>
+
+            
+        </section>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.text-box{
+    min-height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px dashed #abced4;
+    background: #abced444;
+    margin:auto; 
+    padding: 1rem; 
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: -5px -5px #abced444;
+   
+}
+
+#percentage{
+    width:90%; 
+}
+
+#px{
+    width: 400px; 
+    height: 200px;
+    font-size: 35px
+}
+
+#vh{
+    height: 50vh;
+}
+
+#em-padding{
+    font-size: 10px;
+    padding: 3em;
+    width:70%;
+}
+
+#em-padding .parent{
+    font-size: 10px;
+    padding:2em; 
+    width:70%;
+}
+
+#em-padding .child{
+    font-size: 10px;
+    padding:1em; 
+    width:70%;
+}
+
+#em-font{
+    font-size: 10px;
+    width:70%;
+}
+
+#em-font .parent{
+    font-size: 2em;
+    width:70%;
+}
+
+#em-font .child{
+    font-size: 2em;
+    width:70%;
+}
+
+#rem-font{
+    width:70%;
+}
+
+#rem-font .parent{
+    font-size: 2rem;
+    width:70%;
+}
+
+#rem-font .child{
+    font-size: 2rem;
+    width:70%;
+}
