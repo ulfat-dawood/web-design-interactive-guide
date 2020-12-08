@@ -25,10 +25,21 @@
                 <li>Works with images, videos and other media formats.</li>
                 <br>
                 <li><code>object-fit: fill | contain | cover | scale-down | none;</code></li>
+                <br>
             </ul>
+                <p>change the value of <code>object-fit</code> of the following image:</p>
+                <div id="fit-img">
+                    <!-- remove (overflow:hidden) to clearly observe the change  -->
+                    <img src="./img/illustration.jpg" />
+                </div>
+            <ul><li>For <code>object-fit</code> property to work, <code>&lt;img/&gt;</code> must have defined height and width.</li></ul>
+            
         </section>
         <section>
             <h2>object-position</h2>
+            <ul>
+                <li>Changes the position of <code>&lt;img/&gt;</code> , when <code class="highlight">object-fit</code> property <br>is set to either <code class="highlight">cover</code> or <code class="highlight">none</code>.</li>
+            </ul>
         </section>
 
         <h1 class="title">Anchor</h1>
