@@ -10,7 +10,7 @@
 /* RESETTING */
 *,*::before,*::after{
 	box-sizing: content-box;
-	list-style-position: inside;	
+	list-style-position: outside;	
 }
 
 html{

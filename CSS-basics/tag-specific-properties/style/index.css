@@ -1,12 +1,21 @@
-#fit-img{
+#fit-img, #obj-pos{
     height: 200px; width: 300px;
     border-radius: 7px;
     border: 5px solid #abced4; 
     display: block;
     margin:auto; 
-    overflow: hidden;
 }
 #fit-img img{
     width:100%; height:100%;
-    object-fit: cover;
+    object-fit: scale-down;
+}
+
+#obj-pos img{
+    width:100%; height:100%;
+    object-fit: none;
+    object-position: 50% 50%; 
+}
+
+#list-type{
+    list-style-type: lower-alpha;
 }
