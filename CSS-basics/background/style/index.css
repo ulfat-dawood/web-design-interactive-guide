@@ -84,3 +84,56 @@
     width:200px;
 
 }
+ /* BG CLIP  */
+#bg-clip-content{
+    background-image: url(../img/img-meduim.png);
+    background-origin: border-box;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
+#bg-clip-padding{
+    background-image: url(../img/img-meduim.png);
+    background-clip: padding-box;
+
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}#bg-clip-border{
+    background-image: url(../img/img-meduim.png);
+    background-origin: border-box;
+
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
