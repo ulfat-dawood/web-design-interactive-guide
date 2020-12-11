@@ -172,3 +172,12 @@
     overflow: scroll;
 
 }
+
+/* SHORTHAND  */
+
+#shorthand{
+    background: #ffa05363 url(../img/img-meduim.png) center center/contain no-repeat;
+
+    height: 200px;
+    width:200px;
+}
