@@ -137,3 +137,38 @@
     width:200px;
 
 }
+
+/* ATTACHMENT  */
+
+#bg-attch-scroll{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+    overflow: scroll;
+
+
+}
+
+#bg-attch-fixed{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+
+}
+
+#bg-attch-local{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+    overflow: scroll;
+
+}
