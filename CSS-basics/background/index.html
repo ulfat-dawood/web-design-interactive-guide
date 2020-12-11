@@ -16,10 +16,78 @@
 
 <body>
 
-<div class="container">
-    <h1 class="title">Background</h1>
+    <div class="container">
+        <h1 class="title">Background properties</h1>
+        <section>
+            <h2>Background Color</h2>
+            <ul>
+                <li><code>background-color: color keyword | hex | rgb() | hsl(); </code></li>
+            </ul>
+            <div id="bg-color" class="text-box">
+                background color is set <br>to grey,
+            </div>
+        </section>
 
-</div>
+        <section>
+            <h2>Background Image</h2>
+            <ul>
+                <li><code>background-image: url(); </code></li>
+            </ul>
+            <div id="bg-img" class="text-box">
+                An image is set <br>as the background.
+            </div>
+        </section>
+
+        <section>
+            <h2>Background Repeat</h2>
+            <ul>
+                <li><code>background-repeat: repeat | repeat-x | repeat-y | no-repeat;</code></li>
+            </ul>
+            <div id="bg-repeat" class="text-box">
+                The image background <br> is set to no-repeat
+            </div>
+        </section>
+
+        <section>
+            <h2>Background Position</h2>
+            <ul>
+                <li><code>background-postition: x-axis -y-axis;</code></li>
+            </ul>
+            <div class="grid" style="--grid:5;">
+                <div>x-axis</div>
+                <div>%</div>
+                <div>center</div>
+                <div>left</div>
+                <div>right</div>
+                <div>y-axis</div>
+                <div>%</div>
+                <div>center</div>
+                <div>top</div>
+                <div>bottom</div>
+
+            </div>
+            <ul>
+                <li>background image is centered from the x and y axis. </li>
+            </ul>
+            <div id="bg-pos" class="text-box"> </div>
+        </section>
+
+        <section>
+            <h2>Background Size</h2>
+            <ul>
+                <li><code>background-size: width height | auto | contain | cover;</code></li>
+            </ul>
+            <ul>
+                <li>background image width and height is set to 90px. </li>
+            </ul>
+            <div id="bg-size1" class="text-box"> </div>
+            <ul>
+                    <li>background image size is set to contain. </li>
+                </ul>
+                <div id="bg-size2" class="text-box"> </div>
+        </section>
+
+    </div>
 
     <script src="./app.js"></script>
 </body>

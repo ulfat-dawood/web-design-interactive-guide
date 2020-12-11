@@ -118,15 +118,24 @@ b{
 	  
     width: fit-content;
     border-radius: 5px;
-    border: 2px dashed #abced4;
+    /* border: 2px dashed #abced4; */
     background: #abced444;
-    margin:auto; 
+    margin:1rem auto; 
     padding: 1rem; 
     font-size: 4rem;
     text-align: center;
     box-shadow: -5px -5px #abced444;
     transition: all 1s ease-in;
    
+}
+
+.grid{
+	display: grid; 
+	grid-template-columns: repeat(var(--grid),auto);
+}
+.grid div{
+	border: 1px solid #40404044; 
+	text-align: center;
 }
 
 

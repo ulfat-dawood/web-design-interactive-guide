@@ -1,0 +1,40 @@
+#bg-color{
+    background-color: #50505044; 
+}
+
+#bg-img{
+    background-image: url(../img/img-small.png);
+}
+
+#bg-repeat{
+    background-image: url(../img/img-small.png);
+    background-repeat: no-repeat;
+}
+
+#bg-pos{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+
+}
+#bg-size1{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90px 90px;
+    height: 200px;
+    width:200px;
+
+}
+
+#bg-size2{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 200px;
+    width:200px;
+
+}
