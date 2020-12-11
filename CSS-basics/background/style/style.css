@@ -125,7 +125,9 @@ b{
     font-size: 4rem;
     text-align: center;
     box-shadow: -5px -5px #abced444;
-    transition: all 1s ease-in;
+	transition: all 1s ease-in;
+	height: 200px;
+    width:200px;
    
 }
 
