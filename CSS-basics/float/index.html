@@ -70,21 +70,26 @@
             <div id="block-sib" class="text-box">
                 <div>previous block sibling</div>
                 <div class="float-right">Float Right</div>
-                <div >next block sibling</div>
+                <div>next block sibling</div>
             </div>
-<br>
+            <br>
             <h3 class="title left">Solution</h3>
             <ul>
-                <li>Clear the floats coming from the <code class="highlight">right</code> or <code class="highlight">both</code> directions, using the <code class="highlight">clear</code> property.</li>
+                <li>Clear the floats coming from the <code class="highlight">right</code> or <code
+                        class="highlight">both</code> directions, using the <code class="highlight">clear</code>
+                    property.</li>
             </ul>
-            <ul><li><code>clear: left | right | both;</code></li></ul>
+            <ul>
+                <li><code>clear: left | right | both;</code></li>
+                <li>Add the <code class="highlight">clear</code> class to the next block sibling</li>
+            </ul>
             <div id="block-sib" class="text-box">
-                    <div>previous block sibling</div>
-                    <div class="float-right">Float Right</div>
-                    <div style="clear:right">next block sibling</div>
-                </div>
+                <div>previous block sibling</div>
+                <div class="float-right">Float Right</div>
+                <div class="clear">next block sibling</div>
+            </div>
         </section>
-            <h1 class="title">Collapsing Height</h1>
+        <h1 class="title">Collapsing Height</h1>
         <section>
             <h2>Parents abandon their floating children</h2>
             <ul>
@@ -93,25 +98,61 @@
             </ul>
 
             <div class="text-box">
-                <main id="collapsing-parent">
-                    <div class="floating float-right" style="height:150px;">floating child</div>
-                    <div class="non-floating" >non-floating child</div>
-                    
+                <main class="collapsing-parent">
+                    Parent collapses to fit text only
+                    <div class="float-right">floating child</div>
+
                 </main>
             </div>
             <br>
             <h3 class="title left">Solution</h3>
-            <ul><li>
-                Clear the floats
-            </li></ul>
-            <div class="text-box">
-                    <main id="collapsing-parent">
-                        <div class="floating float-right clearfix" style="height:150px;">floating child</div>
-                        <div class="non-floating" >non-floating child</div>
-                        
-                    </main>
-                </div>
+            <ul>
+                <li>
+                    Clear the floats, by adding the <code class="highlight">clearfix</code> class to the parent
+                </li>
+            </ul>
 
+            <div class="text-box">
+                <main class="collapsing-parent clearfix">
+                    Parent collapses to fit text only
+                    <div class="float-right">floating child</div>
+
+                </main>
+            </div>
+
+
+        </section>
+        <h1 class="title">Overlapping elements</h1>
+
+        <section>
+
+                <div class="text-box">
+                        <main class="collapsing-parent">
+                            Parent collapses to fit text only
+                            <div class="float-right">floating child</div>
+        
+                        </main>
+                        <main class="collapsing-parent" >
+                            Element overlaps with other floating elements.
+                        </main>
+        
+                    </div>
+                    <br>
+                    <h3 class="title left">Solution</h3>
+                    <ul><li>
+                        Add the <code class="highlight">clear</code> class to the Overlapping element. 
+                    </li></ul>
+                    <div class="text-box">
+                            <main class="collapsing-parent">
+                                Parent collapses to fit text only
+                                <div class="float-right">floating child</div>
+            
+                            </main>
+                            <main class="collapsing-parent clear"  >
+                                Element overlaps with other floating elements.
+                            </main>
+            
+                        </div>
         </section>
 
 

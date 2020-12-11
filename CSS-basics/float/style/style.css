@@ -131,11 +131,11 @@ b{
 }
 
 .text-box div{
-	height: 100px; width: 150px;
+	min-height: 100px; width: 150px;
 	background: #abced4;
 	border-radius: 5px;
-	vertical-align: bottom;
 	margin: 3px;
+	display: block;
 }
 
 
