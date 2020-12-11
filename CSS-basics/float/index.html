@@ -19,8 +19,90 @@
     <div class="container">
         <h1 class="title">Float</h1>
         <section>
-            <ul><li><code>float: none | left | right;</code></li></ul>
+            <ul>
+                <li><code>float: none | left | right;</code></li>
+            </ul>
+            <ul>
+                <li>Floating elements float on either left/right side.</li>
+            </ul>
+            <ul>
+                <li>Floating elements behave differently with BLOCK siblings than other INLING and FLOATING siblings.
+                </li>
+            </ul>
         </section>
+
+        <section>
+            <h2>Inline Siblings</h2>
+            <ul>
+                <li>Floating elements float on the same line with TEXT and their other non-floating INLINE siblings.
+                </li>
+            </ul>
+
+            <div id="inline-sib" class="text-box">
+                SOME TEXT <div class="float-right">Float Right</div> <button>INLINE BUTTON</button>
+            </div>
+        </section>
+        <section>
+            <h2>Floating Siblings</h2>
+            <ul>
+                <li>Floating elements float on the same line with their other FLOATING siblings.</li>
+            </ul>
+
+            <div id="float-sib" class="text-box">
+                <div class="float-left">Float Left</div>
+                <div class="float-right">Float right</div>
+                <div class="float-right">Float right</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Block Siblings</h2>
+            <div id="block-sib" class="text-box">
+                <div>previous block sibling</div>
+                <div>to be floated</div>
+                <div>next block sibling</div>
+            </div>
+            <ul>
+                <li>Floating elements float on the next line to their non-floating previous BLOCK siblings.</li>
+                <li>However, the next non-floating elements will try to jump up into any available space.</li>
+            </ul>
+
+            <div id="block-sib" class="text-box">
+                <div>previous block sibling</div>
+                <div class="float-right">Float Right</div>
+                <div >next block sibling</div>
+            </div>
+<br>
+            <h3 class="title left">Solution:</h3>
+            <ul>
+                <li>Clear the floats coming from the <code class="highlight">right</code> or <code class="highlight">both</code> directions, using the <code class="highlight">clear</code> property.</li>
+            </ul>
+            <ul><li><code>clear: left | right | both;</code></li></ul>
+            <div id="block-sib" class="text-box">
+                    <div>previous block sibling</div>
+                    <div class="float-right">Float Right</div>
+                    <div style="clear:right">next block sibling</div>
+                </div>
+        </section>
+            <h1 class="title">Collapsing Height</h1>
+        <section>
+            <h2>Parents abandon their floating children</h2>
+            <ul>
+                <li>A parent element's height usually grows to fit its children elements.</li>
+                <li>Here otherwise, parent's height collapses to fit only non-floating elements. </li>
+            </ul>
+
+            <div class="text-box">
+                <main id="collapsing-parent">
+                    <div class="floating float-right" style="height:150px;">floating child</div>
+                    <div class="non-floating" >non-floating child</div>
+
+
+                </main>
+            </div>
+        </section>
+
+
     </div>
 
     <script src="./app.js"></script>
