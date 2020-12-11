@@ -12,7 +12,10 @@
 .clearfix::after {
     content: "";
     clear: both;
-    display: table;
+    /* hide the ::after pseudo element */
+   display: block; 
+   visibility: hidden; 
+   height: 0; 
 }
 .clear{
     clear:both; 

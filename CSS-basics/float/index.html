@@ -126,33 +126,51 @@
 
         <section>
 
-                <div class="text-box">
-                        <main class="collapsing-parent">
-                            Parent collapses to fit text only
-                            <div class="float-right">floating child</div>
-        
-                        </main>
-                        <main class="collapsing-parent" >
-                            Element overlaps with other floating elements.
-                        </main>
-        
-                    </div>
-                    <br>
-                    <h3 class="title left">Solution</h3>
-                    <ul><li>
-                        Add the <code class="highlight">clear</code> class to the Overlapping element. 
-                    </li></ul>
-                    <div class="text-box">
-                            <main class="collapsing-parent">
-                                Parent collapses to fit text only
-                                <div class="float-right">floating child</div>
-            
-                            </main>
-                            <main class="collapsing-parent clear"  >
-                                Element overlaps with other floating elements.
-                            </main>
-            
-                        </div>
+            <div class="text-box">
+                <main class="collapsing-parent">
+                    Parent collapses to fit text only
+                    <div class="float-right">floating child</div>
+
+                </main>
+                <main class="collapsing-parent">
+                    Element overlaps with other floating elements.
+                </main>
+
+            </div>
+            <br>
+            <h3 class="title left">Solution</h3>
+            <ul>
+                <li>
+                    Add the <code class="highlight">clear</code> class to the Overlapping element.
+                </li>
+            </ul>
+            <div class="text-box">
+                <main class="collapsing-parent">
+                    Parent collapses to fit text only
+                    <div class="float-right">floating child</div>
+
+                </main>
+                <main class="collapsing-parent clear">
+                    Element overlaps with other floating elements.
+                </main>
+
+            </div>
+            <ul>
+                <li>
+                    Add the <code class="highlight">clearfix</code> class to the parent of the floating element.
+                </li>
+            </ul>
+            <div class="text-box">
+                <main class="collapsing-parent clearfix">
+                    Parent collapses to fit text only
+                    <div class="float-right">floating child</div>
+
+                </main>
+                <main class="collapsing-parent clear">
+                    Element overlaps with other floating elements.
+                </main>
+
+            </div>
         </section>
 
 
