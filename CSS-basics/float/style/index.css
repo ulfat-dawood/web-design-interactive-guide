@@ -5,5 +5,11 @@
     float: left;
 }
 #collapsing-parent{
-    
+    border: 2px solid grey; 
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -73,7 +73,7 @@
                 <div >next block sibling</div>
             </div>
 <br>
-            <h3 class="title left">Solution:</h3>
+            <h3 class="title left">Solution</h3>
             <ul>
                 <li>Clear the floats coming from the <code class="highlight">right</code> or <code class="highlight">both</code> directions, using the <code class="highlight">clear</code> property.</li>
             </ul>
@@ -89,17 +89,29 @@
             <h2>Parents abandon their floating children</h2>
             <ul>
                 <li>A parent element's height usually grows to fit its children elements.</li>
-                <li>Here otherwise, parent's height collapses to fit only non-floating elements. </li>
+                <li>Here otherwise, parent's height collapses to fit only non-floating elements or nothing. </li>
             </ul>
 
             <div class="text-box">
                 <main id="collapsing-parent">
                     <div class="floating float-right" style="height:150px;">floating child</div>
                     <div class="non-floating" >non-floating child</div>
-
-
+                    
                 </main>
             </div>
+            <br>
+            <h3 class="title left">Solution</h3>
+            <ul><li>
+                Clear the floats
+            </li></ul>
+            <div class="text-box">
+                    <main id="collapsing-parent">
+                        <div class="floating float-right clearfix" style="height:150px;">floating child</div>
+                        <div class="non-floating" >non-floating child</div>
+                        
+                    </main>
+                </div>
+
         </section>
 
 
