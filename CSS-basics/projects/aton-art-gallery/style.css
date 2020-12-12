@@ -1,0 +1,109 @@
+/* GENERAL */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      /*remove bullet point from lists*/
+	text-decoration:none; /*remove underline from <a>*/
+    color: #000; 
+
+}
+
+html{
+    font-size:62.5%;  /*1rem  = 10px*/ 
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'EB Garamond', serif;
+	background: linear-gradient(to bottom, 
+      #AAC0B7  7%, 
+      #EFEFEA  7%, 
+      #EFEFEA  70%, 
+      #F6D152   70%, 
+      #F6D152   10%
+    ) ; 
+
+    /* background: linear-gradient(to bottom, 
+      #F6D152  7%, 
+      #EFEFEA  7%, 
+      #EFEFEA  70%, 
+      #AAC0B7   70%, 
+      #AAC0B7   10%
+    ) ;  */
+    
+    background-size: 100vh 100vh;
+    font-size: 2.5rem;
+    height: fit-content;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* TYPOGRAPHY */
+h1{font-size:7.5rem;}
+h2{font-size:5rem;}
+h4{font-size:3rem;}
+p{font-size:2rem;}
+
+/* HEADER */
+header{
+    background:#fff;
+    border: 3px solid black; 
+    margin: 1em auto; 
+    height: 7rem ;
+    box-shadow:3px 3px 0 0 #404040
+    
+}
+
+header h1{
+    float:left;
+    line-height: 6rem;
+}
+
+main .schedule{
+    float:left;
+    width:50%;
+    
+}
+table#schedule{
+    margin:auto; 
+}
+table#schedule caption{
+    padding-top:150px;
+}
+
+table#schedule td, table#schedule th{
+    text-align: left;
+    width: 4em;
+    font-weight: 400;
+    padding: .5em .5em;
+}
+table#schedule td:first-child, table#schedule th:first-child{
+    text-align: right;
+}
+
+main .arts{
+    float:right;
+    width:50%; 
+}
+table#arts td{
+    text-align: left;
+    padding: 5px; 
+}
+table#arts #book{
+    text-align: right;
+}
+
+img.large{
+    height: 200px;
+}
+img.larger{
+    height: 300px;
+}
+/* Image attributes https://www.booooooom.com/submissions/black-is-black/ */
