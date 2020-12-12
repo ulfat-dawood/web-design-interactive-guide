@@ -1,0 +1,129 @@
+.wrapper{
+    margin-top :50px; 
+    height: 700px;
+    width:700px; 
+    border: 1px solid grey; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+}
+h1{
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    margin: 30px; 
+    color: #453c39; 
+    
+}
+.face{
+    position: relative;
+    height: 480px;
+    width:550px;
+    background: #fbede6;
+    border-radius: 80% 80% 70% 70% / 100% 100% 60% 60%;
+    box-shadow: 0px 0px 20px 3px rgba(85, 85, 85, 0.1);
+    &::before{
+        content: "";
+        position: absolute;
+        @extend .face; 
+        background: #f2dccc;
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+}
+
+.eye{
+    position: absolute;
+    height: 140px;
+    width: 190px; 
+    background: #453c39;
+    top:190px; 
+    border-radius: 90% ;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px; 
+        background:#fbede6 ;
+        border-radius: 50%;
+        left:35%; 
+        bottom:15px; 
+    }
+    &::after{
+        @extend .eye::before;  
+        background:#453c39 ;
+        transform: scale(0.6) translateY(10px);
+    }  
+}
+
+.eye.left{
+    transform: rotate(-40deg);
+    left:55px; }
+
+.eye.right{
+    transform: rotate(40deg);
+    right:55px; }
+
+.ear{
+    position: absolute;
+    height: 160px;
+    width: 190px; 
+    background: #56524e;
+    border-radius: 90%;
+    top:10px;
+    box-shadow: 0px 0px 20px 3px rgba(85, 85, 85, 0.1),
+    inset 0px 0px 0px 34px #453c39;
+    z-index: -1; }
+
+.ear.right{
+    position: abolute;
+    right:-5px; 
+    transform: rotate(-40deg);}
+.ear.left{
+    position: abolute;
+    left:-5px; 
+    transform: rotate(40deg);
+}
+
+.nose{
+    position: absolute;
+    height: 50px;
+    width: 160px; 
+    background: #453c39;
+    bottom:90px; 
+    left: calc(50% - (160px/2)); 
+    border-radius:  70% 70% 80% 80% / 
+                   60% 60% 100% 100%;
+}
+
+.mouth{
+    position: absolute;
+    width:200px; 
+    height: 100px;
+    left: calc(50% - (200px/2)); 
+    bottom:20px;
+    .p1{
+        position: absolute;
+        height: 85px;
+        width: 50px;
+        right: calc(64.7% - (200px/2)); 
+        border: 10px solid #453c39 ;
+        border-radius:  70% 70% 80% 80% /  
+                        60% 60% 100% 100%;
+        transform: rotate(70deg);
+        clip-path: polygon(60% 0, 100% 0, 
+                    100% 100%, 60% 100%);
+    }
+
+    .p2{
+        position: absolute;
+        height: 85px;
+        width: 50px;
+        border: 10px solid #453c39 ;
+        border-radius:  80% 80% 70% 70%  / 100% 100% 60% 60% ;
+        left: calc(64.7% - (200px/2)); 
+        transform: rotate(110deg);
+        clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%);}
+    }
+
