@@ -1,0 +1,183 @@
+#bg-color{
+    background-color: #abced444; 
+}
+
+#bg-img{
+    background-image: url(../img/img-small.png);
+}
+
+#bg-repeat{
+    background-image: url(../img/img-small.png);
+    background-repeat: no-repeat;
+}
+
+#bg-pos{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+
+}
+#bg-size1{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90px 90px;
+    height: 200px;
+    width:200px;
+
+}
+
+#bg-size2{
+    background-image: url(../img/img-meduim.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 200px;
+    width:200px;
+
+}
+#bg-origin-padding{
+    background-image: url(../img/img-meduim.png);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
+#bg-origin-border{
+    background-image: url(../img/img-meduim.png);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}#bg-origin-content{
+    background-image: url(../img/img-meduim.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
+ /* BG CLIP  */
+#bg-clip-content{
+    background-image: url(../img/img-meduim.png);
+    background-origin: border-box;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
+#bg-clip-padding{
+    background-image: url(../img/img-meduim.png);
+    background-clip: padding-box;
+
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}#bg-clip-border{
+    background-image: url(../img/img-meduim.png);
+    background-origin: border-box;
+
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+    
+
+
+    border: 30px double grey;
+
+    padding:30px; 
+    height: 200px;
+    width:200px;
+
+}
+
+/* ATTACHMENT  */
+
+#bg-attch-scroll{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+    overflow: scroll;
+
+
+}
+
+#bg-attch-fixed{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+
+}
+
+#bg-attch-local{
+    background-image: url(../img/img-meduim.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width:200px;
+    overflow: scroll;
+
+}
+
+/* SHORTHAND  */
+
+#shorthand{
+    background: #ffa05363 url(../img/img-meduim.png) center center/contain no-repeat;
+
+    height: 200px;
+    width:200px;
+}
