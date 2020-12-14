@@ -17,8 +17,55 @@
 <body>
 
 <div class="container">
+    <h1 class="title">Color Transparency VS Opacity</h1>
     <section>
-        
+        <h2>Color Transparency</h2>
+        <p>Trasparency of colors in color related properties can be tuned by appending the alpha channel to the color value.</p>
+        <ul>
+            <br><p>The following values of the color black have 50% transparency</p>
+            <li><span class="highlight">HEX:</span> <span class="color" style="--color:#00000080">#00000080</span></li>
+            <li><span class="highlight">RGB:</span> <span class="color" style="--color:rgba(0, 0, 0, 0.5)">rgba(0, 0, 0, 0.5)</span></li>
+            <li><span class="highlight">HSL:</span> <span class="color" style="--color:hsla(0, 0%, 0%, 0.5)">hsla(0, 0%, 0%, 0.5)</span></li>
+        </ul>
+
+    </section>
+    <section>
+        <div id="trans1" class="trans">
+            only border is semi-transparent
+        </div>
+        <div id="trans2" class="trans">
+            only background is semi-transparent
+        </div>
+        <div id="trans3" class="trans">
+            only text is semi-transparent
+        </div>
+    </section>
+    <section>
+        <h2>Opacity</h2>
+        <p>Sets the opacity of the entired element(border/background/text), all it's content and all its descendant elements.</p>
+        <ul><li>
+            <code>opacity: (0-1); </code>
+        </li></ul>
+        <p>Where <code class="highlight"> 0</code> implies the element is fully transparent and <code class="highlight"> 1</code> implies element is fully visible.</p>
+    </section>
+    <section>
+        <p>Only the parent has <code class="highlight">0.3</code> opacity</p>
+        <div class="trans">
+            Grandparent
+            <div class="trans opacity3" >
+                Parent
+                <div class="trans">Child</div>
+            </div>
+        </div>
+
+        <p>Only the grandparent has <code class="highlight">0.3</code> opacity</p>
+        <div class="trans opacity3" >
+            Grandparent
+            <div class="trans">
+                Parent
+                <div class="trans">Child</div>
+            </div>
+        </div>
     </section>
 </div>
 

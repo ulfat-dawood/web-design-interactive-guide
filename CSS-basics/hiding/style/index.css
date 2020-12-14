@@ -1,53 +1,21 @@
-#fit-img, #obj-pos{
-    height: 200px; width: 300px;
-    border-radius: 7px;
-    border: 5px solid #abced4; 
-    display: block;
-    margin:auto; 
+.trans{
+     padding: .5em; 
+    border:20px solid #6db9c0;border-radius: 7px;
+    font-weight: 800;
+    margin: 2.5rem auto;
+    background: #abced4;
+    text-align: center;
+
 }
-#fit-img img{
-    width:100%; height:100%;
-    object-fit: cover;
+#trans1{
+    border:25px solid #6db9c080;
 }
-
-#obj-pos img{
-    width:100%; height:100%;
-    object-fit: none;
-    object-position: 50% 50%; 
+#trans2{
+    background: #abced480;
 }
-
-#list-type{
-    list-style-type: lower-alpha;
+#trans3{
+    color:#50505080; 
 }
-
-#list-img{
-    list-style-image: url('../img/arrow.png');
-}
-
-#list-pos{
-    list-style-position: outside; 
-}
-
-#list-pos li{
-    background: #abced444;
-    list-style-position: outside;
-}
-
-#table, #table th, #table td{
-    border: 1px solid black;
-}
-
-
-#border-spacing, #border-spacing th, #border-spacing td{
-    border: 1px solid black; 
-}
-
-#border-spacing{
-    border-spacing: 10px; 
-}
-
-
-#border-collapse, #border-collapse th, #border-collapse td{
-    border: 1px solid black;
-    border-collapse: collapse; 
+.opacity3{
+    opacity: 0.3;
 }
