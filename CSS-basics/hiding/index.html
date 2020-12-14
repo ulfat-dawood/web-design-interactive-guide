@@ -16,58 +16,136 @@
 
 <body>
 
-<div class="container">
-    <h1 class="title">Color Transparency VS Opacity</h1>
-    <section>
-        <h2>Color Transparency</h2>
-        <p>Trasparency of colors in color related properties can be tuned by appending the alpha channel to the color value.</p>
-        <ul>
-            <br><p>The following values of the color black have 50% transparency</p>
-            <li><span class="highlight">HEX:</span> <span class="color" style="--color:#00000080">#00000080</span></li>
-            <li><span class="highlight">RGB:</span> <span class="color" style="--color:rgba(0, 0, 0, 0.5)">rgba(0, 0, 0, 0.5)</span></li>
-            <li><span class="highlight">HSL:</span> <span class="color" style="--color:hsla(0, 0%, 0%, 0.5)">hsla(0, 0%, 0%, 0.5)</span></li>
-        </ul>
+    <div class="container">
+        <h1 class="title">Color Transparency VS Opacity</h1>
+        <section>
+            <h2>Color Transparency</h2>
+            <p>Trasparency of colors in color related properties can be tuned by appending the alpha channel to the
+                color value.</p>
+            <ul>
+                <br>
+                <p>The following values of the color black have 50% transparency</p>
+                <li><span class="highlight">HEX:</span> <span class="color" style="--color:#00000080">#00000080</span>
+                </li>
+                <li><span class="highlight">RGB:</span> <span class="color" style="--color:rgba(0, 0, 0, 0.5)">rgba(0,
+                        0, 0, 0.5)</span></li>
+                <li><span class="highlight">HSL:</span> <span class="color" style="--color:hsla(0, 0%, 0%, 0.5)">hsla(0,
+                        0%, 0%, 0.5)</span></li>
+            </ul>
 
-    </section>
-    <section>
-        <div id="trans1" class="trans">
-            only border is semi-transparent
-        </div>
-        <div id="trans2" class="trans">
-            only background is semi-transparent
-        </div>
-        <div id="trans3" class="trans">
-            only text is semi-transparent
-        </div>
-    </section>
-    <section>
-        <h2>Opacity</h2>
-        <p>Sets the opacity of the entired element(border/background/text), all it's content and all its descendant elements.</p>
-        <ul><li>
-            <code>opacity: (0-1); </code>
-        </li></ul>
-        <p>Where <code class="highlight"> 0</code> implies the element is fully transparent and <code class="highlight"> 1</code> implies element is fully visible.</p>
-    </section>
-    <section>
-        <p>Only the parent has <code class="highlight">0.3</code> opacity</p>
-        <div class="trans">
-            Grandparent
-            <div class="trans opacity3" >
-                Parent
-                <div class="trans">Child</div>
+        </section>
+        <section>
+            <div id="trans1" class="trans">
+                only border is semi-transparent
             </div>
-        </div>
-
-        <p>Only the grandparent has <code class="highlight">0.3</code> opacity</p>
-        <div class="trans opacity3" >
-            Grandparent
+            <div id="trans2" class="trans">
+                only background is semi-transparent
+            </div>
+            <div id="trans3" class="trans">
+                only text is semi-transparent
+            </div>
+        </section>
+        <section>
+            <h2>Opacity</h2>
+            <p>The <code class="highlight">opacity</code> property sets the opacity of the entir
+                element(border/background/text), all it's content and all its descendant
+                elements.</p>
+            <ul>
+                <li>
+                    <code>opacity: (0-1); </code>
+                </li>
+            </ul>
+            <ul>
+                 
+                <li><code class="highlight"> 0</code> implies that the element is fully transparent</li>
+                <br>
+                <li><code class="highlight"> 1</code> implies that the element is fully visible.</li>
+                
+            </ul>
+        </section>
+        <section>
+            <p>Only the parent has <code class="highlight">opacity:0.3</code></p>
             <div class="trans">
-                Parent
-                <div class="trans">Child</div>
+                Grandparent
+                <div class="trans opacity3">
+                    Parent
+                    <div class="trans">Child</div>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+
+            <p>Only the grandparent has <code class="highlight">opacity:0.3</code></p>
+            <div class="trans opacity3">
+                Grandparent
+                <div class="trans">
+                    Parent
+                    <div class="trans">Child</div>
+                </div>
+            </div>
+        </section>
+        <h1 class="title">visibility:hidden VS display:none</h1>
+        <section>
+            <h2>Visibility</h2>
+            <ul>
+                <li><code>visibility: visible | hidden;</code></li>
+            </ul>
+
+            <ul>
+                
+                <li>
+                    <code class="highlight"> visible </code> sets the opacity of the element to <code
+                        class="highlight"> 1 </code>.
+                    <br>The element is completely visible.
+                </li>
+                <br>
+                <li>
+                    <code class="highlight"> hidden </code> sets the opacity to <code class="highlight"> 0 </code>.
+                    <br>The element is completely transparent, yet it takes up space on the page.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>display:none</h2>
+            <p>Hides and removes the element from the document layout. <br>
+                The element no longer occupies space on the page.</p>
+        </section>
+        <section>
+            <!-- NORMAL -->
+            <p>parent{ <br><code class="highlight">visibility:visible;</code> <br>
+                <code class="highlight">display:block</code>}</p>
+
+            <div class="trans">
+                Grandparent
+                <div class="trans">
+                    Parent
+                    <div class="trans">Child</div>
+                </div>
+            </div>
+            <!-- HIDDEN  -->
+            <p>parent{ <code class="highlight">visibility:hidden;</code>}
+                <br>yet, it takes up space on the page.</p>
+
+            <div class="trans">
+                Grandparent
+                <div class="trans" style="visibility: hidden;">
+                    Parent
+                    <div class="trans">Child</div>
+                </div>
+            </div>
+
+            <!-- NONE  -->
+            <p>parent{ <code class="highlight">display:none;}</code>
+                <br>The element no longer occupies space on the page.</p>
+
+            <div class="trans">
+                Grandparent
+                <div class="trans" style="display:none;">
+                    Parent
+                    <div class="trans">Child</div>
+                </div>
+            </div>
+
+        </section>
+    </div>
 
     <script src="./app.js"></script>
 </body>
