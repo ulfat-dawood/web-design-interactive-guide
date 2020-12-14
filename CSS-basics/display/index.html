@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="title">Display</h1>
+    <section>
+        <h2>Display Property</h2>
+        <p>By default, display of elements is either  <code class="highlight">block</code>  or <code class="highlight">inline</code>.</p>
+        <br>
+        <ul><li><code>display: block | inline | inline-block;</code></li></ul>
+    </section>
+
+    <section>
+        <h2>Block Elements</h2>
+        <ul>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;hr&gt;</code></li>
+            <li><code>&lt;video&gt;</code></li>
+            <li><code>&lt;form&gt;</code></li>
+            <li><code>&lt;table&gt; &lt;tfoot&gt;</code></li>
+            <br>
+            <li><span class="highlight">Text containers: </span><code> &lt;h1&gt; - &lt;h6&gt; &lt;p&gt; &lt;pre&gt;</code></li>
+            <br>
+
+            <li><span class="highlight">Lists: </span><code>&lt;ol&gt;  &lt;ul&gt;  &lt;li&gt; & &lt;dl&gt;  &lt;dt&gt;  &lt;dd&gt;</code></li>
+            <br>
+            <li><span class="highlight">Semantic tags:</span> <code> &lt;article&gt; &lt;header&gt; &lt;aside&gt; &lt;figcaption&gt; &lt;section&gt; &lt;figure&gt;
+                &lt;main&gt; &lt;footer&gt; &lt;nav&gt; 
+            </code></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Inline Elements</h2>
+        <ul>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <br>
+            <li><span class="highlight">Text formatting: </span> <code> &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; </code></li>
+            <br>
+            <li><span class="highlight">form tags:</span> <code>&lt;input&gt; &lt;label&gt; &lt;button&gt; &lt;textarea&gt; &lt;select&gt;</code></li>
+            <br>
+           
+            <li><span class="highlight">Semantic tags:</span><code> &lt;strong&gt; &lt;q&gt; &lt;abbr&gt; &lt;cite&gt; &lt;acronym&gt; &lt;dfn&gt; </code></li>
+        </ul>
+    </section>
+    <h1 class="title">Block Elements</h1>
+    <section>
+        <h2>Default Width</h2>
+        <p>100%</p>
+        <h2>Default Height</h2>
+        <p>fit-content</p>
+        <br>
+        <div class="text-box">If width is not spesified, </div>
+        <div class="text-box">block level elements take 100% of the parent width, while height wraps the content. </div>
+    </section>
+    <section>
+        <h2>Stacking</h2>
+        <p><span class="highlight">COLUMS</span>: elements with different widths don't overlap on the same line, rather they are stacked on top of each other</p>
+        <div class="text-box" style="width: 300px">Element 1</div>
+        <div class="text-box" style="width: 200px">Element 2</div>
+        <div class="text-box" style="width: 80%">Element 3</div>
+        <div class="text-box" >Element 4</div>
+    </section>
+    <h1 class="title">Inline Elements</h1>
+    <section>
+        <h2>Default Width</h2>
+        <p>fit-content</p>
+        <h2>Default Height</h2>
+        <p>fit-content</p>
+        <br>
+        <a href="#" class="text-box">anchor</a>
+        <span class="text-box">span</span>
+
+        <br><br>
+
+        <h3 class="title left">Quirk :</h3>
+        <p>Inline elements are not allowed to have custom <span class="highlight">height</span> and <span class="highlight">width</span>. <br>   
+            Rather, height and width of inline lements will always wrap the content. <br>
+             (unless <code class="highlight">display</code> property is explicitly set to <code class="highlight">block</code> or <code class="highlight">inline-block</code>.)</p>
+    </section>
+    <section>
+        <h2>Stacking</h2>
+        <p><code class="highlight">ROWS</code>: elements stacked next to each other, while allowing elements that don't fit to wrap to the next line.</p>
+
+
+        <a href="#" class="text-box" style= " box-shadow: none; padding: 0;">this is an anchor</a>
+        <span class="text-box" style= " box-shadow: none; padding: 0;">span</span>
+        <span class="text-box" style= " box-shadow: none; padding: 0;">another span element</span>
+        <span class="text-box" style= " box-shadow: none; padding: 0;">another span element</span>
+
+        <br><br>
+        <h3 class="title left">Quirk :</h3>
+        <ol>
+        <li>While inline elements are allowed to have <code class="highlight">padding</code>, they are not allowed to have <code class="highlight">margin-top</code> or <code class="highlight">margin-botton</code>.</li>
+
+        <li>This causes overlapping of:
+            <ul>
+                <li>Inline element's border with the parent.</li>
+                <li>Inline element's border and padding with other siblings.</li>
+                <br>
+                <li><img src="./img/overlapping.png" width="300"></li>
+            </ul>
+
+        </li>
+    </ol> 
+    </section>
+    <h1 class="title">inline-block </h1>
+    <section>
+        <p>
+            Both <code class="highlight">block</code> and <code class="highlight">inline</code> elemets' display can be set to <code class="highlight">inline-block</code>, by explicitly spesifying the following property
+        </p>
+        <code class="highlight">display:inline-block</code>
+    </section>
+
+    <section>
+            <h2>Default Width</h2>
+            <p>fit-content</p>
+            <h2>Default Height</h2>
+            <p>fit-content</p>
+            <br>
+            <a href="#" class="text-box" style="display: inline-block;">anchor</a>
+            <span class="text-box" style="display: inline-block;">span</span>
+    
+            <br><br>
+    
+            <h3 class="title left">Pros :</h3>
+            <p><code class="highlight">inline-block</code> elements are allowed to have custom <span class="highlight">height</span> and <span class="highlight">width</span>. 
+
+        </section>
+        <section>
+            <h2>Stacking</h2>
+            <p><span class="highlight">ROWS</span>: elements are stacked next to each other, while allowing elements that don't fit to wrap to the next line.</p>
+    
+    
+            <a href="#" class="text-box" style= " display:inline-block">an anchor</a>
+            <span class="text-box" style= " display:inline-block">span</span>
+            <span class="text-box" style= " display:inline-block">another span element</span>
+            <span class="text-box" style= " display:inline-block">another span element</span>
+            <a href="#" class="text-box" style= " display:inline-block">an anchor</a>
+
+    
+            <br><br>
+            <h3 class="title left">Pros :</h3>
+            <ol>
+            <li><code class="highlight">inline-block</code> elements are allowed to have both <code class="highlight">margin-top</code> and <code class="highlight">margin-botton</code>.</li>
+    
+            <li>There's no overlapping. </li>
+        </ol> 
+        </section>
+
+</div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

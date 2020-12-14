@@ -114,20 +114,19 @@ b{
 	z-index: -1;
 }
 .text-box{
-	min-height: 50px;
+	/* min-height: 50px; */
 	  
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 5px;
-    /* border: 2px dashed #abced4; */
+    border: 2px dashed #abced4;
     background: #abced444;
-    margin:1rem auto; 
+    margin:2rem .5rem; 
     padding: 1rem; 
     font-size: 4rem;
     text-align: center;
     box-shadow: -5px -5px #abced444;
 	transition: all 1s ease-in;
-	height: 200px;
-    width:200px;
+
    
 }
 
