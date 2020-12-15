@@ -17,10 +17,55 @@
 <body>
 
     <div class="container">
-
+        <h1 class="title">Position</h1>
         <section>
-            <p>The property POSITION has no effect without assigning value to either TOP BOTTOM LEFT or RIGHT properties.</p>
+            <ul>
+                The following CSS properties:
+                <code><li>left </li><li>right</li><li>top</li><li>bottom</li></code>
+            </ul>
+            <ol>
+                <li>Accept numerical numbers, with any unit defined, as the value.</li>
+                <li>They define how much an element is <span style="text-decoration: underline;"
+                        class="highlight">PUSHED</span> from the left, right, top or bottom.</li>
+                <li>These properties though, won't have any affect unless the property <code
+                        class="highlight">position</code> is defined. </li>
+            </ol>
+            <ul>
+                <li><code>position: static(default) | relative | fixed | absolute | sticky;</code></li>
+            </ul>
         </section>
+        <h1 class="title">Static</h1>
+        <section>
+            <ul>
+                <li>The default value.</li>
+                <li>When elements positioned <code class="highlight">static</code>, the properties <br>
+                    <code class="highlight">top</code> <code class="highlight">botton</code> <code
+                        class="highlight">left</code> <code class="highlight">right</code>
+                    has no effect. </li>
+            </ul>
+        </section>
+        <h1 class="title">Relative</h1>
+        <section>
+
+
+            <ul>
+                <li><code class="highlight">position: relative;</code> element is positioned relative to itself.</li>
+                <br>
+                <li>Default values for
+                    <code class="highlight">top</code>, <code class="highlight">botton</code>, <code
+                        class="highlight">left</code> and <code class="highlight">right</code>
+                    is <code class="highlight">auto</code>. <br>
+                    change theses values to reflect their effect.
+                </li>
+            </ul>
+
+            <div id="relative" class="parent">
+                <div class="child">
+                    This is positionted relative to itself
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <script src="./app.js"></script>
