@@ -55,6 +55,15 @@
         </section>
 
         <section>
+                <h2>overflow: hidden</h2>
+                <p>Hides the overflowing content, without allowing to scroll</p>
+                <div class="text-box" style="width:400px; height: 150px; overflow:hidden; ">
+                    This element has a fixed height. <br>
+                    The heigh does not grow to fit the content.
+                </div>
+            </section>
+
+        <section>
             <h2>overflow: scroll</h2>
             <p>On some browsers, the scroll bar will be visible even if contenet isn't overflowing.</p>
             <div class="text-box" style="width:400px; height: 150px; overflow:scroll; ">
@@ -71,6 +80,34 @@
                 The heigh does not grow to fit the content.
             </div>
         </section>
+        <h1 class="title">Overflow x / y</h1>
+        <section>
+            
+            <p>When both width and height are fixed, content may overflow from both right and bottom edge. <br>
+            Thus, both horizontal and vertical scroll bar will be visible.</p>
+            <p></p>
+            <br>
+            <div class="text-box" style="width:400px; height: 150px; overflow:scroll;">
+                <div style="border:1px solid black; width:500px;">width and height of the child element overflow from both  right  and bottom edge.</div>
+            </div>
+        </section>
+        <section>
+            <h2>overflow-x</h2>
+            <p>To hide the horizontal scroll bar, 
+                    set the <code class="highlight">overflow-x</code> to <code class="highlight">hidden</code></p>
+            <div class="text-box" style="width:400px; height: 150px; overflow:scroll; overflow-x:hidden;">
+                    <div style="border:1px solid black; width:500px;">width and height of the child element overflow from both  right  and bottom edge.</div>
+               
+        </section>
+
+        <section>
+                <h2>overflow-y</h2>
+                <p>To hide the vertical scroll bar, 
+                        set the <code class="highlight">overflow-y</code> to <code class="highlight">hidden</code></p>
+                <div class="text-box" style="width:400px; height: 150px; overflow:scroll; overflow-y:hidden;">
+                        <div style="border:1px solid black; width:500px;">width and height of the child element overflow from both  right  and bottom edge.</div>
+                   
+            </section>
 
     </div>
 
