@@ -73,18 +73,22 @@
                 <li>
                     <code class="highlight">position: absolute;</code> element is positioned relative
                     to the closest (relative/absolute/sticky/fixed) positioned ansestor. <br>
-                    If none found (i.e. all ansestors are static), it will be positioned relative to <code>&lt;body&gt;</code>.
+                    If none found (i.e. all ansestors are static), it will be positioned relative to
+                    <code>&lt;body&gt;</code>.
                 </li>
                 <br>
                 <li>
-                    Set the <code class="highlight">position</code> of the grey elements below to <code class="highlight">absolute</code>, <br>
+                    Set the <code class="highlight">position</code> of the grey elements below to <code
+                        class="highlight">absolute</code>, <br>
                     to observe how it will be positioned relative to <code>&lt;body&gt;</code>.
                 </li>
             </ul>
             <div class="parent">static
                 <div class="parent">static
                     <div class="parent">static
-                        <div class="child" style="position:static;top:0;left:0px; padding:0; width:fit-content;margin: auto; ">static</div>
+                        <div class="child"
+                            style="position:static;top:0;left:0px; padding:0; width:fit-content;margin: auto; ">static
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +98,7 @@
                 <li><code class="highlight">left: 30px; </code></li>
             </ul>
 
-            <div class="parent"style="position: relative;">relative
+            <div class="parent" style="position: relative;">relative
                 <div class="parent" style="position: relative;">relative
                     <div class="parent" style="position: relative;">relative
                         <div class="child" style="position:absolute; top:0;left: 30px; padding:0; ">absolute</div>
@@ -107,37 +111,52 @@
                 <li><code class="highlight">left: 30px; </code></li>
             </ul>
 
-            <div class="parent"style="position: relative;">relative
-                <div class="parent"style="position: relative;">relative
-                    <div class="parent" >static
+            <div class="parent" style="position: relative;">relative
+                <div class="parent" style="position: relative;">relative
+                    <div class="parent">static
                         <div class="child" style="position:absolute; top:0;left: 30px; padding:0">absolute</div>
                     </div>
                 </div>
             </div>
 
             <ul>
-                    <li><code class="highlight">top: 0; </code></li>
-                    <li><code class="highlight">left: 30px; </code></li>
-                </ul>
-    
-                <div class="parent" style="position: relative;">relative
+                <li><code class="highlight">top: 0; </code></li>
+                <li><code class="highlight">left: 30px; </code></li>
+            </ul>
+
+            <div class="parent" style="position: relative;">relative
+                <div class="parent">static
                     <div class="parent">static
-                        <div class="parent" >static
-                            <div class="child" style="position:absolute; top:0;left: 30px; padding:0">absolute</div>
-                        </div>
+                        <div class="child" style="position:absolute; top:0;left: 30px; padding:0">absolute</div>
                     </div>
                 </div>
+            </div>
         </section>
         <h1 class="title">Fixed vs Sticky</h1>
         <section>
-            <p>Both <code class="highlight">sticky</code> and <code class="highlight">fixed</code> positioned elements won't move while scrolling. Except..</p>
+            <p>Both <code class="highlight">sticky</code> and <code class="highlight">fixed</code> positioned elements
+                won't move while scrolling. Except..</p>
             <div class="grid">
-                    <div><b><code>sticky</code></b></div> <div><b><code>fixed</code></b></div> 
-                <div>sticks to its parent</div><div>not bound to the parent</div>
-                <div>positioned according to the normal document flow, <br>*must define <code class="highlight">top</code></div>
+                <div><b><code>sticky</code></b></div>
+                <div><b><code>fixed</code></b></div>
+                <div>sticks to its parent</div>
+                <div>not bound to the parent</div>
+                <div>positioned according to the normal document flow, <br>*must define <code
+                        class="highlight">top</code></div>
                 <div>positioned relative to the viewport,<br>takes no space in the normal document flow</div>
 
             </div>
+        </section>
+        <section>
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result"
+                data-user="ulfat_dawood" data-slug-hash="QWKpREJ"
+                style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="Fixed vs. Sticky">
+                <span>See the Pen <a href="https://codepen.io/ulfat_dawood/pen/QWKpREJ">
+                        Fixed vs. Sticky</a> by Ulfat (<a href="https://codepen.io/ulfat_dawood">@ulfat_dawood</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
     </div>
