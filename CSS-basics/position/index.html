@@ -58,7 +58,7 @@
             </ul>
 
             <div id="relative" class="parent" style="border: none; width: 200px; margin: 1em auto; ">
-                <div class="child">
+                <div style="padding: .5em; min-width:200px; background: #abced4;">
                     This is positionted relative to itself
                 </div>
             </div>
@@ -73,13 +73,18 @@
                 <li>
                     <code class="highlight">position: absolute;</code> element is positioned relative
                     to the closest (relative/absolute/sticky/fixed) positioned ansestor. <br>
-                    If none found (i.e. all ansestors are static), it will be positioned relative to body.
+                    If none found (i.e. all ansestors are static), it will be positioned relative to <code>&lt;body&gt;</code>.
+                </li>
+                <br>
+                <li>
+                    Set the <code class="highlight">position</code> of the grey elements below to <code class="highlight">absolute</code>, <br>
+                    to observe how it will be positioned relative to <code>&lt;body&gt;</code>.
                 </li>
             </ul>
             <div class="parent">static
                 <div class="parent">static
                     <div class="parent">static
-                        <div class="child" style="padding:0; width:fit-content;margin: auto; ">static</div>
+                        <div class="child" style="position:static;top:0;left:0px; padding:0; width:fit-content;margin: auto; ">static</div>
                     </div>
                 </div>
             </div>
@@ -90,7 +95,7 @@
             </ul>
 
             <div class="parent"style="position: relative;">relative
-                <div class="parent">static
+                <div class="parent" style="position: relative;">relative
                     <div class="parent" style="position: relative;">relative
                         <div class="child" style="position:absolute; top:0;left: 30px; padding:0; ">absolute</div>
                     </div>
