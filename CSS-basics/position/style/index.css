@@ -1,11 +1,13 @@
 .parent{
-    width:200px;
+    min-width:200px;
     background: hsla(189, 32%, 75%, 0.18);
-    margin: 1em auto; 
+    margin: 1em ; 
+    border: 3px solid #abced4;
+    text-align: center;
 }
 .child{
-    background: #abced4;
-    padding: .5em;
+    background: #909090;
+    padding: .5em;color: #eee;
 }
 
 #relative .child{
