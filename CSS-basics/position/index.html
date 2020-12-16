@@ -31,7 +31,7 @@
                         class="highlight">position</code> is defined. </li>
             </ol>
             <ul>
-                <li><code>position: static(default) | relative | fixed | absolute | sticky;</code></li>
+                <li><code>position: static(default) | relative | absolute | fixed | sticky;</code></li>
             </ul>
         </section>
         <h1 class="title">Static</h1>
@@ -127,6 +127,17 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <h1 class="title">Fixed vs Sticky</h1>
+        <section>
+            <p>Both <code class="highlight">sticky</code> and <code class="highlight">fixed</code> positioned elements won't move while scrolling. Except..</p>
+            <div class="grid">
+                    <div><b><code>sticky</code></b></div> <div><b><code>fixed</code></b></div> 
+                <div>sticks to its parent</div><div>not bound to the parent</div>
+                <div>positioned according to the normal document flow, <br>*must define <code class="highlight">top</code></div>
+                <div>positioned relative to the viewport,<br>takes no space in the normal document flow</div>
+
+            </div>
         </section>
 
     </div>
