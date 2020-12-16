@@ -19,8 +19,40 @@
 <div class="container">
     <h1 class="title">Stacking</h1>
     <section>
-        
+        <ul>
+            <li>To specify the stacking order of elements, define the <code class="highlight">z-index</code> property, 
+                which accepts both positive and negative number values.
+            </li>
+            <br>
+            <li>In order for <code class="highlight">z-index</code> to work, element must be positioned <br>either
+                <code class="highlight">relative</code>,
+                <code class="highlight">absolute</code>,
+                <code class="highlight">fixed</code> or
+                <code class="highlight">sticky</code>.
+            </li>
+            <br>
+            <li>Default value is <code class="highlight">z-index:auto;</code></li>
+        </ul>
     </section>
+    
+    <section>
+            <ul style="list-style: none;"> 
+                <p>Observe how positive, negative, zero and auto values reflect of elements z-index stacking</p> <br>
+                <li><code class="highlight">#red{z-index:1}</code></li>
+                <li><code class="highlight">#grey{z-index:auto}</code></li>
+                <li><code class="highlight">#pink{z-index:0}</code></li>
+                <li><code class="highlight">#purple{z-index:-1}</code></li>
+            </ul>
+            <p class="codepen" data-height="346" data-theme-id="light" data-default-tab="result" data-user="ulfat_dawood"
+                data-slug-hash="mdrmRzZ"
+                style="height: 346px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                data-pen-title="Stacking">
+                <span>See the Pen <a href="https://codepen.io/ulfat_dawood/pen/mdrmRzZ">
+                        Stacking</a> by Ulfat (<a href="https://codepen.io/ulfat_dawood">@ulfat_dawood</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </section>
 </div>
 
     <script src="./app.js"></script>
