@@ -16,9 +16,89 @@
 
 <body>
 
-<div class="container">
-    <h1 class="title">Semantic Tags</h1>
-</div>
+    <div class="container">
+        <h1 class="title">Web Pages Layout</h1>
+        <section>
+            <ul>
+                <li>Below is an example of a possible web page layout</li>
+            </ul>
+            <img src="./SVG/Asset 1.svg" width="700" style="display: block; margin:auto">
+            <ul>
+                <li>Using <code class="highlight">&lt;div&gt;</code> and <code class="highlight">&lt;span&gt;</code> to build the page layout is fine. <br> Except that.. </li>
+                <ul>
+                        <li>These tags don't convey any meaning to the browser other than how to structure the page.</li>
+
+                </ul>
+            </ul>
+        </section>
+        <h1 class="title">Semantic Tags</h1>
+
+        <section>
+            <h2>What Are HTML5 Semantic Tags</h2>
+            <ul>
+                <li>Used to build the web layout.</li>
+                <li>Don't have any distinct visual appearance.</li>
+                <li>Help the browser understand what role is played by the content contained within the semantic tags.</li>
+                <li>Help improve Webpage SEO.</li>
+                <li>Using semantic tags is a good accessibility practice. </li>
+            </ul>
+            <img src="./SVG/semantic.svg" width="700" style="display: block; margin:auto">
+        </section>
+        <h1 class="title">Block Level Semantics</h1>
+        <section>
+            <p>Used in the place of <code class="highlight">&lt;div&gt;</code> tags to break your page content into identified parts, each of which fulfills a specific role. <br>
+                They are used to structure and build the page layout, and divide the page content into its basic parts</p>
+
+                <ul>
+                    <li><code class="highlight">&lt;header&gt;</code>: Introductory information of a page or section.</li>
+                    <br>
+                    <li><code class="highlight">&lt;nav&gt;</code>: Main navigation menu links</li>
+                    <br>
+                    <li><code class="highlight">&lt;main&gt;</code>: The body of a page. There should be only one &lt;main&gt; per page.</li>
+                    <br>
+                    <li><code class="highlight">&lt;article&gt;</code>: Self-contained content. e.g. a blog post.</li>
+                    <br>
+                    <li><code class="highlight">&lt;section&gt;</code>: Groups together nearby content of a similar theme.</li>
+                    <br>
+                    <li><code class="highlight">&lt;aside&gt;</code>: Content that is less important.</li>
+                    <br>
+                    <li><code class="highlight">&lt;footer&gt;</code>:  Used at the base of a page or section.</li>
+                    <br>
+                    <li><code class="highlight">&lt;figure&gt;</code>: Illustrations, diagrams, photos...etc.</li>
+                    <br>
+                    <li><code class="highlight">&lt;figcaption&gt;</code>: caption for a &lt;figure&gt; element</li>
+                    <br>
+                    <li><code class="highlight">&lt;details&gt;</code>: Additional details.</li>
+                    <br>
+                    <li><code class="highlight">&lt;summary&gt;</code>:  Heading for a &lt;details&gt; element</li>
+                </ul>
+        </section>
+        <h1 class="title">Inline Level Semantics</h1>
+        <section>
+            <p>Used in the place of <code class="highlight">&lt;span&gt;</code> tags</p>
+                <li><code class="highlight">&lt;mark&gt;</code>: Highlighted text</li>
+                <br>
+                <li><code class="highlight">&lt;time&gt;</code>: Date or time</li>
+                <br>
+                <li><code class="highlight">&lt;strong&gt;</code>: Content has strong importance.</li>
+                <br>
+                <li><code class="highlight">&lt;em&gt;</code>: Emphasize words </li>
+                <br>
+                <li><code class="highlight">&lt;q&gt;</code>: Shorter quotes</li>
+                <br>
+                <li><code class="highlight">&lt;blockquote&gt;</code>: Longer quotes</li>
+                <br>
+                <li><code class="highlight">&lt;abbr&gt;</code>: Abbreviations.</li>
+                <br>
+                <li><code class="highlight">&lt;cite&gt;</code>: Citation reference. </li>
+                <br>
+                <li><code class="highlight">&lt;dfn&gt;</code>: Terminology explaination.</li>
+
+
+        </section>
+
+
+    </div>
 
     <script src="./app.js"></script>
 </body>
