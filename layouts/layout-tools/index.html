@@ -16,32 +16,50 @@
 
 <body>
     <div class="container">
-        <h1 class="title">Layout Conventions</h1>
+        <h1 class="title">Building Layout</h1>
         <section>
-            <h2>Why Follow Conventions?</h2>
+            <p>Since <span class="highlight">block-level elements</span> are stacked only on top of each other <br>
+            and <span class="highlight">inline-level elemets</span> are stacked only next to each other, <br>
+        how can we change elements placement to build complicated layouts as the following?</p>
+        <br>
+        <img src="./SVG/layouts.svg" alt="">
+        </section>
+        <section>
+            <h2>Tables</h2>
             <ul>
-
-                <li>Why follow web design standards like:</li>
-                <ul>
-                    <li>using &lt;h1&gt; - &lt;h6&gt; and not just simply changing <code class="highlight">font-size</code> property of a  <code class="highlight">&lt;div&gt;</code>.</li>
-                    <li>Placing logo and navigation links on the top header.</li>
-                </ul>
-                <br>
-                <li>Because..</li>
-                <ul>
-                <li>Conventions make websites feel familiar from site to site, making it easier for any user to navigate through the webpage. </li>
-                <li>
-                        These conventions help search engines and web crawlers to easily understand webpage content and access every page of a website across the Internet.
-                </li>
+                <li>Table-based layouts used to be the conventional way of structuring webpages. </li>
+                <li>with the combination of rows and columns with varying colspan/rowspan <br>
+                it is possible to build simple pages as the following.</li>
             </ul>
+            <br>
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="ulfat_dawood" data-slug-hash="OJRgVdw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Table-based Layout">
+                    <span>See the Pen <a href="https://codepen.io/ulfat_dawood/pen/OJRgVdw">
+                    Table-based Layout</a> by Ulfat (<a href="https://codepen.io/ulfat_dawood">@ulfat_dawood</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
-        <h1 class="title">best practices</h1>
+
+        <!-- <section>
+            <h2>iframes</h2>
+        </section> -->
+
         <section>
-            <h2>Containers</h2>
-            <p>Wrapping sections with a container to give the page layout consistent look by
-                adding even/similar margin to all sections on the page. 
-            </p>
+            <h2>Float</h2>
+            <ul>
+                <li>Using <code class="highlight">float:rigth</code> and <code class="highlight">float:left</code> with <br> a hint of <code class="highlight">display: inline-block;</code>
+                It is possible to build quite complicated web pages.</li>
+                <li>Here's an example:</li>
+            </ul>
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="ulfat_dawood" data-slug-hash="ExgXjqy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Float-based Layouts">
+                    <span>See the Pen <a href="https://codepen.io/ulfat_dawood/pen/ExgXjqy">
+                    Float-based Layouts</a> by Ulfat (<a href="https://codepen.io/ulfat_dawood">@ulfat_dawood</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            
         </section>
+        <h1 class="title">Modern Layout Tools</h1>
     </div>
 
 
