@@ -116,29 +116,25 @@ b{
 }
 .text-box{
 	min-height: 50px;
-	  
-    width: fit-content;
+	display:flex; 
+	width: 50%; 
     border-radius: 5px;
     /* border: 2px dashed #abced4; */
     background: #abced444;
-    margin:1rem auto; 
+    margin:.5em auto; 
     padding: 1rem; 
     font-size: 4rem;
     text-align: center;
     box-shadow: -5px -5px #abced444;
-	transition: all 1s ease-in;
-	height: 200px;
-    width:200px;
+
+
    
 }
 
-.grid{
-	display: grid; 
-	grid-template-columns: repeat(var(--grid),auto);
-}
-.grid div{
-	border: 1px solid #40404044; 
-	text-align: center;
+.item{
+	padding: .25em; margin: auto .25em; 
+	background: var(--blue);
+	border-radius: 5px;
 }
 
 

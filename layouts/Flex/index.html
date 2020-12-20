@@ -25,7 +25,8 @@
             </ul>
             <h2>Why Flexbox? </h2>
             <ul>
-                <li>Building layouts with more <span class="highlight">FLEX</span>ibility and stability than floats, inline-blocks and absolute
+                <li>Building layouts with more <span class="highlight">FLEX</span>ibility and stability than floats,
+                    inline-blocks and absolute
                     positioning.</li>
                 <li>Easily..
                     <ul>
@@ -50,7 +51,8 @@
             <h2>Direction and Wrap</h2>
             <ul>
                 <li>Default direction is <span class="highlight">ROW</span>.</li>
-                <li><span class="highlight">WRAP</span>: allow flex items that don't fit to wrap to the next line, instead of trying to fit in one line. </li>
+                <li><span class="highlight">WRAP</span>: allow flex items that don't fit to wrap to the next line,
+                    instead of trying to fit in one line. </li>
             </ul>
 
             <ul>
@@ -59,18 +61,22 @@
             </ul>
             <br>
             <h3 class="title left">Sorthand :</h3>
-            <ul><li><code>flex-flow: flex-direction flex-wrap;</code></li></ul>
+            <ul>
+                <li><code>flex-flow: flex-direction flex-wrap;</code></li>
+            </ul>
         </section>
 
         <section>
             <h2>Items Alignment</h2>
             <ul>
-                <li><code>justify-content: flex-start | flex-end | center | <br> space-between | space-around | space-evenly;</code></li>
+                <li><code>justify-content: flex-start | flex-end | center | <br> space-between | space-around | space-evenly;</code>
+                </li>
                 <br>
                 <ul>
-                        <li>Defines items alignment along the set direction</li>
-                        <li>sets the <span class="highlight">horizontal</span> alignment when direction is <code class="highlight">row</code>).</li>
-                        
+                    <li>Defines items alignment along the set direction</li>
+                    <li>sets the <span class="highlight">horizontal</span> alignment when direction is <code
+                            class="highlight">row</code>.</li>
+
                 </ul>
             </ul>
             <br>
@@ -78,19 +84,30 @@
                 <li><code>align-items: flex-start | flex-end | center | <br> stretch | baseline;</code></li>
                 <br>
                 <ul>
-                    <li>sets the <span class="highlight">vertical</span> alignment of all items when direction is <code class="highlight">row</code>.</li>
+                    <li>sets the <span class="highlight">vertical</span> alignment of all items when direction is <code
+                            class="highlight">row</code>.</li>
 
                 </ul>
             </ul>
+            <br><br>
+            <div class="text-box" style="justify-content: center; ">
+                    <div  class="item">text <br>text</div>
+                    <div  class="item">text</div>
+                    <div  class="item">text <br>text <br>text</div>
+    
+                </div>
 
-            <p></p>
         </section>
         <section>
             <h2>Wrapped Lines Alignment</h2>
             <ul>
-                <li><code>align-content: flex-start | flex-end | center | <br>space-between | space-around | space-evenly | <br>stretch | baseline;</code></li>
+                <li><code>align-content: flex-start | flex-end | center | <br>space-between | space-around | space-evenly | <br>stretch | baseline;</code>
+                </li>
                 <br>
-                <ul><li>Sets the <span class="highlight">vertical</span> alignment of each line when direction is <code class="highlight">row</code>.</li></ul>
+                <ul>
+                    <li>Sets the <span class="highlight">vertical</span> alignment of each line when direction is <code
+                            class="highlight">row</code>.</li>
+                </ul>
             </ul>
         </section>
         <h1 class="title">Flex Items</h1>
@@ -100,7 +117,8 @@
                 <li><code>align-self: flex-start | flex-end | center | <br> stretch | baseline ;</code></li>
                 <br>
                 <ul>
-                    <li>sets the <span class="highlight">vertical</span> alignment of one item when direction is <code class="highlight">row</code>.</li>
+                    <li>sets the <span class="highlight">vertical</span> alignment of one item when direction is <code
+                            class="highlight">row</code>.</li>
 
                 </ul>
             </ul>
@@ -108,17 +126,18 @@
         <section>
             <h2><span style="text-decoration:underline;">SIZE</span> of an Individual Item (fixed or proportional)</h2>
             <ul>
-                    <li>By default, flex distrubutes the size of each item evenly.</li>
-                    <br>
-                    <li>Set an item's width (when direction is row).</li>
-                    <li>Set an item's height (when direction is column).</li>
+                <li>By default, flex distrubutes the size of each item evenly.</li>
+                <br>
+                <li>Set an item's width (when direction is row).</li>
+                <li>Set an item's height (when direction is column).</li>
             </ul>
-            <h3 class="title left">Fixed :</h3> 
+            <h3 class="title left">Fixed :</h3>
             <ul>
                 <li><code>flex-basis: [number][unit];</code></li>
                 <br>
                 <ul>
-                    <li>  Default value is <code class="highlight">auto</code> for all items(distributes thier size evenly).</li>
+                    <li> Default value is <code class="highlight">auto</code> for all items(distributes thier size
+                        evenly).</li>
                 </ul>
             </ul>
 
@@ -126,34 +145,66 @@
             <ul>
                 <li><code>flex-grow: [unitless number];</code></li>
             </ul>
-            <h3 class="title left">Shorthand :</h3> 
-            <ul><li><code>flex: none | (flex-grow || flex-basis);</code></li></ul>
+
+
+            <h3 class="title left">Shorthand :</h3>
+            <ul>
+                <li><code>flex: none | (flex-grow || flex-basis);</code></li>
+            </ul>
+
+            <div class="text-box">
+                <div style="flex:1;" class="item">1</div>
+                <div style="flex:1;" class="item">1</div>
+                <div style="flex:1;" class="item">1</div>
+
+            </div>
+            <div class="text-box">
+                <div style="flex:2;" class="item">2</div>
+                <div style="flex:1;" class="item">1</div>
+                <div style="flex:1;" class="item">1</div>
+
+            </div>
+            <div class="text-box">
+                <div style="flex:150px;" class="item">150px</div>
+                <div style="flex:1;" class="item">1</div>
+                <div style="flex:1;" class="item">1</div>
+
+            </div>
 
 
         </section>
         <section>
             <h2><span style="text-decoration:underline;">ORDER</span> of an Individual Item</h2>
-            <ul><li><code>order: [unitless number];</code></li>
-                <ul><li>Accepts negative values as well.</li></ul>
+            <ul>
+                <li><code>order: [unitless number];</code></li>
+                <ul>
+                    <li>Accepts negative values as well.</li>
+                </ul>
             </ul>
-            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div class=&quot;orange&quot;&gt;-1&lt;/div&gt;</p>
-            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div class=&quot;green&quot;&gt;0&lt;/div&gt;</p>
-            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div class=&quot;blue&quot;&gt;1&lt;/div&gt;</p>
-            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div class=&quot;red&quot;&gt;-2&lt;/div&gt;</p>
-            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div class=&quot;pink&quot;&gt;2&lt;/div&gt;</p>
-            <p >Default Order: <img style="position: relative; bottom:-10px;" src="./img/order-1.png" width="200"></p>
-            
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div
+                class=&quot;orange&quot;&gt;-1&lt;/div&gt;</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div
+                class=&quot;green&quot;&gt;0&lt;/div&gt;</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div
+                class=&quot;blue&quot;&gt;1&lt;/div&gt;</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div
+                class=&quot;red&quot;&gt;-2&lt;/div&gt;</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>&lt;div
+                class=&quot;pink&quot;&gt;2&lt;/div&gt;</p>
+            <p>Default Order: <img style="position: relative; bottom:-10px;" src="./img/order-1.png" width="200"></p>
+
             <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.orange{order:-1}</p>
-<p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.green{order:0}</p>
-<p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.blue{order:1}</p>
-<p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.red{order:-2;}</p>
-<p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.pink{order:2;}</p>
-            <p>Rearranged Order: <img  style="position: relative; bottom:-10px;" src="./img/order-2.png" width="200"> </p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.green{order:0}</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.blue{order:1}</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.red{order:-2;}</p>
+            <p lang="en-US" style='margin:0in;font-family:"Courier New";font-size:20.0pt;'>.pink{order:2;}</p>
+            <p>Rearranged Order: <img style="position: relative; bottom:-10px;" src="./img/order-2.png" width="200">
+            </p>
 
         </section>
     </div>
 
-   
+
 
 
 
