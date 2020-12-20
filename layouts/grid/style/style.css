@@ -116,10 +116,9 @@ b{
 }
 .text-box{
 	min-height: 50px;
-	  
+	display: flex;
     width: fit-content;
     border-radius: 5px;
-    /* border: 2px dashed #abced4; */
     background: #abced444;
     margin:1rem auto; 
     padding: 1rem; 
@@ -132,14 +131,6 @@ b{
    
 }
 
-.grid{
-	display: grid; 
-	grid-template-columns: repeat(var(--grid),auto);
-}
-.grid div{
-	border: 1px solid #40404044; 
-	text-align: center;
-}
 
 
 
