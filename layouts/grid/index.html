@@ -31,12 +31,18 @@
             <h2>Grid Properties</h2>
             <p>There are separate properties for:</p>
             <ul>
-                <li>The grid container (parent element).</li>
-                <li>The grid items (children elements).</li>
+                <li>The <code class="highlight">grid-container</code> (parent element).</li>
+                <li>The <code class="highlight">grid-items</code> (children elements).</li>
             </ul>
         </section>
         <section>
-            <p>Imagin grid as a table that has rows, columns, cells and lines surrounding them.</p>
+            <p>The <code class="highlight">grid-container</code> is divided into rows and columns that contains:</p>
+            <ul>
+        
+                <li><code class="highlight">grid-cells</code> (containing the <code class="highlight">grid-items</code>).</li>
+                <li><code class="highlight">grid-lines</code> surrounding <code class="highlight">grid-cells</code> (each line has a number identifier).</li>
+            </ul>
+            <img src="./SVG/grid-2.svg" style="display: block; margin: auto; width: 700px;">
         </section>
         <h1 class="title">Grid Container</h1>
         <section>
@@ -57,16 +63,37 @@
             <h3 class="title left">Shorthand :</h3>
         </section>
         <section>
-            <h2>Alignment</h2>
-            <h3 class="title left"> Align Columns Content Horizontally </h3>
-            <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+            <h2>Grid-items Alignment within Grid-cells</h2>
+            <ul>
+                <li>Align Columns of <code class="highlight">grid-items</code> Horizontally </li>
+                <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                <br>
+                <li>Align Rows of <code class="highlight">grid-items</code> Vertically</li>
+                <ul><li><code>align-items: start | end | center | stretch;</code></li></ul>
+            </ul>
 
-            <h3 class="title left">Align Rows Content Vertically</h3>
-            <ul><li><code>align-items: start | end | center | stretch;</code></li></ul>
+            <h3 class="title left">Shorthand</h3>
+
+        </section>
+        <section>
+            <h2>Grid-cells Alignment within the Grid-container</h2>
+            <ul>
+                <li>Align Columns of <code class="highlight">grid-cells</code> Horizontally </li>
+                <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                <br>
+                <li>Align Rows of <code class="highlight">grid-cells</code> Horizontally </li>
+                <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+            </ul>
+
+            <h3 class="title left">Shorthand</h3>
+
+        </section>
+        <h1 class="title">Grid Items</h1>
+        <section>
+            <h2>Grid-items Location</h2>
         </section>
     </div>
 
-    </section>
 
 
 
