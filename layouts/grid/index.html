@@ -132,6 +132,8 @@
             </ul>
             <img src="./SVG/align-items-end.svg" style="display: block; margin: auto; width: 500px;">
 
+           
+
 
         </section>
         <section>
@@ -192,7 +194,11 @@
                 <li><code>grid-row-end: 3;</code></li>
             </ul>
             <img src="./SVG/location-defined.svg" style="display: block; margin: auto; width: 500px;">
-
+            <h3 class="title left">Shorthand</h3>
+            <ul>
+                    <li>grid-column: grid-column-start grid-column-end;</li>
+                    <li>grid-row: grid-row-start grid-row-end;</li>
+                </ul>
 
         </section>
         <section>
@@ -216,19 +222,26 @@
         <section>
             <h2>Alignment of Individual grid-item</h2>
             <ul>
-                    <li>Align all <code class="highlight">grid-items</code> horizontally within their grid-cells.</li>
-                    <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                    <li>Align a specified  <code class="highlight">grid-item</code> horizontally within its grid-cells.</li>
+                    <ul><li><code>justify-self: start | end | center | stretch;</code></li></ul>
                     <br>
-                    <li>Align all <code class="highlight">grid-items</code> vertically within their grid-cells.</li>
-                    <ul><li><code>align-items: start | end | center | stretch;</code></li></ul>
+                    <li>Align a specified  <code class="highlight">grid-item</code> vertically within its grid-cells.</li>
+                    <ul><li><code>align-self: start | end | center | stretch;</code></li></ul>
                     <br>
-    
-                    <li><code>justify-items: center; </code></li>
+                    <li><code>justify-items: end; </code></li>
                     <li><code>align-items: start; </code></li>
-                    <img src="./SVG/align-items.svg" style="display: block; margin: auto; width: 500px;">
-    
-    
+                    <img src="./SVG/align-self-1.svg" style="display: block; margin: auto; width: 500px;">
             </ul>
+
+            <h3 class="title left">Shorthand</h3>
+            <ul>
+                <li><code>place-self: align-self  justify-self</code></li>
+                <br>
+                <li><code>place-self: center center;</code></li>
+                <li><code>place-self: center; //sets both to 'center'</code> </li> 
+            </ul>
+            <img src="./SVG/align-self-2.svg" style="display: block; margin: auto; width: 500px;">
+
 
         </section>
     </div>
