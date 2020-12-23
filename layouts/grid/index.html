@@ -23,10 +23,6 @@
                 <li>Grid is used when building a layouts in two dimension (rows and columns at the same time).</li>
                 <li>Large-scale layouts.</li>
             </ul>
-            <h2>Why grid? </h2>
-            <ul>
-                
-            </ul>
 
             <h2>Grid Properties</h2>
             <p>There are separate properties for:</p>
@@ -50,47 +46,190 @@
             <ul><li><code>display: grid;</code></li></ul>
         </section>
         <section>
-            <h2>Rows/Columns Number and Size</h2>
+            <h2>Number of Rows/Columns and their Size</h2>
+
+            <ul>
+                <li><code >grid-template-columns: <br>[col-1-width] [col-2-width]...[col-n-width] ;</code></li>
+                <br>
+                <li><code >grid-template-rows: <br>[row-1-height] [row-2-height]...[row-n-height] ;</code></li>
+            </ul>
+            <br>
+            <ul>
+                <li><code>grid-template-columns: 50% 100px 50px;</code></li>
+                <li><code>grid-template-rows: 1fr 2fr 100px;</code></li>
+            </ul>
+            <img src="./SVG/columns-rows-2.svg" style="display: block; margin: auto; width: 700px;">
+            <ol>
+                <li>First, last row will  occupy 100px of the grid-container-height.</li>
+                <li>Then, first and second rows will fill all the available space. </li>
+            </ol>
+            <ul>
+                <li><code class="highlight">fr</code> forced rows to fill all the available space of the <code>grid-container</code> height.</li>
+                <li>Columns don't fill the entire <code>grid-container</code>'s width.</li>
+            </ul>
+
+            
         </section>
         <section>
             <h2>Grid Areas</h2>
-            <p>A collection of adjacent cells, identified by a label. <br>
-            Later, a grid item is assigned this label to fill the designated area.</p>
-        </section>
-        <section>
-            <h2>Lines Size</h2>
-            <p>Spesifies the size of the INNER lines (lines between columns and rows not the lines forming the edge of the grid).</p>
-            <h3 class="title left">Shorthand :</h3>
-        </section>
-        <section>
-            <h2>Grid-items Alignment within Grid-cells</h2>
             <ul>
-                <li>Align Columns of <code class="highlight">grid-items</code> Horizontally </li>
+                <li><code class="highlight">grid-area</code>: one or multiple adjacent <code class="highlight">grid-cells</code> identified by a given label.</li>
+                <li>Later, a <code class="hight">grid-item</code> can be assigned to one the <code class="highlight">grid-areas</code> to fill that portion of the grid.</li>
+            </ul>
+            <br>
+
+            <ul>
+                <li><code>grid-template-columns: 10% 1fr 20%;</code></li>
+                <li><code>grid-template-rows: 10% 1fr 15%;</code></li>
+                <li><code>grid-template-areas: <br>"header header header" <br> 
+                    "nav main aside"<br>"nav footer . "</code></li>
+            </ul>
+            <p>The period after footer indicate an empty cell. </p>
+            <img src="./SVG/grid-area.svg" style="display: block; margin: auto; width: 600px;">
+            
+        </section>
+        <section>
+            <h2>Gap around grid-lines</h2>
+            <p><code class="highlight">column-gap</code> / <code class="highlight">row-gap</code> specify the GUTTER 
+                (the gap around INNER <code >grid-lines</code> only, without the <code >grid-lines</code> on the edge).</p>
+
+            <ul>
+                    <li><code>row-gap: 40px;</code></li>
+                    <li><code>column-gap: 20px;</code></li>
+            </ul>
+            <img src="./SVG/gap.svg" style="display: block; margin: auto; width: 500px;">
+
+            <h3 class="title left">Shorthand :</h3>
+            <ul>
+                <li><code>gap: row-gap column-gap;</code></li><br>
+                <li><code>gap: 40px 20px;</code></li>
+                <li><code>gap: 30px; //sets both row-gap and column-gap to 30px</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>grid-items Alignment within grid-cells</h2>
+            <ul>
+                <li>Align all <code class="highlight">grid-items</code> horizontally within their grid-cells.</li>
                 <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
                 <br>
-                <li>Align Rows of <code class="highlight">grid-items</code> Vertically</li>
+                <li>Align all <code class="highlight">grid-items</code> vertically within their grid-cells.</li>
                 <ul><li><code>align-items: start | end | center | stretch;</code></li></ul>
+                <br>
+
+                <li><code>justify-items: center; </code></li>
+                <li><code>align-items: start; </code></li>
+                <img src="./SVG/align-items.svg" style="display: block; margin: auto; width: 500px;">
+
+
             </ul>
 
             <h3 class="title left">Shorthand</h3>
+            <ul>
+                <li><code>place-items: align-items  justify-items</code></li>
+                <br>
+                <li><code>place-items: end end;</code></li>
+                <li><code>place-items: end; //sets both to 'end'</code> </li> 
+            </ul>
+            <img src="./SVG/align-items-end.svg" style="display: block; margin: auto; width: 500px;">
+
 
         </section>
         <section>
-            <h2>Grid-cells Alignment within the Grid-container</h2>
+            <h2>grid-cells Alignment within the grid-container</h2>
             <ul>
                 <li>Align Columns of <code class="highlight">grid-cells</code> Horizontally </li>
-                <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                <ul><li><code>justify-content: start | end | center | stretch | space-around | space-between | space-evenly;</code></li></ul>
                 <br>
-                <li>Align Rows of <code class="highlight">grid-cells</code> Horizontally </li>
-                <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                <li>The effect of <code class="highlight">justify-content</code> won't be reflected if 
+                    columns fill the entire grid-container's width.</li>
+            </ul>
+            <code>justify-content: start;</code>
+            <img src="./SVG/align-content-start.svg" style="display: block; margin: auto; width: 500px;">
+            <code>justify-content: center;</code>
+            <img src="./SVG/align-content-center.svg" style="display: block; margin: auto; width: 500px;">
+            <code>justify-content: space-between;</code>
+            <img src="./SVG/align-content-space.svg" style="display: block; margin: auto; width: 500px;">
+
+            <ul>
+                <li>Align Rows of <code class="highlight">grid-cells</code> vertically </li>
+                <ul><li><code>align-content: start | end | center | stretch | space-around | space-between | space-evenly;  </code></li></ul>
+                <br>
+                <li>The effect of <code class="highlight">align-content</code> won't be reflected if 
+                    rows fill the entire grid-container's height.</li>
             </ul>
 
             <h3 class="title left">Shorthand</h3>
+            <ul>
+                <li><code>place-content:align-content justify-content;</code></li>
+                <br>
+                <li><code>place-content:center center;</code></li>
+                <li><code>place-content:center; //sets both properties to 'center'</code></li>
+            </ul>
 
         </section>
         <h1 class="title">Grid Items</h1>
         <section>
-            <h2>Grid-items Location</h2>
+            <h2>grid-items Location</h2>
+            <p>By default, each <code class="highlight">grid-item</code> will be located inside on of the <code class="higlight">grid-cells</code>
+                with respect to their order.</p>
+            <p>However, this can be changed, by locating the <code class="highlight">grid-items</code> 
+                to a differnt <code class="highlight">grid-cell/s</code>
+                 or to a pre-defined <code class="highlight">grid-area</code>.</p> 
+            <p><code class="highlight"></code></p>
+            <p><code class="highlight">grid-area</code> : one or multiple adjacent <code class="highlight">grid-cells</code> identified by a given label.</p>
+                <br>
+        
+                <img src="./SVG/location-default.svg" style="display: block; margin: auto; width: 500px;">
+                <p>This is the default location of  <code class="highlight">grid-item</code> that is <br>
+                     the first child of <code class="highlight">grid-container</code></p>
+        </section>
+        <section>
+            <h2>Locate grid-items by: grid-lines</h2>
+            <ul>
+                <li><code>grid-column-start: 1;</code></li>
+                <li><code>grid-column-end: 4;</code></li>
+                <li><code>grid-row-start: 2;</code></li>
+                <li><code>grid-row-end: 3;</code></li>
+            </ul>
+            <img src="./SVG/location-defined.svg" style="display: block; margin: auto; width: 500px;">
+
+
+        </section>
+        <section>
+            <h2>Locate grid-items by: grid-area</h2>
+            <ul>
+                    <li><code>.grid-container{ <br> grid-template-areas: <br>"header header header" <br> 
+                        "nav main aside"<br>"nav footer . " <br>}</code></li>
+            </ul>
+            <img src="./SVG/location-area-1.svg" style="display: block; margin: auto; width: 500px;">
+            <ul>
+                <li><code>.grid-item-1{   grid-area: header; }</code></li>
+                <li><code>.grid-item-2{   grid-area: nav; }</code></li>
+                <li><code>.grid-item-3{   grid-area: main; }</code></li>
+                <li><code>.grid-item-4{   grid-area: aside; }</code></li>
+                <li><code>.grid-item-5{   grid-area: footer; }</code></li>
+            </ul>
+            <img src="./SVG/location-area-2.svg" style="display: block; margin: auto; width: 500px;">
+
+
+        </section>
+        <section>
+            <h2>Alignment of Individual grid-item</h2>
+            <ul>
+                    <li>Align all <code class="highlight">grid-items</code> horizontally within their grid-cells.</li>
+                    <ul><li><code>justify-items: start | end | center | stretch;</code></li></ul>
+                    <br>
+                    <li>Align all <code class="highlight">grid-items</code> vertically within their grid-cells.</li>
+                    <ul><li><code>align-items: start | end | center | stretch;</code></li></ul>
+                    <br>
+    
+                    <li><code>justify-items: center; </code></li>
+                    <li><code>align-items: start; </code></li>
+                    <img src="./SVG/align-items.svg" style="display: block; margin: auto; width: 500px;">
+    
+    
+            </ul>
+
         </section>
     </div>
 
