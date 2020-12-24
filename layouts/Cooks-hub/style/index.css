@@ -1,2 +1,30 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    place-items:stretch stretch;
+    grid-template-areas:
+      "header header  header"
+      "nav    main aside"
+      "nav    main aside"
+      "footer footer  footer"; 
+}
+.grid-container > *{
+    background: #909090;
+    margin: 1rem;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
 
-
+footer{
+    grid-area: footer;
+}
