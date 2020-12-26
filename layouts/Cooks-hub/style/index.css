@@ -45,8 +45,9 @@ nav .flex-container{
     height: fit-content;
     flex-direction: column;
     flex-wrap: wrap;
-    /* border: 1px solid black;  */
     background: var(--bg-d);
+    position: sticky;
+    top:0; 
 
 }
 nav div{
