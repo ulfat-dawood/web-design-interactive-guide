@@ -13,19 +13,32 @@
     background: #909090;
     margin: 1rem;
 }
+/* HEADER  */
 header{
     grid-area: header;
+    /* width: 100px;  */
 }
+/* #header{color:red} */
+
+
+/* NAVIGATION  */
 nav{
     grid-area: nav;
+    background-color: red;
 }
+
+/* MAIN SECTION  */
 main{
     grid-area: main;
 
 }
+
+/* SIDEBAR  */
 aside{
     grid-area: aside;
 }
+
+/* FOOTER  */
 
 footer{
     grid-area: footer;
