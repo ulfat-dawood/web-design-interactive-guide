@@ -1,0 +1,29 @@
+
+@media (max-width: 480px){
+/* TYPOGRAPHY */
+h1{font-size: 2rem !important;}
+
+
+/* ====================GRID CONTAINER====================  */
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto auto auto 10vh;
+    grid-template-areas:
+    "header  "
+    "nav     "
+    "main"
+    " aside"
+    "footer  ";
+}    
+
+/* ====================HEADER====================  */
+header .flex-container{
+    font-weight: 500;
+}
+/* ====================MAIN====================  */
+main{margin-right:3rem; }
+/* SECTION-2 */
+main #section-2.flex-container{
+    flex-direction: column;
+}
+} 

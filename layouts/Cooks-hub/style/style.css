@@ -1,5 +1,6 @@
 @import "./index.css" ;
-@import "./media-queries.css"; 
+@import "./tablet-vp.css"; 
+@import "./mobile-vp.css"; 
 
 /* COLORS */
 :root{

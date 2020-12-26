@@ -26,11 +26,10 @@ footer{grid-area: footer;}
     justify-content: space-between;
 }
 /* ====================HEADER====================  */
-
 header .flex-container{
     height: 100%;
     background: var(--pink-l);
-    padding: 1rem 7rem;
+    padding: 1rem 5%;
 }
 header h1{flex:1; font-weight: 800;}
 
@@ -107,13 +106,13 @@ main #section-3 h3{
 aside .flex-container{
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
+    height: fit-content;
     background: var(--bg-l);
 }
 aside .card{ 
     text-align: center;
     width: 130px;
-    margin: 1rem auto 5rem auto;
+    margin: 1rem 1rem 5rem 1rem;
 }
 aside .img-holder{
     width: 120px; height: 120px;
@@ -128,8 +127,12 @@ aside figcaption
 
 
 /* ====================FOOTER====================  */
-footer {
-    height: 100%;
+footer div{
     background: var(--pink-l);
-    color:red; 
+}
+body > div > footer > div{
+    height: 100%; width: 100%; 
+
+    background: var(--pink-l);
+
 }
