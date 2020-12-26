@@ -3,9 +3,12 @@
 
 /* COLORS */
 :root{
-    --bg: #F5F5F5; 
-    --box: #dbdbdb; 
-    --text: #505050; 
+	--bg-l: #F8F8F8;
+	--bg-d:#F2EEED; 
+	--pink-l:#ECD9D5;
+	--pink-d: #E89F8E;  
+
+    --text: #484848; 
 }
 /* RESETTING */
 *,*::before,*::after{
@@ -22,7 +25,7 @@ html{
 }
 
 body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'EB Garamond', serif;
 	background: var(--bg); 
 	font-size: 3rem;
 }
