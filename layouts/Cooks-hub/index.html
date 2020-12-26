@@ -1,27 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <title>Cooks Hub</title>
 </head>
+
 <body>
     <div class="grid-container">
-        <header id="header">
-            <h1>COOKS HUB</h1>
-            <div><h3>SIGNIN</h3></div>
-            <div><h3>REGISTER</h3></div>
+        <header>
+            <div class="flex-container">
+                <h1>COOKS HUB</h1>
+                <div>
+                    <h6>SIGNIN</h6>
+                </div>
+                <div>
+                    <h6>REGISTER</h6>
+                </div>
+            </div>
         </header>
-        <nav>nav</nav>
+        <nav>
+            <div class="flex-container">
+                <div>
+                    <h6>DESSERTS SECTION</h6>
+                </div>
+                <div>
+                    <h6>BAKERY SECTION</h6>
+                </div>
+                <div>
+                    <h6>HEALTH SECTION</h6>
+                </div>
+                <div>
+                    <h6>SMOOTHIES SECTION</h6>
+                </div>
+            </div>
+        </nav>
         <main>
-            <img src="http://placekitten.com/200/500" alt="">
+            <section id="section-1" class="flex-container">
+                <div>
+                    <h2>Nutritious Breakfast Everyday!</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    </p>
+                </div>
+                <figure>
+                    <img src="./img/pancake.jpeg" alt="">
+                </figure>
+
+            </section>
+
+            <section id="section-2" class="flex-container">
+                <div class="card">
+                    <figure>
+                        <img src="./img/cookies.jpeg" alt="">
+                    </figure>
+                    <h4>Cookies</h4>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./img/bread-1.jpeg" alt="">
+                    </figure>
+                    <h4>Homemade Bread</h4>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="./img/juice.jpeg" alt="">
+                    </figure>
+                    <h4>Refreshing Mojito</h4>
+                </div>
+            </section>
+            <section id="section-3">
+                <h3>Best Cooking Tips, Easily Available Just a Few Clicks Away!</h3>
+                <p>
+                    Leo a diam sollicitudin tempor. Hac habitasse platea dictumst vestibulum. Libero nunc consequat
+                    interdum varius sit amet mattis vulputate. Eu facilisis sed odio morbi quis commodo odio aenean.
+                    Bibendum enim facilisis gravida neque convallis a cras semper
+                    <br><br>
+                    auctor. Venenatis tellus in metus vulputate eu. Vestibulum lectus mauris ultrices eros in cursus
+                    turpis. Pharetra massa massa ultricies mi quis hendrerit. Sit amet purus gravida quis blandit turpis
+                    cursus. Lorem donec massa sapien faucibus. Sollicitudin ac orci phasellus egestas tellus rutrum
+                    tellus pellentesque eu. Sapien nec sagittis aliquam malesuada
+                    <br><br>
+                    bibendum arcu. Iaculis eu non diam phasellus vestibulum. Faucibus interdum posuere lorem ipsum dolor
+                    sit amet consectetur. Non nisi est sit amet facilisis. Malesuada fames ac turpis egestas maecenas
+                    pharetra convallis posuere. Purus in mollis nunc sed id semper risus in hendrerit. Mi proin sed
+                    libero enim sed faucibus turpis in. Donec enim diam vulputate ut pharetra sit amet aliquam id.
+                    Porttitor massa id neque aliquam.
+                </p>
+            </section>
+
         </main>
-        <aside>sidebar <img src="http://placekitten.com/200/500" alt=""></aside>
-        <footer>footer</footer>
+        <aside>
+            <div class="flex-container">
+                <div class="card">
+                    <figure>
+                        <div class="img-holder">
+                            <img src="./img/bread-2.jpeg" alt="">
+                        </div>
+                        <figcaption>
+                            Keep bread fresh for longer
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <div class="img-holder">
+                            <img src="./img/apple.jpeg" alt="">
+                        </div>
+                        <figcaption>
+                                Creative Dishes with Appls
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <div class="img-holder">
+                            <img src="./img/avocado.jpeg" alt="">
+                        </div>
+                        <figcaption>
+                                Aocado is more than just healthy
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="card">
+                        <figure>
+                            <div class="img-holder">
+                                <img src="./img/chocolate.jpeg" alt="">
+                            </div>
+                            <figcaption>
+                                    Chocolate! The darker, the better
+                            </figcaption>
+                        </figure>
+                    </div>
+            </div>
+        </aside>
+
+        <footer>
+            <div class="flex-container">
+                footer
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>

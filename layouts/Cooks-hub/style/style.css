@@ -7,7 +7,6 @@
 	--bg-d:#F2EEED; 
 	--pink-l:#ECD9D5;
 	--pink-d: #E89F8E;  
-
     --text: #484848; 
 }
 /* RESETTING */
@@ -26,15 +25,17 @@ html{
 
 body{
 	font-family: 'EB Garamond', serif;
-	background: var(--bg); 
-	font-size: 3rem;
+	background: var(--bg-d); 
+	font-size: 2rem;
 }
 
 /* TYPOGRAPHY  */
-h1{font-size: 2.5rem;}
-h3{font-size: 3.5rem;}
-h4{font-size: 3rem;}
-p{font-size: 2.5;}
+h1{font-size: 3.5rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2.5rem;}
+h5{font-size: 2rem;}
+h6{font-size: 1.5rem;}
+p{font-size: 2rem;}
 li{font-size: 2rem;}
 
 
