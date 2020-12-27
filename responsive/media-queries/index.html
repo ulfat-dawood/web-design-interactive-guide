@@ -18,7 +18,12 @@
     <div class="container">
         <h1 class="title">Media Quesris</h1>
         <section>
-            <p>The CSS <code class="highlight">@meida</code> rule allows to specify the media type and the condition of this media type.</p>
+            <ul>
+                The CSS <code class="highlight">@meida</code> rule defines media queries, which:
+                <li>Targets different media types and their condition to define different styles 
+                     as the media on which webpage is display changes. </li>
+            </ul>
+            <br>
             <ul>Media type:
                 <li>Computer Screens.</li>
                 <li>Printers.</li>
@@ -30,7 +35,34 @@
             </ul>
         </section>
         <section>
-            Media quesris help define different styles as the media on which webpage is display changes. 
+            <h2>@media Syntax</h2>
+            <br>
+            <ul>
+                <li><code>@media not|only <span class="highlight">media-type</span> and (<span class="highlight">media-condition</span>) { <br>
+                <h6>/* Define styles for differnt selectors here */</h6>  }</code></li>
+                <br>
+                <ul>
+                    where:
+                    <li><code class="highlight">media-type</code>: screen | print | speech | all(default)</li>
+                    <li><code class="highlight">media-condition</code>: width, height, orientation or resolution</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <h2>Examples</h2>
+            <ul>
+                <li><code>@media only screen and (max-width:768px){…}</code></li>
+                <ul><li>Targets screens, where width is less than 768px.</li></ul>
+                <br>
+                <li><code>@media (min-width: 500px){…} </code></li>
+                <ul><li>Targets all media types, where width is larger than 500px.</li></ul>
+                <br>
+                <li><code>@media only screen and (orientation: portrait) and (max-width: 500px){…}</code></li>
+                <ul><li>Targets screens, where orientation is portrait and width is less than 500px. </li></ul>
+                <br>
+                <li><code>@media (min-width: 300px) and (max-width: 500px){…}</code></li>
+                <ul><li>Targets all media types, where width is between 300px & 500px.</li></ul>
+            </ul>
         </section>
     </div>
 
