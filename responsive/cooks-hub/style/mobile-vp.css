@@ -20,6 +20,10 @@ h1{font-size: 2rem !important;}
 header .flex-container{
     font-weight: 500;
 }
+/* ====================NAVIGATION====================  */
+nav div{
+    width: 100%;
+}
 /* ====================MAIN====================  */
 main{margin-right:3rem; }
 /* SECTION-2 */
