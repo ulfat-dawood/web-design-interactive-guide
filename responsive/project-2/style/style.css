@@ -1,0 +1,41 @@
+@import "./index.css" ;
+
+/* COLORS */
+:root{
+	--bg-l: #F5F5F5; 
+    --bg-d: #dbdbdb; 
+    --text: #505050; 
+}
+/* RESETTING */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      /* remove bullet point from lists */
+	text-decoration:none; /* remove underline from <a> */
+	color: var(--text); 
+}
+
+html{
+	font-size:62.5%  /* 1rem  = 10px */
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background: var(--bg-l); 
+	font-size: 3rem;
+}
+
+/* TYPOGRAPHY  */
+h1{font-size: 2.5rem;}
+h3{font-size: 3.5rem;}
+h4{font-size: 3rem;}
+p{font-size: 2.5;}
+li{font-size: 2rem;}
+
+
+
+
+
+
+
