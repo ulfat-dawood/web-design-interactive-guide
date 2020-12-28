@@ -16,52 +16,51 @@
 
 <body>
     <div class="container">
-        <h1 class="title">Desktop First Design</h1>
+        <h1 class="title">Mobile First Design</h1>
         <section>
-            <p>In desktop-first desing:</p>
+            <p>In mobile-first desing:</p>
             <ol>
-                <li>Layout for large screens is designed first.</li>
-                <li>Media query breakpoints for smaller screens are defined later.</li>
-                <li>The goal is to scale down the layout and UI elements.</li>
+                <li>Layout for small screens is designed first.</li>
+                <li>Media query breakpoints for larger screens are defined later.</li>
+                <li>The goal is to scale up the layout and UI elements.</li>
             </ol>
             <ul>
-                <li>This design approach is followed when the website traffic is mostly coming from desktop computers.</li>
-                <li>Example: </li>
+                <li>This design approach is followed when the website traffic is mostly coming from mobile devices.</li>
+                <li>Example: Amazon.</li>
             </ul>
         </section>
-        <h1 class="title">Scale down the UI</h1>
+        <h1 class="title">Scaling up the UI</h1>
         <section>
             <h2>Large-scale Layout (grid-based)</h2>
             <ul>
-                <li>Reduce the number of grid columns.</li>
-                <li>Allow all the grid-areas or grid-items to fit into two or one column.</li>
+                <li>Increase the number of grid columns.</li>
+                <li>Distribuite the grid-areas or grid-items to fill multiple columns.</li>
             </ul>
         </section>
         <section>
             <h2>Small-scale Layout(flex-based)</h2>
             <ul>
-                <li>Wrap flex-items to span multiple lines.</li>
-                <li>Change the direction of flex-container to row columns.</li>
-                <li>change the <code class="highlight">overflow</code> of the container 
-                    to <code class="highlight">scroll</code></li>
-                <li>change the order of flex items as needed</li>
+                <li>Change the direction of flex-container to row or column.</li>
+                <li>Change the order of flex items as needed.</li>
             </ul>
         </section>
         <section>
-            <h2>navigation Menus</h2>
+            <h2>Margins</h2>
             <ul>
-                <li>It is recommended to always keep all UI elements visible and in display</li>
-                <li>But when navigation menus are too large to fit into mobile screens,
-                        hamburger menus can be applied as an alternative solution. 
-                </li>
+                <li>Be generous with margins.</li>
+                <li>When possible, ncreas the gutter (margin between elements) and the margin around the webpage edges.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Navigation Menus</h2>
+            <ul>
+                <li>Expand the navigation menus to be visible at all times.</li>
             </ul>
         </section>
         <section>
             <h2>Illustrations</h2>
             <ul>
-                <li>Icons are informative and used to convey some visual meaning.</li>
-                <li>Unlike icons, some illustrations on desktop view are there for decorative purposes to fillin white space.</li>
-                <li>To make the mobile view less crowded, these illustrations can be illiminated.</li>
+                <li>Since more space is available, whitespace can be filled with illustrations.</li>
             </ul>
         </section>
     </div>

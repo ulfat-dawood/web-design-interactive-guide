@@ -1,0 +1,33 @@
+@media (max-width: 768px){
+
+/* ====================GRID CONTAINER====================  */
+    .grid-container{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 10vh auto auto 10vh;
+        grid-template-areas:
+        "header  header"
+        "nav     nav"
+        "main aside"
+        "footer      footer";
+    }
+/* ====================NAVIGATION====================  */
+    nav .flex-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:80%;
+    }
+/* ====================MAIN====================  */
+main{margin-left:3rem; }
+
+/* SECTION-1  */
+main #section-1.flex-container{
+    flex-direction: column;
+    align-items: flex-start;
+}
+main #section-1 figure{
+    order:-1;
+    padding-bottom: 3rem;
+}
+}
+
+

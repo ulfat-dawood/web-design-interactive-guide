@@ -1,0 +1,143 @@
+/* ====================GRID CONTAINER====================  */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10vh auto 10vh;
+    place-items:stretch stretch;
+    grid-template-areas:
+      "header header  header"
+      "nav    main aside"
+      "footer footer  footer"; 
+    gap: 10vh 50px;
+}
+
+/* GRID AREAS  */
+header{grid-area: header;}
+nav{grid-area: nav;}
+main{grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area: footer;}
+
+/* ====================FLEX CONTAINER====================  */
+.flex-container{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: space-between;
+}
+/* ====================HEADER====================  */
+header .flex-container{
+    height: 100%;
+    background: var(--pink-l);
+    padding: 1rem 5%;
+}
+header h1{flex:1; font-weight: 800;}
+
+header .flex-container div{
+ background: var(--pink-d);
+ padding : .5em; 
+ margin-left:1rem; 
+ border-radius: 5px;
+}
+
+/* ====================NAVIGATION====================  */
+nav .flex-container{
+    height: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--bg-d);
+    position: sticky;
+    top:0; 
+
+}
+nav div{
+    background: var(--pink-l);
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem auto; 
+    text-align: center;
+}
+/* ====================MAIN====================  */
+/* SECTION-1  */
+main #section-1.flex-container{
+    align-items: flex-start;
+}
+main #section-1 div{
+    flex:1; 
+    padding-right: 50px;
+}
+main #section-1 figure{
+    flex: 1; 
+    height: 300px;
+}
+main #section-1 img{
+    width:100%; height:100%;
+    object-fit: cover;
+}
+
+/* SECTION-2 */
+main #section-2.flex-container{
+    margin: 7rem auto;
+}
+main #section-2 .card{
+    height: 300px;
+    flex:1; 
+    margin: 1rem;
+    background: var(--bg-l);
+    text-align: center;
+}
+main #section-2 figure{
+    width : 88%; 
+    height: 70%;
+    margin: 1.5rem auto; 
+}
+main #section-2 img{
+    width:100%; height:100%;
+    object-fit: cover;
+}
+/* SECTION-3 */
+main #section-3 h3{
+    padding: 1rem;
+    border-radius: 5px;
+    background : var(--pink-d);
+    margin: 3rem auto; 
+}
+
+/* ====================SIDEBAR====================  */
+aside .flex-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    background: var(--bg-l);
+}
+aside .card{ 
+    text-align: center;
+    width: 130px;
+    margin: 1rem 1rem 5rem 1rem;
+}
+aside .img-holder{
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+aside img{
+    width:100%; height:100%;
+    object-fit: cover;
+}
+
+
+
+/* ====================FOOTER====================  */
+footer.flex-container{
+    background:  var(--pink-l);
+    justify-content: center;
+
+}
+body > div > footer > i.fab{
+    font-size: 4rem;
+}
+footer > *::before{
+    color: var(--pink-d); 
+    margin: auto 2rem; 
+
+}
