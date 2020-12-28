@@ -25,20 +25,33 @@
             <br>
             <li>For this project, GRID is used to build the larger layout. 
                 <br> FLEX is used build the layout of smaller components.</li>
-            <br>
-            <li>GRID and FLEX allow to build web pages that are adaptive with different screen size (desktop / small screens / mobile). </li>
            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>This project follows the desktop first design approach</li>
+                <li>The base layout is designed for larger screens (3 columns layout).</li>
+                <li>Media query breakpoint for tablet devices define the (2 columns layout).</li>
+                <li>Media query breakpoint for mobile devices define the (1 column layout).</li>
+            </ul>
         </section>
         <h1 class="title">3 columns layout</h1>
         <section>
-            <ul>
-                <li>For large desktop screens, 3 columns layout is suitable.</li>
-                <li>As screen size reduces, so will the numbers of columns.</li>
-                <li>This lesson covers 3 columns layout, <br> 2 and 1 column layout in the next module. </li>
-            </ul>
+            <h2>grid-container</h2>
+            <img src="./SVG/3-colum-1.svg" style="display: block; width:50%; margin: auto;">
         </section>
         <section>
+            <h2>grid-areas</h2>
+            <img src="./SVG/3-column-2.svg" style="display: block; width:50%; margin: auto;">
+        </section>
+        <section>
+            <h2>flex-containers</h2>
+            <img src="./SVG/3-column-3.svg" style="display: block; width:50%; margin: auto;">
+        </section>
+        <h1 class="title">2 columns layout</h1>
+        <section>
             <h2>grid-container</h2>
+            <p>Define media queries for tablet screens:</p>
             <ul>
                 <li>First step is setting up the large-scale layout by <br>
                     defining the <code>grid-container</code>.</li>
@@ -48,7 +61,7 @@
                 <br>
                 <li>Use the graph below to guide you set the number of columns/rows and their size.</li>
             </ul>
-            <img src="./SVG/3-colum-1.svg">
+            <img src="./SVG/2-column-1.svg" style="display: block; width:70%; margin: auto;">
         </section>
         <section>
             <ul>
@@ -58,18 +71,40 @@
                 <li>Use the graph below to guide you set different areas.</li>
 
             </ul>
-            <img src="./SVG/3-column-2.svg" >
+            <img src="./SVG/2-column-2.svg" style="display: block; width:70%; margin: auto;">
         </section>
         <section>
-            <h2>flex-container</h2>
+            <h2>flex-containers</h2>
             <ul>
                 <li>Each <code>grid-item</code> has a <code>flex-container</code>  </li>
                 <li>Flex defines the structure of smaller scale UI components.</li>
                 <br>
                 <li>Use the graph below to guide you set the layout of each section on the page.</li>
             </ul>
-            <img src="./SVG/3-column-3.svg" >
+            <img src="./SVG/2-column-3.svg"  style="display: block; width:70%; margin: auto;">
         </section>
+        <h1 class="title">1 column layout</h1>
+        <section>
+            <h2>grid-container</h2>
+            <img src="./SVG/1-column-1.svg" style="display: block; width:50%; margin: auto;" >
+        </section>
+        <section>
+            <h2>grid-areas</h2>
+            <img src="./SVG/1-column-2.svg" style="display: block; width:50%; margin: auto;" >
+        </section>
+        <section>
+            <h2>flex-containers</h2>
+            <img src="./SVG/1-column-3.svg" style="display: block; width:50%; margin: auto; justify-content: space-around;" >
+        </section>
+    </div>
+    <br><br>
+    <h1 class="title">Wrap up</h1>
+    <br>
+    <div style="display:grid; grid-template-columns: auto auto auto; align-items: start;">
+        <img src="./SVG/3-column-3.svg" style="display: block; width:70%; margin: 0 auto;" >
+        <img src="./SVG/2-column-3.svg" style="display: block; width:70%; margin: 0 auto;" >
+        <img src="./SVG/1-column-3.svg" style="display: block; width:70%; margin: 0 auto;" >
+
     </div>
 
 
