@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:wght@400;500;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Desktop First Design</h1>
+        <section>
+            <p>In desktop-first desing:</p>
+            <ol>
+                <li>Layout for large screens is designed first.</li>
+                <li>Media query breakpoints for smaller screens are defined later.</li>
+                <li>The goal is to scale down the layout and UI elements.</li>
+            </ol>
+            <ul>
+                <li>This design approach is followed when the website traffic is mostly coming from desktop computers.</li>
+                <li>Example: </li>
+            </ul>
+        </section>
+        <h1 class="title">Scale down the UI</h1>
+        <section>
+            <h2>Large-scale Layout (grid-based)</h2>
+            <ul>
+                <li>Reduce the number of grid columns.</li>
+                <li>Allow all the grid-areas or grid-items to fit into two or one column.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Small-scale Layout(flex-based)</h2>
+            <ul>
+                <li>Wrap flex-items to span multiple lines.</li>
+                <li>Change the direction of flex-container to row columns.</li>
+                <li>change the <code class="highlight">overflow</code> of the container 
+                    to <code class="highlight">scroll</code></li>
+                <li>change the order of flex items as needed</li>
+            </ul>
+        </section>
+        <section>
+            <h2>navigation Menus</h2>
+            <ul>
+                <li>It is recommended to always keep all UI elements visible and in display</li>
+                <li>But when navigation menus are too large to fit into mobile screens</li>
+            </ul>
+        </section>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

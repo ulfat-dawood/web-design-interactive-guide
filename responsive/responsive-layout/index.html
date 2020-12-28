@@ -42,32 +42,43 @@
                 <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
             </ul>
         </section>
-            <h1 class="title">responsive UI</h1>
+            <h1 class="title">responsive UI elements </h1>
+  
         <section>
-            <h2>Large-scale Layout (drid-based)</h2>
-        </section>
-        <section>
-            <h2>Small-scale Layout(flex-based)</h2>
+            <h2>Width and Margin</h2>
             <ul>
-                <li>Wrap flex-items to span multiple lines.</li>
-                <li>change the direction of flex-container to row/columns.</li>
-                <li>change the <code class="highlight">overflow</code> of the container 
-                    to <code class="highlight">scroll</code></li>
-                <li>change the order of flex items as needed</li>
+                <li>Use percentage as the unit when assigning width.</li>
+                <ul>
+                    <li>Give the element <code>100%</code> width and percentage based margin.</li>
+                    <li>Give the element a percentage based width and <code>auto</code> margin.</li>
+
+                </ul>
             </ul>
+                
         </section>
         <section>
-            <h2>Width</h2>
-            <h2>height</h2>
-            <h2>margins</h2>
+                <h2>Height</h2>
+                <ul>
+                    <li>Using percentage based height is tricky, and would most probably not work.</li>
+                    <li>Percentage based width is set relative to the browser window size.</li>
+                    <li>Percentage based height on the other hand is not set relative to anything, unless explicitly defined.</li>
+                    <br>
+                    <li>To make hieght responsive, set it relative to the viewport height using the <code class="highlight">vh</code> unit.</li>
+                </ul>
         </section>
         <section>
             <h2>Images</h2>
-            objct-fit
+                <ul>
+                    <li>Assign images <code class="highlight">max-width: 100%;</code> to avoid pixelation when the image width grows.</li>
+                    <li>Wrap images within a responsive container.</li>
+                    <li>set the images size and position using</li>
+                    <ul>
+                        <li><code class="highlight">object-fit</code></li>
+                        <li><code class="highlight">object-position</code></li>
+                    </ul>
+                </ul>
         </section>
-        <section>
-            <h2>navigation Menus</h2>
-        </section>
+
     </div>
 
 
