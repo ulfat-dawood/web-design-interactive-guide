@@ -2,8 +2,8 @@
 
 /* COLORS */
 :root{
-    --bg: #F5F5F5; 
-    --box: #dbdbdb; 
+	--bg-l: #F5F5F5; 
+    --bg-d: #dbdbdb; 
     --text: #505050; 
 }
 /* RESETTING */
@@ -22,14 +22,8 @@ html{
 
 body{
 	font-family: 'Lato', sans-serif;
-	background: var(--bg); 
+	background: var(--bg-l); 
 	font-size: 3rem;
-
-	/* CENTER */
-	/* display:flex; 
-	height: 100vh;
-	align-items: center;
-	justify-content: center; */
 }
 
 /* TYPOGRAPHY  */
@@ -38,6 +32,10 @@ h3{font-size: 3.5rem;}
 h4{font-size: 3rem;}
 p{font-size: 2.5;}
 li{font-size: 2rem;}
+
+
+
+
 
 
 

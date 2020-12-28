@@ -1,2 +1,42 @@
+.container{
+	width:85%;
+	margin: auto;
+	text-align: center;
+}
+
+header{
+    background: var(--bg-d);
+    padding: 4rem 0; 
+}
+
+section{
+    display: flex;
+}
+section#top{
+    height: 500px;
+}
+section#bottom{
+    height: 300px;
+}
+.flex-item{
+    background: var(--bg-d);
+    border-radius: 5px;
+    margin: 4rem 1rem;
+}
+.col-20{
+    flex: 20%; 
+}
+.col-fluid{
+    flex-grow: 1;
+}
+
+@media only screen and (max-width:700px){
+    section{
+        flex-direction: column;
+    }
+    .flex-item{
+        flex-grow: 1;
+    }
+}
 
 
