@@ -24,7 +24,7 @@ section#bottom{
     margin: 4rem 1rem;
 }
 .col-20{
-    flex: 20%; 
+    flex-basis: 20%; 
 }
 .col-fluid{
     flex-grow: 1;
