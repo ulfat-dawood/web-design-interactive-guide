@@ -8,7 +8,7 @@
     display: flex;
 }
 .flex-item{
-    margin: 2rem 1rem;
+    margin: 4rem 1rem;
 }
 .col-20{
     flex-basis: 20%; 
@@ -18,20 +18,24 @@
 }
 
 /* =====================HEADER===================== */
+.hide{
+    width:100%;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    padding: .5rem 0;
+    text-align: center;
+}
 header{
     text-align: center;
     background: var(--bg-l);
-    box-shadow: 0 1px 5px 5px var(--shadow);
+    box-shadow: 0 5px 5px 0 var(--shadow);
     margin-bottom: 5rem;
+    position:sticky;
+    top:0; 
 }
-header .hide{
-    width:100%;
-    background: var(--cyan); 
-    padding: .5rem 0;
-}
+
 header h1{
     color:var(--cyan); 
-    padding: 1rem 0; 
+    padding: 1rem ; 
     font-weight: 100;
 }
 /* =====================ITEM-1===================== */
@@ -40,7 +44,7 @@ header h1{
     background: var(--bg-l);
     box-shadow: 0 0px 10px 5px var(--shadow);
     margin: 3rem auto;
-    padding: 3rem; 
+    padding: 1.5rem; 
     border-radius: 10px;
 }
 #item-1 img{
@@ -49,8 +53,61 @@ header h1{
 #item-1 h4{
     padding-top: 1rem; 
 }
+/* =====================ITEM-2===================== */
+#item-2{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#item-2 img{
+    display:block;
+    width: 80%; 
+}
+#item-2 button{
+    display: block;
+    border:none;
+    padding: 1em 3em;
+	font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 1px #dbdbdb;
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+}
+/* =====================ITEM-3===================== */
+#item-3 div, #item-5 div{
+    width: 100%;
+    background: var(--bg-l);
+    padding: 1rem 3rem;
+    margin: 2rem; 
+    border-right: 4px solid var(--cyan);
+    text-align: right;
 
-
+}
+/* =====================ITEM-4===================== */
+#item-4 div{
+    background: var(--bg-l);
+    box-shadow: 0 0px 10px 5px var(--shadow);
+    padding: 1.5rem; 
+    border-radius: 10px;
+    text-align: left;
+}
+#item-4 h2{
+    color:var(--cyan); 
+    padding: 1rem ; 
+    font-weight: 100;
+}
+#item-4 p{
+    font-weight: 200;
+    font-family: serif;
+}
+/* =====================ITEM-5===================== */
+#item-5 div{
+    display: flex;
+    justify-content: flex-end;
+}
+#item-5 img{
+    height:3rem;
+    margin-left:1rem;
+}
 
 
 
