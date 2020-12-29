@@ -1,0 +1,39 @@
+/* COLORS */
+:root{
+	--bg-l: #FDFDFD; 
+    --bg-d: #F5F5F5; 
+    --shadow: #EFEFEF;
+	--cyan: #74ebd5;
+	--purple: #ACB6E5;
+    --text: #505050; 
+}
+/* RESETTING */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	list-style: none;      /* remove bullet point from lists */
+	text-decoration:none; /* remove underline from <a> */
+    color: var(--text); 
+    font-weight: normal;
+}
+
+html{
+	font-size:62.5%  /* 1rem  = 10px */
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background: var(--bg-d); 
+	font-size: 3rem;
+}
+
+/* TYPOGRAPHY  */
+h1{font-size: 6rem;}
+h2{font-size: 3rem;}
+h2{font-size: 2.5rem;}
+h4{font-size: 2rem;}
+h5{font-size: 1.5rem;}
+h6{font-size: 1rem;}
+p{font-size: 2rem;}
+li{font-size: 2rem;}

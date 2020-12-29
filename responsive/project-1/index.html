@@ -6,35 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
     <title>Desktop-first design</title>
 </head>
 
 <body>
     <header>
+        <div class="hide">
+            <p>IT Solutuins and Conculting</p>
+        </div>
         <div class="container">
-            <h1>This is a desktop first design approach</h1>
+            <h1>Cubic A</h1>
         </div>
     </header>
     <main>
         <div class="container">
-            <section id="top">
-                <div class="flex-item col-20">
-                    This flex-item fills 20% of the parent's width
+            <section class="flex-container">
+                <!-- FLEX-ITEM-1  -->
+                <div id="item-1" class="flex-item col-20">
+                    <div class="card">
+                        <img src="./img/cyber.svg">
+                        <h4>Cyber Security Solutions</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./img/ERP.svg">
+                        <h4>Cyber ERP Solutions</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./img/cctv.svg">
+                        <h4>Cyber CCTV Solutions</h4>
+                    </div>
                 </div>
-                <div class="flex-item col-fluid">
+                <!-- FLEX-ITEM-2  -->
+                <div id="item-2" class="flex-item col-fluid">
                     This flex-item fills any available speace.
                 </div>
-                <div class="flex-item col-20">
-                        This flex-item fills 20% of the parent's width
+                <!-- FLEX-ITEM-3  -->
+                <div id="item-3" class="flex-item col-20">
+                    This flex-item fills 20% of the parent's width
                 </div>
             </section>
-            <section id="bottom">
-                    <div class="flex-item col-fluid">
-                            This flex-item fills any available speace.
-                        </div>
-                        <div class="flex-item col-20">
-                                This flex-item fills 20% of the parent's width
-                        </div>
+            <section class="flex-container">
+                <!-- FLEX-ITE4  -->
+                <div id="item-4" class="flex-item col-fluid">
+                    This flex-item fills any available speace.
+                </div>
+               <!-- FLEX-ITEM-5  -->
+                <div id="item-5" class="flex-item col-20">
+                    This flex-item fills 20% of the parent's width
+                </div>
             </section>
         </div>
     </main>

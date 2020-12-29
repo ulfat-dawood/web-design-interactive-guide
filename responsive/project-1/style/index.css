@@ -3,25 +3,12 @@
 	margin: auto;
 	text-align: center;
 }
-
-header{
-    background: var(--bg-d);
-    padding: 4rem 0; 
-}
-
-section{
+/* =====================FLEX===================== */
+.flex-container{
     display: flex;
 }
-section#top{
-    height: 500px;
-}
-section#bottom{
-    height: 300px;
-}
 .flex-item{
-    background: var(--bg-d);
-    border-radius: 5px;
-    margin: 4rem 1rem;
+    margin: 2rem 1rem;
 }
 .col-20{
     flex-basis: 20%; 
@@ -29,6 +16,45 @@ section#bottom{
 .col-fluid{
     flex-grow: 1;
 }
+
+/* =====================HEADER===================== */
+header{
+    text-align: center;
+    background: var(--bg-l);
+    box-shadow: 0 1px 5px 5px var(--shadow);
+    margin-bottom: 5rem;
+}
+header .hide{
+    width:100%;
+    background: var(--cyan); 
+    padding: .5rem 0;
+}
+header h1{
+    color:var(--cyan); 
+    padding: 1rem 0; 
+    font-weight: 100;
+}
+/* =====================ITEM-1===================== */
+#item-1 .card{
+    width: 150px;
+    background: var(--bg-l);
+    box-shadow: 0 0px 10px 5px var(--shadow);
+    margin: 3rem auto;
+    padding: 3rem; 
+    border-radius: 10px;
+}
+#item-1 img{
+    width: 100px;
+}
+#item-1 h4{
+    padding-top: 1rem; 
+}
+
+
+
+
+
+
 
 @media only screen and (max-width:700px){
     section{
