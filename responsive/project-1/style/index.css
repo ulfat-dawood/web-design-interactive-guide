@@ -79,7 +79,7 @@ header h1{
     width: 100%;
     background: var(--bg-l);
     padding: 1rem 0;
-    margin-bottom: 1rem ; 
+    margin-bottom: .25rem ; 
     border-right: 4px solid var(--cyan);
     text-align: right;
 
