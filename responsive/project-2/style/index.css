@@ -1,26 +1,41 @@
 .container{
 	width:90%;
 	margin: auto;
-    
+}
+.flex-container{
     display: flex;
     flex-direction: column;
 }
-
+/* ==================HEADER================== */
 header{
-    background: var(--bg-d);
-    padding: 4rem 0; 
+    background: var(--purple-d);
     margin-bottom:4rem ;
+    color:#fff; 
 }
-
-main, aside{
-    display: flex;
-    flex-direction: column;
+/* ==================MAIN================== */
+main > div{
+    margin:1rem; 
 }
-
-.flex-item{
-    background: var(--bg-d);
+/* ==================TOP================== */
+#top{
+    display:flex;
+    background: #fff; 
     border-radius: 5px;
-    margin: 1rem 1rem;
+    padding: 2rem;
+    position: relative;
+    min-height: fit-content;
+    margin-top:5rem; 
+}
+#top h1{
+    flex-basis: 50%;
+}
+#top img{
+    display: block;
+    height: 140%;
+    max-width: 50%;
+    position: absolute;
+    bottom: -1px;
+    right:5% 
 }
 
 @media only screen and (min-width:600px){
@@ -29,10 +44,9 @@ main, aside{
     }
     aside{
         flex-basis: 20%;
+        flex-shrink: 0;
     }
     main{
         flex-grow:1;
     }
 }
-
-
