@@ -1,5 +1,6 @@
 @import "./template.css" ; /*place template first to override it*/
 @import "./index.css" ;
+@import "./media-queries.css"
 
 
 

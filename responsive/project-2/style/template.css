@@ -2,7 +2,7 @@
 :root{
 	--purple-l: #F2F1FF; 
     --purple-d: #615CF7; 
-    --shadow: #EFEFEF;
+    --shadow: hsl(244, 100%, 95%);
 	--cyan: #00CEC1;
 	--orange: #F08549;
     --text: #505050; 
@@ -37,4 +37,4 @@ h4{font-size: 1.5rem;}
 h5{font-size: 1rem;}
 h6{font-size: .5rem;}
 p{font-size: 2rem;}
-li{font-size: 2rem;}
+li{font-size: 1.5rem;}

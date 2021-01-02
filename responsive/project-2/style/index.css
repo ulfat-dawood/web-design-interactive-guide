@@ -9,12 +9,23 @@
 /* ==================HEADER================== */
 header{
     background: var(--purple-d);
-    margin-bottom:4rem ;
+    padding: 1.5rem 0; 
+    margin-bottom:4rem;
     color:#fff; 
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
 }
 /* ==================MAIN================== */
 main > div{
-    margin:1rem; 
+    margin:10rem auto; 
 }
 /* ==================TOP================== */
 #top{
@@ -24,29 +35,103 @@ main > div{
     padding: 2rem;
     position: relative;
     min-height: fit-content;
-    margin-top:5rem; 
+    width: 50%; 
+    min-width: fit-content;
+    margin: 5rem auto; 
+    /* margin-top:5rem;  */
 }
 #top h1{
     flex-basis: 50%;
 }
 #top img{
     display: block;
-    height: 140%;
+    height: 150%;
     max-width: 50%;
     position: absolute;
     bottom: -1px;
     right:5% 
 }
+/* ==================CARDS================== */
+#cards .card{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 2rem;
+    margin: 1rem auto; 
+    width: 100%;
+    color:white;
+    border-radius: 5px;
+    /* Hoisting card-bg var  */
+    background: var(--card-bg) url(../img/bg-texture.png) repeat;
+    text-align: center;
+}
+#cards .card:nth-child(1){
+    --card-bg:var(--orange);
+}
+#cards .card:nth-child(2){
+    --card-bg:var(--purple-d);
+}
+#cards .card:nth-child(3){
+    --card-bg:var(--cyan);
+}
+#cards img{
+    width:100px;
+    margin-right:2rem; 
+}
+#cards h3{
+    margin:1rem; 
+}
+/* ==================PARAGRAGRAPHS================== */
+#para div{
+    margin:3rem auto; 
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 0 var(--shadow);
+    /* background: #fff; */
+}
+#para h1{ 
+    text-align: center; 
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 
-@media only screen and (min-width:600px){
-    .container{
-        flex-direction: row;
-    }
-    aside{
-        flex-basis: 20%;
-        flex-shrink: 0;
-    }
-    main{
-        flex-grow:1;
-    }
+}
+#para h2{position: relative; 
+    width: fit-content; 
+    font-weight: 800;}
+#para h2::after{
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left:0; 
+    height: 30%; width: 98%; 
+    background: var(--purple-d); 
+    opacity: .2; 
+    z-index: -1;
+}
+/* ==================ASIDE================== */
+aside div{
+    min-width: 300px; 
+    width:50%;
+    margin: 0 auto 4rem auto; 
+    text-align: center;
+    border: 3px solid var(--shadow); 
+    border-radius: 10px;
+    
+}
+aside h3{
+    padding: 1rem;
+    background: var(--shadow); 
+    border-radius: 7px 7px 0 0; 
+}
+aside li{
+    padding: 1rem 0; 
+    border-bottom: 3px solid var(--shadow);
+    cursor: pointer;
+}
+aside li:last-child{
+    border-radius:  0 0 7px 7px;
+    border: none;
+}
+aside li:hover{
+    background: #fff;
 }
