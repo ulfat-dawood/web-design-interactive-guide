@@ -19,57 +19,40 @@
         <h1 class="title">Project Setup</h1>
         <section>
            <ul>
-            <li>Before starting to code any web app, it's a good practice to design/sketch the
-                layout first.
+            <li>Before starting to code any webpage, it's a good practice to sketch the
+                layout on paper first.
             </li>
             <br>
-            <li>For this project, GRID is used to build the larger layout. 
-                <br> FLEX is used build the layout of smaller components.</li>
+            <li>For this project, FLEX is used to build enire layout.</li>
             <br>
-            <li>GRID and FLEX allow to build web pages that are adaptive with different screen size (desktop / small screens / mobile). </li>
+            <li>FLEX allows to build web pages that are responsive to large and small screen sizes. </li>
            </ul>
         </section>
-        <h1 class="title">3 columns layout</h1>
+        <h1 class="title">desktop-first design</h1>
         <section>
             <ul>
-                <li>For large desktop screens, 3 columns layout is suitable.</li>
-                <li>As screen size reduces, so will the numbers of columns.</li>
-                <li>This lesson covers 3 columns layout, <br> 2 and 1 column layout in the next module. </li>
+                <li>This project targets large screens for the initial design. <br>
+                Later, media queries are added to adjust the design for smaller screens.</li>
             </ul>
         </section>
         <section>
-            <h2>grid-container</h2>
-            <ul>
-                <li>First step is setting up the large-scale layout by <br>
-                    defining the <code>grid-container</code>.</li>
-                <li>define the <code>grid-container</code> properties:
-                <br><code class="highlight">grid-template-columns</code><br>
-                <code class="highlight">grid-template-rows</code></li>
-                <br>
-                <li>Use the graph below to guide you set the number of columns/rows and their size.</li>
-            </ul>
-            <img src="./SVG/3-colum-1.svg">
+            <h2>Large screens layout</h2>
+            <img src="./SVG/large-screen.svg" style="display: block; margin: auto;">
         </section>
-        <section>
-            <ul>
-                <li>Second step is defining the grid areas by setting up the property: <br>
-                <code class="highlight">grid-template-areas</code></li>
-                <br>
-                <li>Use the graph below to guide you set different areas.</li>
 
-            </ul>
-            <img src="./SVG/3-column-2.svg" >
-        </section>
         <section>
-            <h2>flex-container</h2>
-            <ul>
-                <li>Each <code>grid-item</code> has a <code>flex-container</code>  </li>
-                <li>Flex defines the structure of smaller scale UI components.</li>
-                <br>
-                <li>Use the graph below to guide you set the layout of each section on the page.</li>
-            </ul>
-            <img src="./SVG/3-column-3.svg" >
-        </section>
+                <h2>Smaller screens layout</h2>
+                <p>Media queries written to make the layout fit smaller screens</p>
+                <img src="./SVG/small-screen.svg" style="display: block; margin: auto; width:60%;">
+            </section>
+    
+
+
+
+
+
+
+   
     </div>
 
 
