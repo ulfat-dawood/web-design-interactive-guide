@@ -9,7 +9,7 @@
 /* ==================HEADER================== */
 header{
     background: var(--purple-d);
-    padding: 1.5rem 0; 
+    padding: 2rem 0; 
     margin-bottom:4rem;
     color:#fff; 
 }
@@ -21,7 +21,8 @@ header .container{
 header h1{
     text-transform: uppercase;
     font-weight: 200;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    text-align: right;
 }
 /* ==================MAIN================== */
 main > div{
@@ -91,9 +92,8 @@ main > div{
 }
 #para h1{ 
     text-align: center; 
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
 }
 #para h2{position: relative; 
     width: fit-content; 
