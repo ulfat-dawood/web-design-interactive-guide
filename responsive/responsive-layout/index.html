@@ -47,7 +47,7 @@
         <section>
             <h2>Width and Margin</h2>
             <ul>
-                <li>Use percentage as the unit when assigning width.</li>
+                <li>Fluid, percentage-based width.</li>
                 <ul>
                     <li>Give the element <code>100%</code> width and percentage based margin.</li>
                     <li>Give the element a percentage based width and <code>auto</code> margin.</li>
@@ -63,19 +63,34 @@
                     <li>Percentage based width is set relative to the browser window size.</li>
                     <li>Percentage based height on the other hand is not set relative to anything, unless explicitly defined.</li>
                     <br>
-                    <li>To make hieght responsive, set it relative to the viewport height using the <code class="highlight">vh</code> unit.</li>
+                    <li>To make the hieght responsive, set it relative to the viewport height using the <code class="highlight">vh</code> unit.</li>
                 </ul>
         </section>
         <section>
             <h2>Images</h2>
                 <ul>
-                    <li>Assign images <code class="highlight">max-width: 100%;</code> to avoid pixelation when the image width grows.</li>
-                    <li>Wrap images within a responsive container.</li>
+
+
+                   <li>Setting fluid width, with adjutable height:</li>
+                   <ul>
+                        <li><code class="highlight">width: 100%</code></li>
+                        <li><code class="highlight">height: auto;</code></li>
+                    </ul>
+                   <br>
+                   <li>To avoid pixilation when fluid image width grows beyond the actual size of the image, set:</li>
+                   <ul><li><code class="highlight">max-width: 100%;</code></li></ul>
+                   <br>
+
+                   <li>Setting width with fixed height while avoiding image distortion: </li>
+                   <ol>
+                        <li>Wrap images within a responsive container.</li>
                     <li>set the images size and position using</li>
-                    <ul>
+                    <ol>
                         <li><code class="highlight">object-fit</code></li>
                         <li><code class="highlight">object-position</code></li>
                     </ul>
+                   </ul>
+
                 </ul>
         </section>
 
