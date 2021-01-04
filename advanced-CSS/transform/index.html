@@ -27,7 +27,7 @@
             <ul>
                 <li><code class="highlight">transform: translateX(n)</code></li>
                 <br>
-                <li>where (n) is a numerical value with a unit, to define how much the element is moving through the
+                <li>where (n) is a numerical value with a unit, to define the distance by which the element is moving along the
                     x-axis. </li>
             </ul>
 
@@ -39,7 +39,7 @@
             <ul>
                 <li><code class="highlight">transform: translateY(n)</code></li>
                 <br>
-                <li>Defines how much the element is moving through the
+                <li>Defines the distance by which the element is moving along the
                     y-axis. </li>
             </ul>
 
@@ -51,7 +51,7 @@
         <ul>
             <li><code class="highlight">transform: translate( x , y )</code></li>
             <br>
-            <li>Defines how much the element is moving through the x-axis and
+            <li>Defines the distance by which the element is moving along the x-axis and
                 y-axis. </li>
         </ul>
 
@@ -63,11 +63,10 @@
         </section>
         <h1 class="title">Rotate</h1>
         <section>
-            <h2></h2>
                 <ul>
                     <li><code class="highlight">transform: rotate(angle)</code></li>
                     <br>
-                    <li>Angle is the degree by which the element rotates clockwise.</li>
+                    <li>(angle) is the degree by which the element rotates clockwise.</li>
                     
                 </ul>
         
@@ -88,12 +87,108 @@
                 
         
                 </section>
+   
+    <h1 class="title">Scale</h1>
+    <section>
+                <ul>
+                    <li><code class="highlight">transform: scaleX(n)</code></li>
+                    <br>
+                    <li>where (n) is a unit numerical scale value, 
+                        by which, the element size is increased/decreased 
+                        from its original size by multiplying (n) to the 
+                        original height and width of the element.</li>
+                        <br>
+                        <li><code class="highlight">scaleX(n)</code> increases/decreases the width of the element.</li>
+                    
+                </ul>
+        
+                <div class="border">
+                    <div id="scale-x" class="box">BOX</div>
+                </div>
+
+                <ul>
+                        <li><code class="highlight">scaleX(-n)</code> negative values for (n), flips the element horizontally.</li>
+                </ul>
+                <div class="border">
+                        <div id="scale-x-flip" class="box">Box</div>
+                    </div>
+        </section>
+        <section>
+                <ul>
+                        <li><code class="highlight">transform: scaleY(n)</code></li>
+                        <br>
+                            <li><code class="highlight">scaleY(n)</code> increases/decreases the height of the element.</li>
+                        
+                    </ul>
+            
+                    <div class="border">
+                        <div id="scale-y" class="box">BOX</div>
+                    </div>
+    
+                    <ul>
+                            <li><code class="highlight">scaleY(-n)</code> negative values for (n), flips the element vertically.</li>
+                    </ul>
+                    <div class="border">
+                            <div id="scale-y-flip" class="box">Box</div>
+                        </div>
+        </section>
+        <section>
+            <ul>
+                <li><code class="highlight">transform: scale(x,y)</code></li>
+                <br>
+                <li><code class="highlight">scale(x,y)</code> increases/decreases the width/height of the element.</li> 
+            </ul>
+            
+                <div class="border">
+                    <div id="scale" class="box">BOX</div>
+                </div>
+        </section>
+
+        <h1 class="title">skew</h1>
+        <section>
+
+            <ul>
+                <li><code class="highlight">transform: skewX(angle)</code></li>
+                <br>
+                <li>(angle) is the degree by which the element is skewed along the
+                    x-axis. </li>
+            </ul>
+
+            <div class="border">
+                <div id="skew-x" class="box">BOX</div>
+            </div>
+        </section>
+        <section>
+            <ul>
+                <li><code class="highlight">transform: translateY(n)</code></li>
+                <br>
+                <li>Defines the degree by which the element is skewed along the
+                    y-axis. </li>
+            </ul>
+
+            <div class="border">
+                <div id="skew-y" class="box">BOX</div>
+            </div>
+        </section>
+        <section>
+        <ul>
+            <li><code class="highlight">transform: skew(x,y)</code></li>
+            <br>
+            <li>Defines the degree by which the element is skewed along the
+                    x-axis and y-axis.  </li>
+        </ul>
+
+        <div class="border">
+            <div id="skew" class="box">BOX</div>
+        </div>
+        
+
+        </section>
+
+
+
+
     </div>
-
-
-
-
-    <script src="./app.js"></script>
 </body>
 
 </html>

@@ -12,13 +12,41 @@
 
 #rotate{
     transform: rotate(45deg);
-    border-top: 4px solid #909090;
-    border-right: 4px solid #909090;
+
 }
 
 #rotate-reverse{
     transform: rotate(-45deg);
-    border-top: 4px solid #909090;
-    border-right: 4px solid #909090;
 
+}
+
+#scale-x{
+    transform: scaleX(1.5);
+}
+
+#scale-x-flip{
+    transform: scaleX(-1);
+}
+#scale-y{
+    transform: scaleY(.5);
+}
+
+#scale-y-flip{
+    transform: scaleY(-1);
+}
+
+#scale{
+    transform: scale(1.5,0.5);
+}
+
+#skew-x{
+    transform: skewX(20deg)
+}
+
+#skew-y{
+    transform: skewY(20deg)
+}
+
+#skew{
+    transform: skew(20deg , 20deg)
 }

@@ -106,6 +106,8 @@ b{
 	line-height: 100px;
 	background: var(--blue);
 	opacity: .5;
+    border-top: 4px solid #909090;
+    border-right: 4px solid #909090;
 
 }
 .highlight{
