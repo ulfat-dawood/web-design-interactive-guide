@@ -1,0 +1,24 @@
+#translate-x{
+    transform: translateX(50px);
+}
+
+#translate-y{
+    transform: translateY(20px);
+}
+
+#translate{
+    transform: translate(50px,20px);
+}
+
+#rotate{
+    transform: rotate(45deg);
+    border-top: 4px solid #909090;
+    border-right: 4px solid #909090;
+}
+
+#rotate-reverse{
+    transform: rotate(-45deg);
+    border-top: 4px solid #909090;
+    border-right: 4px solid #909090;
+
+}
