@@ -110,7 +110,7 @@ b{
 	border-right: 4px solid #909090;
 	margin: auto;
 	text-align: center;
-	transition: width  1s ease 1s; 
+	transition: width  1s linear 0.5s; 
 
 }
 .box:hover{

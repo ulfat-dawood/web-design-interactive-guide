@@ -67,8 +67,9 @@
                 <li>Delay of the animation.</li>
             </ol>
         </section>
-        <h1 class="title">Example</h1>
+      
         <section>
+            <h2>Box Example</h2>
             <p>Hover over the box to trigger the animated transition. </p>
             <div class="box">
                 width will change from 200px to 300px
@@ -94,6 +95,41 @@
                 <li>The animation starts 0.5 second after the transition is trigggered .</li></ul>
         </section>
         <h1 class="title">shorthand</h1>
+        <section>
+            <ul><li><code class="highlight">transition:</code>
+                 <code> transition-property transition-duration
+                
+                    transition-timing-function
+                    transition-delay</code></li>
+                <br>
+                <code class="highlight">transition: width  1s linear 0.5s; 
+                    </code>
+            </ul>
+        </section>
+        <h1 class="title">Box Example Code </h1>
+        <section>
+            <p>Hover over the box to trigger the animated transition. </p>
+            <div class="box">
+                width will change from 200px to 300px
+            </div>
+        </section>
+        <section>
+            <h2>HTML</h2>
+            <code>&lt;div class="box"&gt; <br> &nbsp;&nbsp; &nbsp; width will change from 200px to 300px <br> &lt;/div&gt;</code>
+        </section>
+
+        <section>
+                <h2>Styling Box</h2>
+                <code>.box{ <br> &nbsp;&nbsp; &nbsp; width: 200px; <br>
+                    &nbsp;&nbsp; &nbsp; transition: width  1s linear 0.5s; <br>
+                }</code>
+        </section>
+
+        <section>
+                <h2>Trigger Transition</h2>
+                <code>.box:hover{ <br> &nbsp;&nbsp; &nbsp; width: 300px; <br>
+                }</code>
+        </section>
     </div>
 </body>
 
