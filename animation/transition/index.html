@@ -15,7 +15,86 @@
 </head>
 
 <body>
-    <div class="container">Transition</div>
+    <div class="container">
+        <h1 class="title">Transition</h1>
+        <section>
+            <ul>
+                <li>The value of some CSS properties might change for various reasons:</li>
+                <ul>
+                    <li>Changing the color, size, opacity..etc of an element show emphasis when it's is being hovered over or selected.</li>
+                    <li>Changing the element properties for different screen size.</li>
+                    <li>Changing the visibility of some elements from hidden to visible.</li>
+                    <li>And many other changes are added for other reasons.</li>
+                </ul>
+            </ul>
+          
+        </section>
+        <section>
+                <ul>
+                        <li>The change in properties of the elements can be triggered by either: </li>
+                        <br>
+                        <ol>
+                            <li>Pseudo Classes: </li>
+                            <ul><li><code>:hover :active :focus :checked :disabled :enabled :valid :invalid</code></li></ul>
+                            <br>
+
+                            <li>Media Queries:</li>
+                            <ul><li> <code>@meida</code> rule. 
+                            </li></ul>
+                            <br>
+
+                            <li>JavaScript event listners:</li>
+                            <ul>
+                                <li>Add/remove classes to/from the element.</li>
+                                <li>Change the value of element properties.</li>
+                            </ul>
+                        </ol>
+                </ul>
+                
+        </section>
+        <section>
+                <p>When change is triggered, the transition from a value to another 
+                
+                (e.g. from <code class="highlight">width:200px</code> to <code class="highlight">width:300px</code>) <br>
+                can be animated smoothly over a given duration, <br> by specifying the <code class="highlight">transition</code> property.</p>
+        </section>
+        <section>
+            The <code class="highlight">transition</code> property defines:
+            <ol>
+                <li>The property on which the transition is applied.</li>
+                <li>Duration of the animation.</li>
+                <li>Timing function of the animation.</li>
+                <li>Delay of the animation.</li>
+            </ol>
+        </section>
+        <h1 class="title">Example</h1>
+        <section>
+            <p>Hover over the box to trigger the animated transition. </p>
+            <div class="box">
+                width will change from 200px to 300px
+            </div>
+        </section>
+        <section>
+            <ul><li><code class="highlight">transition-property: width;</code></li>
+            <li>Defines the propery on which the transition animation is applied.</li></ul>
+        </section>
+
+        <section>
+            <ul><li><code class="highlight">transition-duration: 1s;</code></li>
+            <li>The transition takes 1 second to animate the change. </li></ul>
+        </section>
+
+        <section>
+            <ul><li><code class="highlight">transition-timing-function:</code><br> <code class="highlight">linear | ease | ease-in | ease-out | ease-in-out;</code></li>
+            <li>Defines the speed curve of the transition animation.</li></ul>
+        </section>
+
+        <section>
+                <ul><li><code class="highlight">transition-delay: 0.5s</code></li>
+                <li>The animation starts 0.5 second after the transition is trigggered .</li></ul>
+        </section>
+        <h1 class="title">shorthand</h1>
+    </div>
 </body>
 
 </html>
