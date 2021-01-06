@@ -10,7 +10,7 @@
 /* RESETTING */
 *,*::before,*::after{
 	box-sizing: content-box;
-	list-style-position: outside;	
+	
 }
 
 html{
@@ -41,7 +41,7 @@ section{
 	border-radius: 10px;
 	box-shadow: 0 0 5px 5px #f0f0f0;
 	text-align: left;
-	transition: all .3s ease-in;
+	transition: all 1s ease;
 
 }
 section:hover{
@@ -100,15 +100,21 @@ b{
 	border: 2px dashed var(--blue); 
 }
 .box{
-	height: 100px; width: 100px;
+	padding: .25em;
+	height: 100px;
+	 width: 200px;
 	border-radius: 5px;
-	font-size: 4rem;
-	line-height: 100px;
+	font-size: 2rem;
 	background: var(--blue);
-	opacity: .5;
     border-top: 4px solid #909090;
-    border-right: 4px solid #909090;
+	border-right: 4px solid #909090;
+	margin: auto;
+	text-align: center;
+	transition: width  1s linear 0.5s; 
 
+}
+.box:hover{
+	width: 300px;
 }
 .highlight{
 	position: relative;
@@ -141,14 +147,6 @@ b{
 	height: 200px;
     width:200px;
    
-}
-.grid{
-	display: grid; 
-	grid-template-columns: repeat(var(--grid),auto);
-}
-.grid div{
-	border: 1px solid #40404044; 
-	text-align: center;
 }
 
 
