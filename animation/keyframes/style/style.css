@@ -99,23 +99,7 @@ b{
 	margin: auto;
 	border: 2px dashed var(--blue); 
 }
-.box{
-	padding: .25em;
-	height: 100px;
-	 width: 200px;
-	border-radius: 5px;
-	font-size: 2rem;
-	background: var(--blue);
-    border-top: 4px solid #909090;
-	border-right: 4px solid #909090;
-	margin: auto;
-	text-align: center;
-	transition: width  1s linear 0.5s; 
 
-}
-.box:hover{
-	width: 300px;
-}
 .highlight{
 	position: relative;
 	z-index: 1;
