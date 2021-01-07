@@ -1,0 +1,59 @@
+.parent-box{
+    height: 100px; width: 100%; 
+    position: relative;
+}
+.box{
+    height: 100px; width:100px;
+    background: #abced4;
+    margin:auto; 
+    animation: var(--anim-name) 4s infinite ease; 
+    border-radius:5px;  
+    visibility: hidden;
+}
+.parent-box:hover .box{
+    visibility: visible;}
+/* ===============MY-ANIMATIONS===============  */
+.parent-box#slide:hover .box{
+    position: absolute;
+    --anim-name: slide; 
+}
+
+.parent-box#spin:hover .box{
+    --anim-name: spin; 
+}
+
+.parent-box#rainbow:hover .box{
+    position: absolute;
+    --anim-name: rainbow; 
+
+}
+.parent-box#fade:hover .box{
+    --anim-name: fade; 
+}
+
+
+/* ===============KEYFRAMES===============  */
+@keyframes slide{
+    from{ left:0%; }
+    to{ left: 100%; transform: translateX(-100%);}
+}
+
+
+@keyframes spin{
+    0%{  transform: rotate(0deg);}
+    100%{  transform: rotate(359deg);}
+}
+
+@keyframes rainbow{
+    0%{ left:0%; background:#d4abab}
+    25%{background: #abacd4;}
+    50%{background: #abd4d2;}
+    75%{background: #abd4ab;}
+    100%{ left: 100%; transform: translateX(-100%); background:#d4d3ab}
+}
+
+@keyframes fade{
+    0%{ opacity: 0; }
+    50%{opacity : 1}
+    100%{ opacity: 0;}
+}
