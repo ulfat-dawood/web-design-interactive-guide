@@ -18,23 +18,165 @@
     <div class="container">
         <h1 class="title">Animation</h1>
         <section>
-            <h2>Animation Properties</h2>
-            <p>The <code class="highlight">@Keyframes</code> rule defines: Keyframes for each <code class="highlight">[animation-name]</code> </p>
+
+            <p>The <code class="highlight">@Keyframes</code> rule defines: Keyframes for each <code
+                    class="highlight">[animation-name]</code> </p>
             <ul>
-                <li>The <code class="highlight">animation</code> property accepts the <code class="highlight">[animation-name]</code> and defines 
+                <li>The <code class="highlight">animation</code> property accepts the <code
+                        class="highlight">[animation-name]</code> and defines
                     further properties for the animation, such as:</li>
-                    <ul>
-                        <li><code class="highlight">duration</code></li>
-                        <li><code class="highlight">delay</code></li>
-                        <li><code class="highlight">iteration-count</code></li>
-                        <li><code class="highlight">direction</code></li>
-                        <li><code class="highlight">timing-function</code></li>
-                        <li><code class="highlight">fill-mode</code></li>
-                    </ul>
+                <ul>
+                    <li><code class="highlight">duration</code></li>
+                    <li><code class="highlight">delay</code></li>
+                    <li><code class="highlight">iteration-count</code></li>
+                    <li><code class="highlight">direction</code></li>
+                    <li><code class="highlight">timing-function</code></li>
+                    <li><code class="highlight">fill-mode</code></li>
+                </ul>
+                <br>
+                <li>The <code class="highlight">animation</code> applies the animation to the element/s it is assigned
+                    to ..
             </ul>
             </p>
         </section>
-    </div>
+
+        <h1 class="title">Animation Properties</h1>
+
+        <section>
+            <h2>Animation Name</h2>
+            <ul>
+                <li><code class="highlight">animation-name: [animation-name];</code></li>
+                <br>
+                <ul>
+                    <li>Accepts the animation name that is declared in the <code>@keyframes</code> rule</li>
+                    <li><code class="highlight">animation-name: my-anim;</code></li>
+                </ul>
+
+        </section>
+
+
+        <section>
+            <h2>Animation Duration</h2>
+            <ul>
+                <li><code class="highlight">animation-duration: [time];</code></li>
+                <br>
+                <ul>
+                    <li>Time is specified in either seconds <code class="highlight">s</code> or milliseconds <code
+                            class="highlight">ms</code></li>
+                </ul>
+                <ul>
+                    <li><code class="highlight">animation-duration: 2s;</code></li>
+                </ul>
+        </section>
+
+
+        <section>
+            <h2>Animation Delay</h2>
+            <ul>
+                <li><code class="highlight">animation-delay: [time];</code></li>
+                <br>
+                <ul>
+                    <li>Specifies the delay after which the animation is played.</li>
+                    <li>Time is specified in either seconds <code class="highlight">s</code> or milliseconds <code
+                            class="highlight">ms</code></li>
+                    <li><code class="highlight">animation-delay: .5s;</code></li>
+        </section>
+
+
+        <section>
+            <h2>Animation Repetition</h2>
+            <ul>
+                <li><code class="highlight">animation-iteration-count: </code> <br>
+                    <code class="highlight">[number-of-iterations] | infinite; </code></li>
+                <br>
+                <ul>
+                    <li>Specifies the number of times animation is repeated.</li>
+                    <li>The keyword <code class="highlight">infinite</code> denotes the animation is played forever.
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Animation Direction</h2>
+            <ul>
+                <li><code class="highlight">animation-direction:</code><br>
+                    <code class="highlight"> normal | reverse | alternate | alternate-reverse;</code></li>
+                <br>
+                <ul>
+                    <li><code class="highlight">normal</code>: the animation plays in the sequence of the normally defined keyframes order.</li>
+                    <ul>
+                        <li><code class="highlight">from</code> or <code class="highlight">0%</code> is the first keyframe.</li>
+                        <li><code class="highlight">to</code> or <code class="highlight">100%</code> is the last keyframe.</li>
+                    </ul>
+                    <li><code class="highlight">reverse</code>: reverses the order of keyframes (the animation is play in revers)</li>
+                    <ul>
+                            <li><code class="highlight">to</code> or <code class="highlight">100%</code> is the first keyframe.</li>
+                            <li><code class="highlight">from</code> or <code class="highlight">0%</code> is the last keyframe.</li>
+                    </ul>
+                    <li><code class="highlight">alternate</code>: </li>
+                    <ul>
+                        <li>its affect is visible when the animation is repeated more than once.</li>
+                        <li>odd number iterations are played normally.</li>
+                        <li>even number iterations are played in reverse.</li>
+                    </ul>
+                    <li><code class="highlight">alternate-reverse</code>: </li>
+                    <ul>
+                            <li>its affect is visible when the animation is repeated more than once.</li>
+                            <li>first and all odd number iterations are played in reverse.</li>
+                            <li>even number iterations are played normally.</li>
+                        </ul>
+                </ul>
+            </ul>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Animation Acceleration</h2>
+            <ul>
+                <li><code class="highlight">animation-timing-function: linear | ease | ease-in | </code><br>
+                    <code class="highlight">ease-out | ease-in-out | cubic-bezier(n,n,n,n);</code></li>
+                <br>
+                <ul>
+                    <li>Timing functions: specify the speed curve (speed of the animation over time).</li>
+                    <li>CSS provides a set of predefined timing functions.</li>
+                    <li><code class="highlight">cubic-bezier(n,n,n,n)</code>: allows to define custom timing functions.
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Animation Fill Mode</h2>
+            <ul>
+                <li><code class="highlight">animation-fill-mode: forwards | backwards | both;</code></li>
+                <br>
+                <li>Defines the state of the animated element before and after the animation.</li>
+                <li><code class="highlight">forwards</code>: After the animation ends, the animated element retains the styles set by the last keyframe.</li>
+                <li><code class="highlight">backwards</code>: Before the animation starts (during the animation delay time), the styles set by the first keyframe is applied to the element. </li>
+                <li><code class="highlight">both</code>: Sets the fill mode to both <code>forwards</code> and <code>backwards</code>.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Pausing/Playing an Animation</h2>
+            <ul>
+                <li><code class="highlight">animation-play-state: paused | running;</code></li>
+                <br>
+                <li>Defines the initial state of the animation to either be paused or running.</li>
+                <li>Allows to pause or play the animation at any point of time.</li>
+                <ul>
+                        <li><code class="highlight">paused</code>: pauses a running animation at the exact state when this property is triggered</li>
+                        <li><code class="highlight">running</code>: resume the animation from the last paused state.</li>
+                </ul>
+            </ul>
+        </section>
+
+
 </body>
 
 </html>
