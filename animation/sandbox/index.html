@@ -11,8 +11,8 @@
 
     <div class="container">
         <form id="duration" class="flex-container">
-                <div class="dark" >Duration</div>
-                <input type="radio" id="1duration" value="1s" name="duration" >
+                <div class="prop" >Duration</div>
+                <input type="radio" id="1duration" value="1s" name="duration" checked>
                 <label  for="1duration">1 second</label>
 
                 <input type="radio"  id="2duration" value="2s" name="duration">
@@ -24,7 +24,7 @@
 
 
     <form id="timing-func" class="flex-container">
-            <div class="dark" >Timing Function</div>
+            <div class="prop" >Timing Function</div>
             <input type="radio" id="linear" value="linear" name="func">
             <label  for="linear">linear</label>
 
@@ -44,7 +44,7 @@
 
  
             <form id="delay" class="flex-container">
-                    <div class="dark" >Delay</div>
+                    <div class="prop" >Delay</div>
                     <input type="radio" id="1delay" value="1s" name="delay">
                     <label  for="1delay">1 second</label>
     
@@ -57,8 +57,8 @@
 
 
     <form id="iteration" class="flex-container">
-            <div class="dark" >Iteration Count</div>
-            <input type="radio" id="1-iteration" value="1" name="iteration">
+            <div class="prop" >Iteration Count</div>
+            <input type="radio" id="1-iteration" value="1" name="iteration" checked>
             <label  for="1-iteration">1</label>
 
             <input type="radio"  id="2-iteration" value="2" name="iteration">
@@ -69,7 +69,7 @@
     </form>    
 
     <form id="direction" class="flex-container">
-            <div class="dark" >Direction</div>
+            <div class="prop" >Direction</div>
             <input type="radio" id="normal" value="normal" name="direction">
             <label  for="normal">normal</label>
 
@@ -84,7 +84,7 @@
     </form>   
     
     <form id="fill-mode" class="flex-container">
-            <div class="dark" >Fill Mode</div>
+            <div class="prop" >Fill Mode</div>
             <input type="radio" id="forwards" value="forwards" name="fill-mode">
             <label  for="forwards">forwards</label>
 
@@ -96,7 +96,7 @@
     </form>  
 
     <form id="play-state" class="flex-container">
-            <div class="dark" >Play State</div>
+            <div class="prop" >Play State</div>
             <input type="radio" id="paused" value="paused" name="play-state">
             <label  for="paused">paused</label>
 
@@ -106,6 +106,7 @@
 
 
     <button id="play">PLAY</button>
+    <button id="remove">STOP</button>
 </div>
     <div class="container">
         <div id="box"  ></div>

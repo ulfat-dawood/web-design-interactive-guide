@@ -2,9 +2,10 @@
 
 /* COLORS */
 :root{
-    --bg: #F5F5F5; 
-    --box: #dbdbdb; 
-    --text: #505050; 
+    --bg-d: #0D102B; 
+    --bg-l: hsl(234, 5%, 15%); 
+    --grey: #909090; 
+    --text: #303030; 
 }
 /* RESETTING */
 *,*::before,*::after{
@@ -22,14 +23,8 @@ html{
 
 body{
 	font-family: 'Lato', sans-serif;
-	background: var(--bg); 
-	font-size: 1.5rem;
-
-	/* CENTER */
-	/* display:flex; 
-	height: 100vh;
-	align-items: center;
-	justify-content: center; */
+	background: var(--bg-d); 
+	font-size: 2rem;
 }
 
 /* TYPOGRAPHY  */

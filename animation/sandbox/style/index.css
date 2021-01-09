@@ -5,36 +5,32 @@
 }
 .flex-container{
     display: flex;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    background: var(--bg-l);
+    padding: 1rem ;
+    align-items: center;
+    border-radius: 10px;
 }
 
 #box{
     width:100px; height: 100px;
-    background: navy;
+    background: linear-gradient(to bottom right, purple, tomato);
     position: absolute;
-
-    
+    border-radius: 50%;  
+    margin: 2rem auto; 
 }
 .anim{
     animation: slide 1s; 
-
 }
 
-button:not(#play){
-    display: block;
-    padding: .25em;
-    margin: auto .5em;
-    border: 1px solid purple;
-    background: transparent;
-    border-radius: 5px;
-}
 label{
     display: block;
-    padding: .25em;
+    padding: .25em .5em;
     margin: auto .5em;
-    border: 1px solid purple;
-    background: transparent;
-    border-radius: 5px;
+    background: var(--grey);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s ease; 
 }
 input[type='radio']{
     width:0; 
@@ -43,8 +39,31 @@ input[type='radio']{
 }
 input[type='radio']:checked + label{
     background: purple ; 
-    color:white; 
+    background: var(--color) ; 
+     
 }
+button{
+    display: block;
+    padding: .25em .5em;
+    margin: auto .5em;
+    background: var(--grey);
+    border-radius: 50px;
+    cursor: pointer;
+    border:none; 
+    margin: 1rem; 
+}
+.prop{
+    width:150px;
+    color:var(--color);
+}
+
+#duration{--color:rgb(255, 251, 21);}
+#timing-func{--color:#16B1D0;}
+#delay{--color:#FF156D;}
+#iteration{--color:rgb(255, 251, 21);;}
+#direction{--color:#16B1D0;}
+#fill-mode{--color:rgb(255, 251, 21);}
+#play-state{--color:#FF156D;}
 
 
 
@@ -52,9 +71,12 @@ input[type='radio']:checked + label{
 @keyframes slide{
     from{
         left: 0%;
+        background: linear-gradient(to bottom right, purple, tomato);
     }
     to{
         left: 100%; 
         transform: translateX(-100%);
+        background: linear-gradient(to bottom right, purple, tomato);
+
     }
 }
