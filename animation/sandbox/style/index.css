@@ -1,2 +1,60 @@
+.container{
+    width:90%;
+    margin:auto;
+    position: relative;
+}
+.flex-container{
+    display: flex;
+    margin: 1rem 0;
+}
+
+#box{
+    width:100px; height: 100px;
+    background: navy;
+    position: absolute;
+
+    
+}
+.anim{
+    animation: slide 1s; 
+
+}
+
+button:not(#play){
+    display: block;
+    padding: .25em;
+    margin: auto .5em;
+    border: 1px solid purple;
+    background: transparent;
+    border-radius: 5px;
+}
+label{
+    display: block;
+    padding: .25em;
+    margin: auto .5em;
+    border: 1px solid purple;
+    background: transparent;
+    border-radius: 5px;
+}
+input[type='radio']{
+    width:0; 
+    height: 0;
+    opacity: 0;
+}
+input[type='radio']:checked + label{
+    background: purple ; 
+    color:white; 
+}
 
 
+
+
+@keyframes slide{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%; 
+        transform: translateX(-100%);
+    }
+}
