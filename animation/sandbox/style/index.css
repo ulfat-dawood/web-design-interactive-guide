@@ -52,6 +52,7 @@ input[type='radio']:checked + label{
 }
 button{
     padding: .25em .5em;
+    padding-top:.4em;
     margin: auto .5em;
     background: var(--grey);
     border-radius: 50px;
