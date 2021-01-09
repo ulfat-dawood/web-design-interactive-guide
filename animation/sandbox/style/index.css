@@ -1,7 +1,10 @@
 .container{
-    width:90%;
-    margin:auto;
+    width:fit-content;
+    margin: auto;
     position: relative;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 30px 0px hsl(234, 50%, 15%);
 }
 .flex-container{
     display: flex;
@@ -15,9 +18,11 @@
 #box{
     width:100px; height: 100px;
     background: linear-gradient(to bottom right, purple, tomato);
-    position: absolute;
     border-radius: 50%;  
     margin: 2rem auto; 
+    
+    
+
 }
 .anim{
     animation: slide 1s; 
@@ -32,6 +37,9 @@ label{
     cursor: pointer;
     transition: all .5s ease; 
 }
+label:hover{
+    opacity: 0.8;
+}
 input[type='radio']{
     width:0; 
     height: 0;
@@ -43,7 +51,6 @@ input[type='radio']:checked + label{
      
 }
 button{
-    display: block;
     padding: .25em .5em;
     margin: auto .5em;
     background: var(--grey);
@@ -51,6 +58,12 @@ button{
     cursor: pointer;
     border:none; 
     margin: 1rem; 
+    outline: none;
+    transition: all .5s ease; 
+
+}
+button:hover{
+    opacity: .7;
 }
 .prop{
     width:150px;
@@ -67,14 +80,15 @@ button{
 
 
 
-
 @keyframes slide{
     from{
         left: 0%;
+        position: absolute;
         background: linear-gradient(to bottom right, purple, tomato);
     }
     to{
         left: 100%; 
+        position: absolute;
         transform: translateX(-100%);
         background: linear-gradient(to bottom right, purple, tomato);
 

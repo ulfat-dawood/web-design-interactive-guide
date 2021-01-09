@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <title>Sandbox</title>
 </head>
 <body>
+    <h1>Animation Sandbox</h1>
 
     <div class="container">
         <form id="duration" class="flex-container">
                 <div class="prop" >Duration</div>
-                <input type="radio" id="1duration" value="1s" name="duration" checked>
-                <label  for="1duration">1 second</label>
+                <input type="radio" id="duration1" value="1s" name="duration" checked>
+                <label  for="duration1">1 second</label>
 
                 <input type="radio"  id="2duration" value="2s" name="duration">
                 <label  for="2duration">2 seconds</label>
@@ -45,6 +48,9 @@
  
             <form id="delay" class="flex-container">
                     <div class="prop" >Delay</div>
+                    <input type="radio" id="0delay" value="0s" name="delay">
+                    <label  for="0delay">0 second</label>
+                    
                     <input type="radio" id="1delay" value="1s" name="delay">
                     <label  for="1delay">1 second</label>
     
@@ -105,12 +111,18 @@
     </form>  
 
 
-    <button id="play">PLAY</button>
-    <button id="remove">STOP</button>
-</div>
-    <div class="container">
-        <div id="box"  ></div>
+    <div style="display: block; margin: auto;">
+            <button id="play">PLAY</button>
+            <button id="remove">STOP</button>
+            <button id="reset">RESET</button>
     </div>
+    <div id="box"  ></div>
+
+</div>
+
+
+
+        
     
     <script src="./app.js"></script>
 </body>
