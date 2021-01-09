@@ -13,10 +13,11 @@
     padding: 1rem ;
     align-items: center;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 #box{
-    width:100px; height: 100px;
+    width:60px; height: 60px;
     background: linear-gradient(to bottom right, purple, tomato);
     border-radius: 50%;  
     margin: 2rem auto; 
@@ -36,6 +37,7 @@ label{
     border-radius: 50px;
     cursor: pointer;
     transition: all .5s ease; 
+    font-size: 1.5rem;
 }
 label:hover{
     opacity: 0.8;
@@ -67,7 +69,7 @@ button:hover{
     opacity: .7;
 }
 .prop{
-    width:150px;
+    width:160px;
     color:var(--color);
 }
 
