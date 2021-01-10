@@ -5,17 +5,22 @@
     position: relative;
     text-align: center;
     padding: .01rem 1rem;
-    box-shadow: 0 0 30px 0px hsl(234, 50%, 15%);
+    box-shadow: 0 0 30px 0px hsl(234, 50%, 19%);
     border-radius: 7px;
 }
 .flex-container{
     display: flex;
     margin: 1.5rem 0;
     background: var(--bg-l);
-    padding: 1rem ;
+    padding: .5rem 1rem ;
     align-items: center;
     border-radius: 10px;
+}
+.flex{
+    display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+
 }
 .box-container{
     height:70px;
@@ -36,7 +41,7 @@
 label{
     display: block;
     padding: .25em .5em;
-    margin: auto .5em;
+    margin: .5rem .5em;
     background: var(--grey);
     border-radius: 50px;
     cursor: pointer;
@@ -73,7 +78,7 @@ button:hover{
     opacity: .7;
 }
 .prop{
-    width:160px;
+    min-width:150px;
     color:var(--color);
 }
 
