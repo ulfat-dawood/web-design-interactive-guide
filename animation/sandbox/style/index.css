@@ -1,10 +1,12 @@
 .container{
     width:fit-content;
     margin: auto;
+    margin-bottom: 3rem; ;
     position: relative;
     text-align: center;
-    padding: 1rem;
+    padding: .01rem 1rem;
     box-shadow: 0 0 30px 0px hsl(234, 50%, 15%);
+    border-radius: 7px;
 }
 .flex-container{
     display: flex;
@@ -15,12 +17,14 @@
     border-radius: 10px;
     flex-wrap: wrap;
 }
-
+.box-container{
+    height:70px;
+}
 #box{
     width:60px; height: 60px;
     background: linear-gradient(to bottom right, purple, tomato);
     border-radius: 50%;  
-    margin: 2rem auto; 
+    margin: 0 auto; 
     
     
 
@@ -85,12 +89,12 @@ button:hover{
 
 @keyframes slide{
     from{
-        left: 0%;
+        left: 3%;
         position: absolute;
         background: linear-gradient(to bottom right, purple, tomato);
     }
     to{
-        left: 100%; 
+        left: 97%; 
         position: absolute;
         transform: translateX(-100%);
         background: linear-gradient(to bottom right, purple, tomato);
