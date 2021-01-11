@@ -1,2 +1,80 @@
+/* ==========HOVER========== */
+
+#hover .list{
+    margin-top: 5rem;
+    text-align: left;
+    border-radius: 5px;
+    background: #eee; 
+    padding: .5rem;
+    width: 50%; 
+}
+#hover li{
+    border-radius: 5px;
+    background: #ccc; 
+    margin: 1rem;
+    padding: .25em;
+    cursor: pointer; 
+    transition: background 1s ease;
+}
+#hover li:hover{
+    background: #9f9f9f; 
+}
+
+
+
+
+/* ==========ACTIVE========== */
+#active .list{
+    margin-top: 5rem;
+    text-align: left;
+    border-radius: 5px;
+    background: #eee; 
+    padding: .5rem;
+    width: 50%; 
+}
+#active li{
+    border-radius: 5px;
+    background: #ccc; 
+    margin: 1rem;
+    padding: .25em;
+    cursor: pointer; 
+    transition: outline 1s ease;
+}
+#active li:active{
+    outline: 1px solid #9f9f9f; 
+}
+
+
+
+
+
+
+
+/* ==========ADD ICON========== */
+.wrapper{
+    margin-top: 4rem;
+}
+#add .icon{
+    padding: 1rem 2rem; 
+    background: #fff;
+    border-radius: 50px; 
+    position: relative;
+    cursor: pointer;
+    margin: 1rem auto; 
+    text-align: left;
+    width:fit-content; 
+}
+#add .icon:after{
+    content: "";
+    opacity: 0;
+    transition: all .5s ease; 
+}
+#add .icon:hover::after{
+    content: attr(data-text);
+    opacity: 1;
+    padding-left: 1rem;
+
+}
+
 
 
