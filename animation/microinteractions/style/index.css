@@ -73,8 +73,62 @@
     content: attr(data-text);
     opacity: 1;
     padding-left: 1rem;
-
 }
 
 
 
+
+
+
+
+
+
+/* ==========PROGRESS BAR========== */
+#bar .flex-container{
+    display: flex;
+    width:100%;
+    margin-top: 4rem;
+    align-items: center;
+}
+.send{
+    padding: 1rem;
+    background: #e1c1c2; 
+    border-radius: 50px;
+    margin: auto 2rem; 
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.send:hover{
+    filter:saturate(1.5);
+}
+.send:active{
+    transform: scale(1.1)
+}
+#bar .bar{
+    width: 100%; height: 40px;
+    background: #f1eae6 ;
+    border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#bar .line{
+    width:0%; height: 100%;
+    background: #c1e1c4 url(../SVG/diagonal-stripes.svg); 
+}
+#bar .animate{
+    animation: grow cubic-bezier(0,1.02,1,.08) 10s 1 forwards;
+}
+@keyframes grow{
+    0%{
+        width:0%
+    }
+    60%{
+        width:70%
+    }
+    75%{
+        width:70%
+    }
+    100%{
+        width:100%
+    }
+}
