@@ -93,7 +93,7 @@
 .send{
     padding: 1rem;
     background: #e1c1c2; 
-    border-radius: 50px;
+    border-radius: 5px;
     margin: auto 2rem; 
     cursor: pointer;
     transition: all 1s ease;
