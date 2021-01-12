@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ==========GENERAL SETTINGS========== */
 *,*::before,*::after{
 	padding:0;
 	margin:0;
@@ -19,36 +19,66 @@ body{
 	background: #F8F8F8; 
     font-size: 3rem;
 }
+
+/* ==========TYPOGRAPHY========== */
+h1{font-size:6rem;}
+h2{font-size:4rem;}
+h4{font-size:3rem;}
+p{font-size:2rem;}
+
+/* ==========TEMPLATE========== */
 .container{
     width:80%;
     margin:auto;
 }
-
-/* TYPOGRAPHY */
-h1{font-size:9rem;}
-h2{font-size:5rem;}
-h4{font-size:3rem;}
-p{font-size:2rem;}
-
-.default-nav{
+/* ==========NAV========== */
+nav{
     position: sticky; 
     top:0; 
-    padding: 3rem;
-    background: #dbdbdb; 
+    z-index: 1;
+    padding: 0 5rem ;
+    background: #BAB3A6; 
     padding: 1.5rem; 
+    transition: all .5s ease; 
 }
-.default-nav, .logo{
-    transition: all .5s ease;
+.logo{
+    flex:1; 
 }
+/* scrolling styles  */
 .scroll-nav{
     background: #fff;
+    padding: 0 1rem ;
+
 }
-.scroll-nav .logo{
-    font-size: 5rem;
+nav .flex{
+    display :flex;
+    align-items: center;
 }
+nav li{
+    display:inline-block;
+    margin-left: 2rem; 
+}
+/* ==========SECTIONS========== */
 
 section{
-    background: #909090; 
-    margin:3rem; 
-    height: 450px;
+    background: #eee;
+    padding: 15rem 0;
 }
+section .flex{
+    display: flex; 
+    align-items: center;
+}
+section .text{
+    display: flex; 
+    flex-basis:50%; 
+    margin-left:  7%;
+}
+section img{
+    display: block; 
+    width: 50%; 
+    filter: drop-shadow(30px 30px 15px #bbb);
+}
+/* ==========TEXT-COLORS========== */
+section:nth-of-type(1) h1{color: #303030; }
+section:nth-of-type(2) h1{color: #C1A491; }
+section:nth-of-type(3) h1{color: #BAB3A6; }
