@@ -140,17 +140,23 @@
 /* ==========PLAY BUTTON========== */
 #play .btn{
     height: 60px; width: 250px; 
-    padding: 0 1rem;
-    background: #e1c1c2; 
-    border-radius: 5px;
     display:flex; 
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    transition: all .5s ease;
-    margin-top: 5rem; 
+    margin-top: 7rem; 
 }
-#play .btn:hover{ background: hsl(358, 28%, 75%);}
+.rect-wrapper{
+    background: #e1c1c2; 
+    box-sizing: content-box;
+    padding: 2rem; margin: 2rem; 
+    background: #e1c1c2;
+    border-radius: 50%;
+    transition: all 1s ease;
+    
+}
+.rect-wrapper:hover{ transform: scale(1.2)}
+
 .rect{
     height:40px; width:40px;
     position: relative; 
