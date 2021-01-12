@@ -176,23 +176,15 @@
     right:0; 
     transition: all .2s linear; 
   }
-  .s-line.top{
+  /* .s-line.top{
     top:0; 
     border-radius: 20px 20px 0 0; 
   }
 
   .s-line.bottom{
     bottom:0; 
-    border-radius: 0 0 20px 20px ; 
-    
+    border-radius: 0 0 20px 20px ;  
   }
-  #play .text{
-	font-family: 'Comfortaa', cursive;
-      font-weight: 600;
-      font-size: 4.5rem;
-      margin-top:.5rem;
-  }
-
   .rotate-top{
     transform-origin: bottom right; 
     transform: rotate(-62deg) scaleY(2.1) translateX(3px);
@@ -202,5 +194,41 @@
     border-radius: 5px !important; 
     transform-origin: top right; 
     transform: rotate(62deg) scaleY(2.1) translateX(3px);
+  } */
+
+
+  .s-line.top{
+    top:0; 
+    border-radius: 5px ;
+    transform-origin: bottom right; 
+    transform: rotate(-62deg) scaleY(2.1) translateX(3px);
   }
+.rotate-top{
+    border-radius: 20px 20px 0 0 !important; 
+    transform: rotate(0deg) scaleY(01) translateX(0px) !important;  
+  }
+
+
+
+  .s-line.bottom{
+    bottom:0; 
+    border-radius: 5px; 
+    transform-origin: top right; 
+    transform: rotate(62deg) scaleY(2.1) translateX(3px);
+     
+  }
+  .rotate-bottom{
+    border-radius: 0 0 20px 20px  !important; 
+    transform: rotate(0deg) scaleY(1) translateX(0px) !important;
+  }
+
+
+
+  #play .text{
+	font-family: 'Comfortaa', cursive;
+      font-weight: 600;
+      font-size: 4.5rem;
+      margin-top:.5rem;
+  }
+
 
