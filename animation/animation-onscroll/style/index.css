@@ -1,10 +1,28 @@
 section{
     height: 95vh; width:95%;
     margin: 2rem auto;
-    background: #f5f5fa;
-    display: flex; justify-content: center; align-items: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.text{
+        opacity: 0;
+        transform: translateY(-100px);
+
+}
+.anim .text{
+    color:#ffd700; 
+    animation: fadeIn 2s forwards;
 }
 
-.inverse{
-    background: #ccc;
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
