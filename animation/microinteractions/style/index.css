@@ -1,4 +1,4 @@
-/* ==========HOVER========== */
+/* ==========HOVER-1========== */
 
 #hover .list{
     margin-top: 5rem;
@@ -21,6 +21,37 @@
 }
 
 
+/* ==========HOVER-2========== */
+
+.button{
+    display:flex; justify-content:center; align-items:center; 
+    width: 200px; height:50px; 
+    background: #cccccccc; 
+    border-radius: 50px; 
+    overflow: hidden; 
+    position:relative; 
+    cursor:pointer; 
+    margin: 2rem auto;
+
+}
+.button > .text{
+    z-index:2;
+}
+.button > .anim{
+    --scaleX:0; 
+    height:50px; width: 50px; 
+    background: #e1c1c2;
+    position:absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(30deg) scale(var(--scaleX),3);
+    z-index:1;
+    transition: all .5s ease;
+  }
+  .button:hover > .anim{
+    --scaleX:4; 
+
+  }
 
 
 /* ==========ACTIVE========== */
