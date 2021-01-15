@@ -10,6 +10,17 @@ section{
         transform: translateY(-100px);
 
 }
+svg{
+    overflow: visible;
+    height: 100px;
+    width: 100px; 
+}
+svg #two-girl{
+    animation: fadeIn 2s;
+}
+svg #two-boy{
+    transform: translateX(-100px);
+}
 .anim .text{
     color:#ffd700; 
     animation: fadeIn 2s forwards;
