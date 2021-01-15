@@ -5,20 +5,27 @@ const sections = document.querySelectorAll('section');
 
 const callback = (entries, observer)=>{
     entries.forEach(entry => {
-        if(entry.isIntersecting==true){
 
+        if(entry.isIntersecting==true){
             console.log(entry.target.id, "is intersecting? ", entry.isIntersecting);
-            console.log(entry.target.id, "Intersection ratio: ", entry.intersectionRatio);
+            // console.log(entry.target.id, "Intersection ratio: ", entry.intersectionRatio);
             entry.target.classList.add("anim")
-            observer.unobserve(entry.target); 
+            // observer.unobserve(entry.target); 
+        }
+        if(entry.isIntersecting==false){
+        console.log(entry.target.id, "is intersecting? ", entry.isIntersecting);
+        entry.target.classList.remove("anim")
+
         }
     });
 } 
+//threshold: .5
+//rootMargin: "0px"
 const options = {
     //root is by default the browser viewport, so don't change it
     root: null, 
     threshold: .7, // 0-1 where 
-                    //.25=> fires the entry ONLY when 25% of the element is in the viewport
+                    //.25=> fires the entry ONLY when at least 25% of the element is in the viewport
                     //  1=> fires the entry ONLY when 100% of the element is in the viewport
     rootMargin: "0px" //px or % value, clockwise or shorthand
                   //rootMargin creates an imaginary viewport that is 

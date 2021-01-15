@@ -4,36 +4,78 @@ section{
     display: flex; 
     justify-content: center; 
     align-items: center;
+    border: 3px solid red; 
 }
-.text{
-        opacity: 0;
-        transform: translateY(-100px);
 
-}
-svg{
+/* ==========ANIMATION==========  */
+svg {
     overflow: visible;
-    height: 100px;
-    width: 100px; 
+    width: 500px; 
 }
-svg #two-girl{
-    animation: fadeIn 2s;
+svg > *{
+    transition: all .5s ease;
 }
-svg #two-boy{
-    transform: translateX(-100px);
+/* set initial state as invisible  */
+#clap #girl, #clap #boy, #clap #msg-left, #clap #msg-right{
+    opacity: 0;
 }
-.anim .text{
-    color:#ffd700; 
-    animation: fadeIn 2s forwards;
+
+/* animate when section in intersecting  */
+.anim #clap #girl{
+    animation: slide-right 1s forwards;
+}
+.anim #clap #boy{
+    animation: slide-left 1s forwards;
+}
+.anim #clap #msg-left{
+    animation: slide-down-right 1s forwards;
+}
+.anim #clap #msg-right{
+    animation: slide-down-left 1s forwards;
 }
 
 
-@keyframes fadeIn{
+/* ==========KEYFRAMES==========  */
+
+@keyframes slide-down-right{
     from{
-        transform: translateY(-100px);
+        transform: translate(-50px, -100px);
         opacity: 0;
     }
     to{
-        transform: translateY(0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down-left{
+    from{
+        transform: translate(50px, -100px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide-right{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
         opacity: 1;
     }
 }
