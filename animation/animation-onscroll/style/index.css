@@ -3,15 +3,17 @@
     z-index: -1;
     overflow: hidden;
 }
+.anim .rect{animation: zoom 2s forwards;}
 .circle{
+
     height: 100%; width:100%; 
     background:#EFE3D8; 
-    border-radius: 50%;
+    border-radius: 50%; opacity: .5;
 }
-.rect.left{left:0; top: 10rem; height: 40vw; width:40vw;}
-.rect.right{right:0; height: 60vw; width:60vw;}
-.left .circle{transform:translate(-50%, 0 ) }
-.right .circle{transform:translate(30%, -30% )}
+.rect.left{left:0; top: 10rem; height: 40vw; width:40vw; transform-origin: left center;}
+.rect.right{right:0; height: 60vw; width:60vw; transform-origin: right top;}
+.left .circle{transform:translate(-50%, 0 )  }
+.right .circle{transform:translate(30%, -30% ) }
 /* ==========HEADER==========  */
 header{
     width:80%;
@@ -70,7 +72,7 @@ section{
 #section-2 h3:nth-child(1){align-self: flex-start;}
 #section-2 h3:nth-child(3){align-self: flex-end;}
 #section-2 svg { 
-    width: 650px; 
+    width: 650px; overflow: visible;
 }
 /* set initial state as invisible  */
 #group #girl-right, 
@@ -221,5 +223,14 @@ section{
     to{
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+@keyframes zoom{
+    from{
+
+        transform: scale(1);
+    }
+    to{
+       transform: scale(1.1);
     }
 }
