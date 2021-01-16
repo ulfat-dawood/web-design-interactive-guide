@@ -1,19 +1,144 @@
+.rect{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.circle{
+    height: 100%; width:100%; 
+    background:#EFE3D8; 
+    border-radius: 50%;
+}
+.rect.left{left:0; top: 10rem; height: 40vw; width:40vw;}
+.rect.right{right:0; height: 60vw; width:60vw;}
+.left .circle{transform:translate(-50%, 0 )}
+.right .circle{transform:translate(30%, -30% )}
+/* ==========HEADER==========  */
+header{
+    width:80%;
+    margin:auto; padding: 3rem 0 ; 
+    display:flex;
+    justify-content: space-between; align-items: center;
+}
+header .logo{
+    line-height: .8;
+}
+header ul{list-style: none;}
+
+header li{
+    display: inline-block;
+    margin-right: 3rem; 
+    border-bottom: 1px solid black;
+
+}
+
+/* ==========ALL-SECTIONS==========  */
 section{
-    height: 95vh; width:95%;
-    margin: 2rem auto;
+    height: 80vh; width:80%;
+    margin: auto;
     display: flex; 
     justify-content: center; 
     align-items: center;
+    flex-direction: column;
     border: 3px solid red; 
 }
 
-/* ==========ANIMATION==========  */
-svg {
-    overflow: visible;
-    width: 500px; 
+/* ==========SECTION-1==========  */
+.search-bar{
+    height: 70px; width: 60%; 
+    background: #fff url(../SVG/search.svg) no-repeat 10px center/50px 50px; 
+    border-radius: 70px;
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+    border:none; 
+    padding: 0 10rem; 
+    outline: none;
 }
-svg > *{
-    transition: all .5s ease;
+.search-bar::placeholder{
+    font-size: 3rem;
+    font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+
+}
+/* ==========SECTION-2==========  */
+#section-2 div{
+    width: 45%;
+    display:flex; align-items: center; flex-direction: column;
+    margin-bottom: 5rem;
+}
+#section-2 h3{font-weight: 200;}
+#section-2 h3:nth-child(1){align-self: flex-start;}
+#section-2 h3:nth-child(3){align-self: flex-end;}
+#section-2 svg { 
+    width: 650px; 
+}
+/* set initial state as invisible  */
+#group #girl-right, 
+#group #girl-left,
+#group #boy, #msg-left,#msg-middle,#msg-right { opacity: 0;}
+/* animate when section in intersecting  */
+.anim #group #girl-left{
+    animation: slide-left 1.5s ease .5s forwards;
+}
+.anim #group #girl-right{
+    animation: slide-right 1.5s ease .5s forwards;
+}
+.anim #group #boy{
+    animation: slide-up 1.5s ease .5s forwards;
+}
+.anim #group #msg-left{
+
+    animation: slide-down-right 1s ease 1s forwards;
+}
+.anim #group #msg-middle{
+
+    animation: slide-down 1s ease 1s forwards;
+}
+.anim #group #msg-right{
+
+    animation: slide-down-left 1s ease 1s forwards;
+}
+
+/* ==========SECTION-3==========  */
+#section-3{
+    flex-direction: row;
+    justify-content: space-around;
+}
+#section-3 .left{
+ width:30%; margin:auto;
+}
+#section-3 .left ol{
+    background: #fff;
+    list-style-position: inside;
+    margin: 3rem auto; 
+    padding: 3rem 5rem;
+}
+#section-3 .right ul{
+    display: flex;
+}
+#section-3 .right li{
+    height: 50px; width: 50px; 
+    list-style: none;
+    background: grey;
+    background: var(--color);
+    margin: 1rem; 
+    padding: 5px; 
+    border-radius: 5px;
+    opacity: 0;
+}
+#section-3 .right li:last-child{ width: fit-content; line-height: 50px; padding: 5px 2rem;}
+#section-3 .right img{width:100%}
+
+/* animate when section is intersecting  */
+#section-3.anim  .right li{
+    animation: slide-right 1.5s ease var(--delay) forwards;
+}
+/* ==========SECTION-4==========  */
+#section-4 svg {
+    width: 650px; 
+    overflow: visible;
+    margin-top:5rem;
 }
 /* set initial state as invisible  */
 #clap #girl, #clap #boy, #clap #msg-left, #clap #msg-right{
@@ -28,15 +153,35 @@ svg > *{
     animation: slide-left 1s forwards;
 }
 .anim #clap #msg-left{
-    animation: slide-down-right 1s forwards;
+    animation: slide-down-right 1s .5s forwards ;
 }
 .anim #clap #msg-right{
-    animation: slide-down-left 1s forwards;
+    animation: slide-down-left 1s .5s forwards;
 }
 
 
 /* ==========KEYFRAMES==========  */
 
+@keyframes slide-down{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide-up{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 @keyframes slide-down-right{
     from{
         transform: translate(-50px, -100px);
