@@ -10,7 +10,7 @@
 }
 .rect.left{left:0; top: 10rem; height: 40vw; width:40vw;}
 .rect.right{right:0; height: 60vw; width:60vw;}
-.left .circle{transform:translate(-50%, 0 )}
+.left .circle{transform:translate(-50%, 0 ) }
 .right .circle{transform:translate(30%, -30% )}
 /* ==========HEADER==========  */
 header{
@@ -39,7 +39,6 @@ section{
     justify-content: center; 
     align-items: center;
     flex-direction: column;
-    border: 3px solid red; 
 }
 
 /* ==========SECTION-1==========  */
