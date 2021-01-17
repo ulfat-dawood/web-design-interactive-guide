@@ -37,13 +37,14 @@ h1{
 
 .eye{
     position: absolute;
-    height: 140px;
-    width: 190px; 
+    height: 150px;
+    width: 150px; 
     background: #453c39;
     top:190px; 
     border-radius: 90% ;
-    &::before{
-        content: "";
+}
+
+    .eye > .eyeball{
         position: absolute;
         width: 60px;
         height: 60px; 
@@ -52,20 +53,21 @@ h1{
         left:35%; 
         bottom:15px; 
     }
-    &::after{
-        @extend .eye::before;  
-        background:#453c39 ;
-        transform: scale(0.6) translateY(10px);
-    }  
-}
+.eye > .eyeball::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+ 
+background:#453c39 ;
+transform: scale(0.6) translateY(10px);}
 
 .eye.left{
-    transform: rotate(-40deg);
-    left:55px; }
+    left:80px; }
 
 .eye.right{
-    transform: rotate(40deg);
-    right:55px; }
+    right:80px; }
 
 .ear{
     position: absolute;

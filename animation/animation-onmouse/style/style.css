@@ -55,15 +55,14 @@ h1 {
 
 .eye {
   position: absolute;
-  height: 140px;
-  width: 190px;
+  height: 150px;
+  width: 150px;
   background: #453c39;
   top: 190px;
   border-radius: 90%;
 }
 
-.eye::before, .eye::after {
-  content: "";
+.eye > .eyeball {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -73,22 +72,23 @@ h1 {
   bottom: 15px;
 }
 
-.eye::after {
+.eye > .eyeball::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   background: #453c39;
   -webkit-transform: scale(0.6) translateY(10px);
           transform: scale(0.6) translateY(10px);
 }
 
 .eye.left {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  left: 55px;
+  left: 80px;
 }
 
 .eye.right {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-  right: 55px;
+  right: 80px;
 }
 
 .ear {
