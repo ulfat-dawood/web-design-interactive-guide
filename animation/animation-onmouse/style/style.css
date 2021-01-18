@@ -9,6 +9,48 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  cursor: none;
+}
+
+#bamboo {
+  position: absolute;
+  height: 300px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -webkit-animation: shake 3s ease infinite alternate;
+          animation: shake 3s ease infinite alternate;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate(-50%, -50%);
+            transform: rotateZ(0deg) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: rotateZ(-5deg) translate(-50%, -50%);
+            transform: rotateZ(-5deg) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotateZ(-2deg) translate(-50%, -50%);
+            transform: rotateZ(-2deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate(-50%, -50%);
+            transform: rotateZ(0deg) translate(-50%, -50%);
+  }
+  70% {
+    -webkit-transform: rotateZ(-5deg) translate(-50%, -50%);
+            transform: rotateZ(-5deg) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotateZ(-2deg) translate(-50%, -50%);
+            transform: rotateZ(-2deg) translate(-50%, -50%);
+  }
 }
 
 .wrapper {

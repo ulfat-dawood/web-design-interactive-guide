@@ -8,9 +8,15 @@ body.addEventListener('mousemove', (e)=>{
         let y= (eye.getBoundingClientRect().top) + (eye.clientHeight /2);
         // console.log("x: " +x+ " | y: "+y)
         // console.log("page x: " +e.pageX+ " | y: "+e.pageY)
-        let radian= Math.atan2(e.pageX -x, e.pageY - y);
 
+        //set the eye to rotate based on mouse current x and y on the page
+        let radian= Math.atan2(e.pageX -x, e.pageY - y);
         let rotate= (radian * (180 / Math.PI) * -1) + 0; 
         eye.style.transform = `rotate(${rotate}deg)`; 
     })
+
+
+    //let the bamboo move along the cursor
+    const bamboo = document.querySelector("#bamboo"); 
+    bamboo.setAttribute('style', 'opacity:1; top:'+ e.pageY+'px; left:'+ e.pageX+'px; transform: translate(-50%,-50%)')
 })
