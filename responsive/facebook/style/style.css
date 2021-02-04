@@ -2,16 +2,15 @@
 
 /* COLORS */
 :root{
-    --bg: #F5F5F5; 
-    --box: #dbdbdb; 
-    --text: #505050; 
+	--bg: #EFF2F5; 
+	--primary: #1977F2; 
+	--green: #44B729;  
 }
 /* RESETTING */
 *,*::before,*::after{
 	padding:0;
 	margin:0;
 	box-sizing: content-box;
-	list-style: none;      /* remove bullet point from lists */
 	text-decoration:none; /* remove underline from <a> */
 	color: var(--text); 
 }
@@ -24,12 +23,6 @@ body{
 	font-family: 'Lato', sans-serif;
 	background: var(--bg); 
 	font-size: 3rem;
-
-	/* CENTER */
-	/* display:flex; 
-	height: 100vh;
-	align-items: center;
-	justify-content: center; */
 }
 
 /* TYPOGRAPHY  */
