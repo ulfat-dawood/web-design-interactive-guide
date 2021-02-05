@@ -1,15 +1,17 @@
 
 .container{
-    height: 300px; width : 70%;
-    margin:auto;
+    margin:10vh 15%;
     display:flex;
     justify-content: space-around;
-    margin-top: 100px; 
+    
 }
 /* ========== LEFT ========== */
 #left{
     width:500px;
     text-align: left;
+    padding: 5rem 2rem 2rem 0; 
+    /* margin-right:2rem; 
+    margin-bottom: 2rem; */
 }
 #left img{
     height: 100px;
@@ -78,4 +80,17 @@ form button{
 }
 #right h5 a{
     font-weight: 600;
+}
+
+@media only screen and (max-width:900px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #left{
+        text-align: center;
+        width:390px;
+        padding: 0 0 2rem 0; 
+
+    }
 }
