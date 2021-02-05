@@ -1,2 +1,81 @@
 
+.container{
+    height: 300px; width : 70%;
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 100px; 
+}
+/* ========== LEFT ========== */
+#left{
+    width:500px;
+    text-align: left;
+}
+#left img{
+    height: 100px;
+}
+#left h1{
+    font-weight: 400;
+}
+/* ========== RIGHT ========== */
 
+#right h5{
+    text-align: center;
+}
+#right form{
+    background: white; 
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 2rem;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+input[type='text'],input[type='password']{
+    
+    padding : 14px 16px;
+    background: #fff;
+    margin: .5rem 0; 
+    border-radius: 6px; 
+    border: 1px solid var(--grey); 
+}
+input[type='text']::placeholder, input[type='password']::placeholder{
+    font-size: 1.5rem; 
+    color: #a0a0a0; 
+}
+input[type='submit']{
+    font-size: 2rem; 
+    font-weight: 600;
+    padding: 1rem 0; 
+    color: white; 
+    background: var(--primary); 
+    border: none; 
+    border-radius: 6px; 
+    margin: .5rem 0;
+}
+form a{
+    display: block;
+    color: var(--primary); 
+    padding: 2rem; 
+    border-bottom: 1px solid var(--grey);
+}
+form button{
+    background: var(--green); 
+    color: white; 
+    border: none; 
+    border-radius: 6px;
+    font-size: 2rem; 
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 2rem auto; 
+
+}
+#right h5{
+    font-weight: 400;
+    margin: 2rem auto; 
+}
+#right h5 a{
+    font-weight: 600;
+}
