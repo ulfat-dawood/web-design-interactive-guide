@@ -19,7 +19,9 @@
     font-weight: 400;
 }
 /* ========== RIGHT ========== */
-
+#right{
+    text-align: center;
+}
 #right h5{
     text-align: center;
 }
@@ -56,6 +58,10 @@ input[type='submit']{
     border: none; 
     border-radius: 6px; 
     margin: .5rem 0;
+}
+input[type='submit']:hover,button:hover{
+    cursor: pointer;
+    filter:grayscale(20%);
 }
 form a{
     display: block;
