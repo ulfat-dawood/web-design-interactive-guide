@@ -1,6 +1,6 @@
 
 .container{
-    margin:10vh 15%;
+    margin:15vh 15%;
     display:flex;
     justify-content: space-around;
     
@@ -9,9 +9,8 @@
 #left{
     width:500px;
     text-align: left;
-    padding: 5rem 2rem 2rem 0; 
-    /* margin-right:2rem; 
-    margin-bottom: 2rem; */
+    padding-right: 2rem;
+    align-self: center;
 }
 #left img{
     height: 100px;
@@ -26,13 +25,14 @@
 }
 #right form{
     background: white; 
+    /* smooth shadow: add a soft shadow then a more intens one:  */
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 2rem;
     width:350px;
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    
 }
 
 input[type='text'],input[type='password']{
@@ -90,7 +90,7 @@ form button{
     #left{
         text-align: center;
         width:390px;
-        padding: 0 0 2rem 0; 
+        padding-bottom:2rem; 
 
     }
 }
