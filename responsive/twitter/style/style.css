@@ -2,10 +2,8 @@
 
 /* COLORS */
 :root{
-	--bg: #EFF2F5; 
-	--primary: #1977F2; 
-	--green: #44B729;  
-	--grey: #dddfe2;
+	--blue:#1da1f2;
+	--text: rgb(217, 217, 217);
 }
 /* NORMALIZE */
 *,*::before,*::after{
@@ -21,14 +19,14 @@ html{
 }
 
 body{
-	font-family:'Lato', sans-serif;
+	font-family: sans-serif;
 	background: var(--bg); 
 	font-size: 1.5rem;
 }
 
 /* TYPOGRAPHY  */
-h1{font-size: 2.8rem;}
-h5{font-size: 1.5rem;}
+h1{font-size: 6rem; font-family: 'Archivo Black', sans-serif;}
+h2{font-size: 3rem;	font-family: 'Archivo Black', sans-serif;}
 
 
 

@@ -1,102 +1,152 @@
-
 .container{
-    margin:15vh 15%;
     display:flex;
-    justify-content: space-around;
-    
+    height: 100vh;
 }
-/* ========== LEFT ========== */
-#left{
-    width:500px;
-    text-align: left;
-    padding-right: 2rem;
-    align-self: center;
+
+/* ========== ASIDE ========== */
+aside{
+    flex:1;
 }
-#left img{
-    height: 100px;
+aside .bg-wrapper{
+    width: 100%;
+    height: 100%;
+    /* keep bg blue if bg-img not found  */
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment */
+    background: var(--blue) url(../img/bg.png) center center/auto no-repeat ;
+    display: flex;
+    justify-content: center; align-items: center;
 }
-#left h1{
-    font-weight: 400;
+/*  LOGO  */
+aside img{
+    height: 300px;
 }
-/* ========== RIGHT ========== */
-#right{
-    text-align: center;
+
+/* ========== MAIN ========== */
+main{
+    min-width: 600px; 
+    background: black;
+    padding: 2rem 3rem; 
 }
-#right h5{
-    text-align: center;
+
+/* ========== FORM ========== */
+main .form-wrapper{
+    display:flex;
 }
-#right form{
-    background: white; 
-    /* smooth shadow: add a soft shadow then a more intens one:  */
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    border-radius: 8px;
-    padding: 2rem;
-    width:350px;
+main input{
+    /* local scope variables  */
+    --padding: .5em; 
+    --font-size:2rem;
+    --border-color: #404040; 
+    --border-radius:5px;
+    --width:200px;
+    display:block;
+    height: 5rem;
+    margin-right:1.5rem; 
+    background: transparent;
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0 var(--padding);
+    font-size: var(--font-size);
+}
+main input[type='submit']{
+    --padding:2rem; 
+    --font-size:1.5rem; 
+    --border-color: var(--blue);
+    --border-radius:50px;
+
+    color: var(--blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main a{
+    color: var(--blue);;
+    font-size:1.2rem;
+    padding: 1rem; 
+}
+/* ========== FLEX-CONTAINER ========== */
+main .flex-container{
+    margin-top:100px; 
+}
+.flex-container img{
+    width:3rem;
+}
+.flex-container h1{
+    margin:5rem 0;
+}
+/* BUTTONS  */
+.flex-container .buttons{
     display: flex;
     flex-direction: column;
-    
+    margin-top: 3rem;
 }
-
-input[type='text'],input[type='password']{
-    
-    padding : 14px 16px;
-    background: #fff;
-    margin: .5rem 0; 
-    border-radius: 6px; 
-    border: 1px solid var(--grey); 
-}
-input[type='text']::placeholder, input[type='password']::placeholder{
-    font-size: 1.5rem; 
-    color: #a0a0a0; 
-}
-input[type='submit']{
-    font-size: 2rem; 
-    font-weight: 600;
-    padding: 1rem 0; 
-    color: white; 
-    background: var(--primary); 
-    border: none; 
-    border-radius: 6px; 
-    margin: .5rem 0;
-}
-input[type='submit']:hover,button:hover{
+.flex-container .buttons div{
+    width: 300px;
+    text-align:center;
+    padding:1rem;
+    margin-bottom:2rem;
+    margin-right:2rem;
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    font-weight: bold;
     cursor: pointer;
-    filter:grayscale(20%);
 }
-form a{
-    display: block;
-    color: var(--primary); 
-    padding: 2rem; 
-    border-bottom: 1px solid var(--grey);
+.flex-container .buttons div:hover{
+    filter: saturate(80%)
 }
-form button{
-    background: var(--green); 
-    color: white; 
-    border: none; 
-    border-radius: 6px;
-    font-size: 2rem; 
-    font-weight: 600;
-    padding: 1rem 2rem;
-    margin: 2rem auto; 
-
+#signup{
+    background: var(--blue);
 }
-#right h5{
-    font-weight: 400;
-    margin: 2rem auto; 
-}
-#right h5 a{
-    font-weight: 600;
+#login{
+    color: var(--blue);
 }
 
-@media only screen and (max-width:900px){
+/* ========== MEDIA QUERIES ========== */
+
+/* Screens with height < 640px */
+@media only screen and (max-height:640px){
+    main form{
+        display: none; 
+    }
+}
+
+/* Screens with width < 850px */
+@media only screen and (max-width:850px){
+    main form{
+        display: none; 
+    }
     .container{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; 
     }
-    #left{
-        text-align: center;
-        width:390px;
-        padding-bottom:2rem; 
+    main{
+        width: 100%; 
+        order:-1;
+    }
+    main .flex-container{
+        width:400px; ;
+        margin:auto;
+    }
+    .flex-container .buttons{
+        flex-direction: row;
+    }
+    .flex-container .buttons div{
+        width:150px
+    }
+    aside img{
+        height: 150px;
+    }
+}
 
+/* Screens with width < 430px */
+@media only screen and (max-width:430px){
+    main .flex-container{
+        width:100%; ;
     }
+    .flex-container .buttons{
+        flex-direction: column;
+    }
+    /* .flex-container .buttons div{
+        width:100%;
+    } */
 }
