@@ -18,7 +18,8 @@ aside .bg-wrapper{
 }
 /*  LOGO  */
 aside img{
-    height: 300px;
+    width:90%;
+    max-width: 300px;
 }
 
 /* ========== MAIN ========== */
@@ -121,10 +122,12 @@ main .flex-container{
     }
     main{
         width: 100%; 
+        min-width: 100%;
         order:-1;
     }
     main .flex-container{
-        width:400px; ;
+        width: 60%;
+        min-width: 350px;
         margin:auto;
     }
     .flex-container .buttons{
@@ -133,6 +136,7 @@ main .flex-container{
     .flex-container .buttons div{
         width:150px
     }
+
     aside img{
         height: 150px;
     }
@@ -141,12 +145,21 @@ main .flex-container{
 /* Screens with width < 430px */
 @media only screen and (max-width:430px){
     main .flex-container{
-        width:100%; ;
+        /* width: 60%; */
+        min-width: 100%;
+        width:100%;
     }
+    /* overriding style.css (order matters here) */
+    h1{font-size: 4rem !important;  }
+    h2{font-size: 2rem!important;	}
+    h1,h2{
+        overflow-wrap: break-word;
+    }
+
     .flex-container .buttons{
         flex-direction: column;
     }
-    /* .flex-container .buttons div{
+    .flex-container .buttons div{
         width:100%;
-    } */
+    }
 }
