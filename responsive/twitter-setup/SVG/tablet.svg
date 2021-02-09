@@ -1,1 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.58 573.56"><defs><style>.cls-1,.cls-15,.cls-17{fill:#d3abd0;}.cls-1{opacity:0.13;}.cls-2,.cls-3,.cls-6{fill:#abced4;}.cls-2{opacity:0.15;}.cls-4{fill:#99b8bc;}.cls-10,.cls-12,.cls-13,.cls-16,.cls-5,.cls-7{fill:none;stroke-miterlimit:10;}.cls-13,.cls-5{stroke:#abced4;}.cls-5{stroke-width:2.65px;}.cls-6{font-size:19px;}.cls-15,.cls-6,.cls-9{font-family:Co-ext-Bold, Co Text ;font-weight:700;}.cls-16,.cls-7{stroke:#d3abd0;}.cls-7{stroke-width:1.96px;}.cls-8{font-size:16px;fill:#505150;font-family:Co-Text-Light, Co Text ;font-weight:300;}.cls-15,.cls-9{font-size:17px;}.cls-11,.cls-9{fill:#7e989b;}.cls-10,.cls-12{stroke:#7e989b;}.cls-10,.cls-12,.cls-16{stroke-linecap:round;}.cls-10{stroke-width:2.47px;}.cls-12{stroke-width:2.89px;}.cls-13{stroke-width:2.26px;}.cls-14{fill:#c3dee0;}.cls-16{stroke-width:3px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="0.98" y="36.61" width="351.03" height="535.97" rx="4.35"/><rect class="cls-2" x="12.05" y="59.2" width="331.04" height="274.02" rx="5.07"/><rect class="cls-2" x="10.04" y="357.99" width="332.91" height="199.64" rx="6.77"/><rect class="cls-3" x="40.02" y="71.29" width="275.21" height="249.26" rx="14.3"/><rect class="cls-4" x="47.7" y="253.02" width="260.37" height="48.66" rx="6.14"/><rect class="cls-5" x="12.05" y="59.2" width="331.04" height="274.02" rx="5.07"/><text class="cls-6" transform="translate(140.51 353.47)">ASIDE</text><text class="cls-6" transform="translate(140.94 54.68)">MAIN</text><rect class="cls-7" x="0.98" y="36.61" width="351.03" height="535.97" rx="4.35"/><text class="cls-8" transform="translate(359.52 288.46)">flex-direction:<tspan x="0" y="19.2">row;</tspan></text><text class="cls-8" transform="translate(385 145.27)">order : -1; </text><text class="cls-9" transform="translate(385 107.88)">flex-item<tspan x="0" y="20.4">(main)</tspan></text><path class="cls-10" d="M345.5,107.64a84.83,84.83,0,0,1,31.35-4.29q3,.18,5.86.55"/><polygon class="cls-11" points="356.32 115 357.4 112.78 346.44 107.46 352.55 96.92 350.41 95.68 342.98 108.52 356.32 115"/><text class="cls-9" transform="translate(359.52 272.16)">flex-container</text><path class="cls-12" d="M307.11,271.39A156.68,156.68,0,0,1,350.52,267c2.73.11,5.41.3,8,.54"/><polygon class="cls-11" points="319.11 280.86 320.56 278.35 308.21 271.22 316.23 259.42 313.84 257.8 304.08 272.17 319.11 280.86"/><rect class="cls-13" x="10.04" y="357.99" width="332.91" height="199.64" rx="6.77"/><rect class="cls-14" x="115.34" y="427.04" width="102.28" height="64.61" rx="10.56"/><rect class="cls-14" x="50.86" y="85.01" width="25.24" height="25.24" rx="1.38"/><rect class="cls-14" x="50.86" y="129.39" width="253.21" height="60.03" rx="6.73"/><rect class="cls-14" x="50.86" y="208.55" width="253.21" height="27.08" rx="4.52"/><rect class="cls-14" x="58.87" y="264.13" width="113.35" height="27.08" rx="3.02"/><rect class="cls-14" x="183.47" y="264.13" width="113.35" height="27.08" rx="3.02"/><text class="cls-15" transform="translate(77.19 14.34)">flex-container</text><path class="cls-16" d="M202,9.57c.74-.06,16.33-1,24.58,11.08a25.53,25.53,0,0,1,4.3,14.06"/><polygon class="cls-17" points="217.17 26.05 219.16 23.8 230.25 33.58 239.2 21.79 241.59 23.61 230.69 37.96 217.17 26.05"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480.6 573.6" style="enable-background:new 0 0 480.6 573.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.13;fill:#D3ABD0;enable-background:new    ;}
+	.st1{opacity:0.15;fill:#ABCED4;enable-background:new    ;}
+	.st2{fill:#ABCED4;}
+	.st3{fill:#99B8BC;}
+	.st4{fill:none;stroke:#ABCED4;stroke-width:2.65;stroke-miterlimit:10;}
+	.st5{font-family:'Co-ext-Bold';}
+	.st6{font-size:19px;}
+	.st7{fill:none;stroke:#D3ABD0;stroke-width:1.96;stroke-miterlimit:10;}
+	.st8{fill:#505150;}
+	.st9{font-family:'Co-Text-Light';}
+	.st10{font-size:16px;}
+	.st11{font-size:17px;}
+	.st12{fill:#7E989B;}
+	.st13{fill:none;stroke:#7E989B;stroke-width:2.89;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#ABCED4;stroke-width:2.26;stroke-miterlimit:10;}
+	.st15{fill:#C3DEE0;}
+	.st16{fill:#D3ABD0;}
+	.st17{fill:none;stroke:#D3ABD0;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2">
+		<path class="st0" d="M5.3,36.6h342.3c2.4,0,4.4,1.9,4.4,4.3v527.3c0,2.4-1.9,4.3-4.4,4.3H5.3c-2.4,0-4.3-1.9-4.3-4.3V41
+			C1,38.6,2.9,36.6,5.3,36.6z"/>
+		<path class="st1" d="M17.1,59.2H338c2.8,0,5.1,2.3,5.1,5.1v263.9c0,2.8-2.3,5.1-5.1,5.1H17.1c-2.8,0-5.1-2.3-5.1-5.1V64.3
+			C12.1,61.5,14.3,59.2,17.1,59.2z"/>
+		<path class="st1" d="M16.8,358h319.4c3.7,0,6.8,3,6.8,6.8v186.1c0,3.7-3,6.8-6.8,6.8H16.8c-3.7,0-6.8-3-6.8-6.8V364.8
+			C10,361,13.1,358,16.8,358z"/>
+		<path class="st2" d="M54.3,71.3h246.6c7.9,0,14.3,6.4,14.3,14.3v220.7c0,7.9-6.4,14.3-14.3,14.3H54.3c-7.9,0-14.3-6.4-14.3-14.3
+			V85.6C40,77.7,46.4,71.3,54.3,71.3z"/>
+		<path class="st3" d="M53.8,253h248.1c3.4,0,6.1,2.7,6.1,6.1v36.4c0,3.4-2.7,6.1-6.1,6.1H53.8c-3.4,0-6.1-2.7-6.1-6.1v-36.4
+			C47.7,255.8,50.4,253,53.8,253z"/>
+		<path class="st4" d="M17.1,59.2H338c2.8,0,5.1,2.3,5.1,5.1v263.9c0,2.8-2.3,5.1-5.1,5.1H17.1c-2.8,0-5.1-2.3-5.1-5.1V64.3
+			C12.1,61.5,14.3,59.2,17.1,59.2z"/>
+		<text transform="matrix(1 0 0 1 140.51 353.47)" class="st2 st5 st6">ASIDE</text>
+		<text transform="matrix(1 0 0 1 140.94 54.68)" class="st2 st5 st6">MAIN</text>
+		<path class="st7" d="M5.3,36.6h342.3c2.4,0,4.4,1.9,4.4,4.3v527.3c0,2.4-1.9,4.3-4.4,4.3H5.3c-2.4,0-4.3-1.9-4.3-4.3V41
+			C1,38.6,2.9,36.6,5.3,36.6z"/>
+		<text transform="matrix(1 0 0 1 359.52 288.46)" class="st8 st9 st10">flex-direction:</text>
+		<text transform="matrix(1 0 0 1 359.52 307.66)" class="st8 st9 st10">row;</text>
+		<text transform="matrix(1 0 0 1 385 145.27)" class="st8 st9 st10">order : -1;</text>
+		<text transform="matrix(1 0 0 1 385 107.88)" class="st2 st5 st11">flex-item</text>
+		<text transform="matrix(1 0 0 1 385 128.28)" class="st2 st5 st11">(main)</text>
+		<path class="st4" d="M345.5,107.6c10.1-3.4,20.7-4.8,31.4-4.3c2,0.1,4,0.3,5.9,0.6"/>
+		<polygon class="st2" points="356.3,115 357.4,112.8 346.4,107.5 352.5,96.9 350.4,95.7 343,108.5 		"/>
+		<text transform="matrix(1 0 0 1 359.52 272.16)" class="st12 st5 st11">flex-container</text>
+		<path class="st13" d="M307.1,271.4c14.2-3.5,28.8-5,43.4-4.4c2.7,0.1,5.4,0.3,8,0.5"/>
+		<polygon class="st12" points="319.1,280.9 320.6,278.4 308.2,271.2 316.2,259.4 313.8,257.8 304.1,272.2 		"/>
+		<path class="st14" d="M16.8,358h319.4c3.7,0,6.8,3,6.8,6.8v186.1c0,3.7-3,6.8-6.8,6.8H16.8c-3.7,0-6.8-3-6.8-6.8V364.8
+			C10,361,13.1,358,16.8,358z"/>
+		<path class="st15" d="M125.9,427h81.2c5.8,0,10.6,4.7,10.6,10.6v43.5c0,5.8-4.7,10.6-10.6,10.6h-81.2c-5.8,0-10.6-4.7-10.6-10.6
+			v-43.5C115.3,431.8,120.1,427,125.9,427z"/>
+		<path class="st15" d="M52.2,85h22.5c0.8,0,1.4,0.6,1.4,1.4v22.5c0,0.8-0.6,1.4-1.4,1.4H52.2c-0.8,0-1.4-0.6-1.4-1.4V86.4
+			C50.9,85.6,51.5,85,52.2,85z"/>
+		<path class="st15" d="M57.6,129.4h239.8c3.7,0,6.7,3,6.7,6.7v46.6c0,3.7-3,6.7-6.7,6.7H57.6c-3.7,0-6.7-3-6.7-6.7v-46.6
+			C50.9,132.4,53.9,129.4,57.6,129.4z"/>
+		<path class="st15" d="M55.4,208.6h244.2c2.5,0,4.5,2,4.5,4.5v18c0,2.5-2,4.5-4.5,4.5H55.4c-2.5,0-4.5-2-4.5-4.5v-18
+			C50.9,210.6,52.9,208.6,55.4,208.6z"/>
+		<path class="st15" d="M61.9,264.1h107.3c1.7,0,3,1.4,3,3v21c0,1.7-1.4,3-3,3H61.9c-1.7,0-3-1.4-3-3v-21
+			C58.9,265.5,60.2,264.1,61.9,264.1z"/>
+		<path class="st15" d="M186.5,264.1h107.3c1.7,0,3,1.4,3,3v21c0,1.7-1.4,3-3,3H186.5c-1.7,0-3-1.4-3-3v-21
+			C183.5,265.5,184.8,264.1,186.5,264.1z"/>
+		<text transform="matrix(1 0 0 1 77.19 14.34)" class="st16 st5 st11">flex-container</text>
+		<path class="st17" d="M202,9.6c0.7-0.1,16.3-1,24.6,11.1c2.8,4.2,4.3,9.1,4.3,14.1"/>
+		<polygon class="st16" points="217.2,26 219.2,23.8 230.2,33.6 239.2,21.8 241.6,23.6 230.7,38 		"/>
+	</g>
+</g>
+</svg>

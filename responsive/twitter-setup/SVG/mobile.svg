@@ -1,1 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.25 573.39"><defs><style>.cls-1,.cls-15,.cls-17{fill:#d3abd0;}.cls-1{opacity:0.13;}.cls-2,.cls-3,.cls-6{fill:#abced4;}.cls-2{opacity:0.15;}.cls-4{fill:#99b8bc;}.cls-10,.cls-12,.cls-13,.cls-16,.cls-18,.cls-19,.cls-22,.cls-23,.cls-5,.cls-7{fill:none;stroke-miterlimit:10;}.cls-13,.cls-5{stroke:#abced4;}.cls-5{stroke-width:2.24px;}.cls-6{font-size:19px;}.cls-15,.cls-6,.cls-9{font-family:Co-ext-Bold, Co Text ;font-weight:700;}.cls-16,.cls-7{stroke:#d3abd0;}.cls-7{stroke-width:1.61px;}.cls-8{font-size:16px;}.cls-20,.cls-21,.cls-8{fill:#505150;}.cls-21,.cls-8{font-family:Co-Text-Light, Co Text ;font-weight:300;}.cls-15,.cls-9{font-size:17px;}.cls-11,.cls-9{fill:#7e989b;}.cls-10,.cls-12{stroke:#7e989b;}.cls-10,.cls-12,.cls-16{stroke-linecap:round;}.cls-10{stroke-width:2.47px;}.cls-12{stroke-width:2.33px;}.cls-13{stroke-width:1.69px;}.cls-14{fill:#c3dee0;}.cls-16{stroke-width:3px;}.cls-18,.cls-19,.cls-22,.cls-23{stroke:#505150;}.cls-19{stroke-dasharray:4.92 1.97;}.cls-21{font-size:13px;}.cls-22,.cls-23{stroke-width:1.08px;}.cls-23{stroke-dasharray:5.32 2.13;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="4.45" y="36.61" width="231.22" height="535.97" rx="3.53"/><rect class="cls-2" x="11.75" y="59.2" width="218.06" height="296.59" rx="4.28"/><rect class="cls-2" x="10.42" y="388.87" width="219.29" height="168.76" rx="5.05"/><rect class="cls-3" x="20.07" y="71.29" width="201.41" height="275.2" rx="12.85"/><rect class="cls-4" x="27.86" y="246.26" width="185.45" height="94.81" rx="7.24"/><rect class="cls-5" x="11.75" y="59.2" width="218.06" height="296.59" rx="4.28"/><text class="cls-6" transform="translate(93.52 384.44)">ASIDE</text><text class="cls-6" transform="translate(93.52 54.68)">MAIN</text><rect class="cls-7" x="0.81" y="36.61" width="238.51" height="535.97" rx="3.58"/><text class="cls-8" transform="translate(247.19 288.46)">flex-direction:<tspan x="0" y="19.2">column;</tspan></text><text class="cls-8" transform="translate(268.66 145.27)">order : -1; </text><text class="cls-9" transform="translate(268.66 107.88)">flex-item<tspan x="0" y="20.4">(main)</tspan></text><path class="cls-10" d="M229.17,107.64a84.8,84.8,0,0,1,31.34-4.29q3,.18,5.86.55"/><polygon class="cls-11" points="239.98 115 241.06 112.78 230.11 107.46 236.22 96.92 234.08 95.68 226.64 108.52 239.98 115"/><text class="cls-9" transform="translate(247.19 272.16)">flex-container</text><path class="cls-12" d="M213.13,271.25A68.19,68.19,0,0,1,241,267c1.79.11,3.53.3,5.23.54"/><polygon class="cls-11" points="223.56 277.91 224.52 275.78 214.02 271.06 219.49 260.94 217.43 259.83 210.77 272.17 223.56 277.91"/><rect class="cls-13" x="10.42" y="388.87" width="219.29" height="168.76" rx="5.05"/><rect class="cls-14" x="77.09" y="440.94" width="102.28" height="64.61" rx="10.56"/><rect class="cls-14" x="32.72" y="103.19" width="25.24" height="25.24" rx="1.38"/><rect class="cls-14" x="32.72" y="139.07" width="175.96" height="57.79" rx="5.5"/><rect class="cls-14" x="32.72" y="207.5" width="175.96" height="28.13" rx="3.84"/><rect class="cls-14" x="32.72" y="253.33" width="175.96" height="35.8" rx="4.33"/><rect class="cls-14" x="32.72" y="297.26" width="175.96" height="35.8" rx="4.33"/><text class="cls-15" transform="translate(43.95 14.34)">flex-container</text><path class="cls-16" d="M168.72,9.57c.74-.06,16.33-1,24.58,11.08a25.53,25.53,0,0,1,4.3,14.06"/><polygon class="cls-17" points="183.93 26.05 185.91 23.8 197.01 33.58 205.95 21.79 208.34 23.61 197.45 37.96 183.93 26.05"/><line class="cls-18" x1="37.84" y1="275.6" x2="40.34" y2="275.6"/><line class="cls-19" x1="42.31" y1="275.6" x2="199.68" y2="275.6"/><line class="cls-18" x1="200.67" y1="275.6" x2="203.17" y2="275.6"/><polygon class="cls-20" points="41.15 279.69 41.84 278.96 38.22 275.6 41.84 272.24 41.15 271.51 36.76 275.6 41.15 279.69"/><polygon class="cls-20" points="199.85 279.69 199.17 278.96 202.78 275.6 199.17 272.24 199.85 271.51 204.25 275.6 199.85 279.69"/><text class="cls-21" transform="translate(99.02 272.16)">100%</text><line class="cls-22" x1="23.61" y1="90.23" x2="26.32" y2="90.23"/><line class="cls-23" x1="28.44" y1="90.23" x2="213.63" y2="90.23"/><line class="cls-22" x1="214.69" y1="90.23" x2="217.4" y2="90.23"/><polygon class="cls-20" points="27.2 94.66 27.93 93.87 24.03 90.23 27.93 86.6 27.2 85.81 22.44 90.23 27.2 94.66"/><polygon class="cls-20" points="213.81 94.66 213.07 93.87 216.98 90.23 213.07 86.6 213.81 85.81 218.57 90.23 213.81 94.66"/><text class="cls-21" transform="translate(99.02 86.8)">100%</text><line class="cls-18" x1="38.11" y1="324.16" x2="40.61" y2="324.16"/><line class="cls-19" x1="42.58" y1="324.16" x2="199.95" y2="324.16"/><line class="cls-18" x1="200.94" y1="324.16" x2="203.44" y2="324.16"/><polygon class="cls-20" points="41.43 328.25 42.11 327.52 38.5 324.16 42.11 320.8 41.43 320.07 37.03 324.16 41.43 328.25"/><polygon class="cls-20" points="200.13 328.25 199.44 327.52 203.05 324.16 199.44 320.8 200.13 320.07 204.52 324.16 200.13 328.25"/><text class="cls-21" transform="translate(99.3 320.72)">100%</text></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 368.2 573.4" style="enable-background:new 0 0 368.2 573.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.13;fill:#D3ABD0;enable-background:new    ;}
+	.st1{opacity:0.15;fill:#ABCED4;enable-background:new    ;}
+	.st2{fill:#ABCED4;}
+	.st3{fill:#99B8BC;}
+	.st4{fill:none;stroke:#ABCED4;stroke-width:2.24;stroke-miterlimit:10;}
+	.st5{font-family:'Co-ext-Bold';}
+	.st6{font-size:19px;}
+	.st7{fill:none;stroke:#D3ABD0;stroke-width:1.61;stroke-miterlimit:10;}
+	.st8{fill:#505150;}
+	.st9{font-family:'Co-Text-Light';}
+	.st10{font-size:16px;}
+	.st11{fill:#7E989B;}
+	.st12{font-size:17px;}
+	.st13{fill:none;stroke:#7E989B;stroke-width:2.33;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#ABCED4;stroke-width:1.69;stroke-miterlimit:10;}
+	.st15{fill:#C3DEE0;}
+	.st16{fill:#D3ABD0;}
+	.st17{fill:none;stroke:#D3ABD0;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:#505150;stroke-miterlimit:10;}
+	.st19{fill:none;stroke:#505150;stroke-miterlimit:10;stroke-dasharray:4.92,1.97;}
+	.st20{font-size:13px;}
+	.st21{fill:none;stroke:#505150;stroke-width:1.08;stroke-miterlimit:10;}
+	.st22{fill:none;stroke:#505150;stroke-width:1.08;stroke-miterlimit:10;stroke-dasharray:5.32,2.13;}
+</style>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2">
+		<path class="st0" d="M8,36.6h224.2c1.9,0,3.5,1.6,3.5,3.5V569c0,1.9-1.6,3.5-3.5,3.5H8c-1.9,0-3.5-1.6-3.5-3.5V40.1
+			C4.4,38.2,6,36.6,8,36.6z"/>
+		<path class="st1" d="M16,59.2h209.5c2.4,0,4.3,1.9,4.3,4.3v288c0,2.4-1.9,4.3-4.3,4.3H16c-2.4,0-4.3-1.9-4.3-4.3v-288
+			C11.8,61.1,13.7,59.2,16,59.2z"/>
+		<path class="st1" d="M15.5,388.9h209.2c2.8,0,5.1,2.3,5.1,5v158.7c0,2.8-2.3,5-5.1,5H15.5c-2.8,0-5.1-2.3-5.1-5V393.9
+			C10.4,391.1,12.7,388.9,15.5,388.9z"/>
+		<path class="st2" d="M32.9,71.3h175.7c7.1,0,12.9,5.8,12.9,12.8v249.5c0,7.1-5.8,12.9-12.9,12.9H32.9c-7.1,0-12.8-5.8-12.8-12.9
+			V84.1C20.1,77,25.8,71.3,32.9,71.3z"/>
+		<path class="st3" d="M35.1,246.3h171c4,0,7.2,3.2,7.2,7.2v80.3c0,4-3.2,7.2-7.2,7.2h-171c-4,0-7.2-3.2-7.2-7.2v-80.3
+			C27.9,249.5,31.1,246.3,35.1,246.3z"/>
+		<path class="st4" d="M16,59.2h209.5c2.4,0,4.3,1.9,4.3,4.3v288c0,2.4-1.9,4.3-4.3,4.3H16c-2.4,0-4.3-1.9-4.3-4.3v-288
+			C11.8,61.1,13.7,59.2,16,59.2z"/>
+		<text transform="matrix(1 0 0 1 93.52 384.44)" class="st2 st5 st6">ASIDE</text>
+		<text transform="matrix(1 0 0 1 93.52 54.68)" class="st2 st5 st6">MAIN</text>
+		<path class="st7" d="M4.4,36.6h231.3c2,0,3.6,1.6,3.6,3.6V569c0,2-1.6,3.6-3.6,3.6H4.4c-2,0-3.6-1.6-3.6-3.6V40.2
+			C0.8,38.2,2.4,36.6,4.4,36.6z"/>
+		<text transform="matrix(1 0 0 1 247.19 288.46)" class="st8 st9 st10">flex-direction:</text>
+		<text transform="matrix(1 0 0 1 247.19 307.66)" class="st8 st9 st10">column;</text>
+		<text transform="matrix(1 0 0 1 247.19 272.16)" class="st11 st5 st12">flex-container</text>
+		<path class="st13" d="M213.1,271.2c8.9-3.3,18.4-4.8,27.9-4.2c1.8,0.1,3.5,0.3,5.2,0.5"/>
+		<polygon class="st11" points="223.6,277.9 224.5,275.8 214,271.1 219.5,260.9 217.4,259.8 210.8,272.2 		"/>
+		<path class="st14" d="M15.5,388.9h209.2c2.8,0,5.1,2.3,5.1,5v158.7c0,2.8-2.3,5-5.1,5H15.5c-2.8,0-5.1-2.3-5.1-5V393.9
+			C10.4,391.1,12.7,388.9,15.5,388.9z"/>
+		<path class="st15" d="M87.6,440.9h81.2c5.8,0,10.6,4.7,10.6,10.6V495c0,5.8-4.7,10.6-10.6,10.6H87.6c-5.8,0-10.6-4.7-10.6-10.6
+			v-43.5C77.1,445.7,81.8,440.9,87.6,440.9z"/>
+		<path class="st15" d="M34.1,103.2h22.5c0.8,0,1.4,0.6,1.4,1.4v22.5c0,0.8-0.6,1.4-1.4,1.4H34.1c-0.8,0-1.4-0.6-1.4-1.4v-22.5
+			C32.7,103.8,33.3,103.2,34.1,103.2z"/>
+		<path class="st15" d="M38.2,139.1h165c3,0,5.5,2.5,5.5,5.5v46.8c0,3-2.5,5.5-5.5,5.5h-165c-3,0-5.5-2.5-5.5-5.5v-46.8
+			C32.7,141.5,35.2,139.1,38.2,139.1z"/>
+		<path class="st15" d="M36.6,207.5h168.3c2.1,0,3.8,1.7,3.8,3.8v20.5c0,2.1-1.7,3.8-3.8,3.8H36.6c-2.1,0-3.8-1.7-3.8-3.8v-20.5
+			C32.7,209.2,34.4,207.5,36.6,207.5z"/>
+		<path class="st15" d="M37.1,253.3h167.3c2.4,0,4.3,1.9,4.3,4.3v27.1c0,2.4-1.9,4.3-4.3,4.3H37.1c-2.4,0-4.3-1.9-4.3-4.3v-27.1
+			C32.7,255.3,34.7,253.3,37.1,253.3z"/>
+		<path class="st15" d="M37.1,297.3h167.3c2.4,0,4.3,1.9,4.3,4.3v27.1c0,2.4-1.9,4.3-4.3,4.3H37.1c-2.4,0-4.3-1.9-4.3-4.3v-27.1
+			C32.7,299.2,34.7,297.3,37.1,297.3z"/>
+		<text transform="matrix(1 0 0 1 43.95 14.34)" class="st16 st5 st12">flex-container</text>
+		<path class="st17" d="M168.7,9.6c0.7-0.1,16.3-1,24.6,11.1c2.8,4.2,4.3,9.1,4.3,14.1"/>
+		<polygon class="st16" points="183.9,26 185.9,23.8 197,33.6 205.9,21.8 208.3,23.6 197.4,38 		"/>
+		<line class="st18" x1="37.8" y1="275.6" x2="40.3" y2="275.6"/>
+		<line class="st19" x1="42.3" y1="275.6" x2="199.7" y2="275.6"/>
+		<line class="st18" x1="200.7" y1="275.6" x2="203.2" y2="275.6"/>
+		<polygon class="st8" points="41.2,279.7 41.8,279 38.2,275.6 41.8,272.2 41.2,271.5 36.8,275.6 		"/>
+		<polygon class="st8" points="199.9,279.7 199.2,279 202.8,275.6 199.2,272.2 199.9,271.5 204.2,275.6 		"/>
+		<text transform="matrix(1 0 0 1 99.02 272.16)" class="st8 st9 st20">100%</text>
+		<line class="st21" x1="23.6" y1="90.2" x2="26.3" y2="90.2"/>
+		<line class="st22" x1="28.4" y1="90.2" x2="213.6" y2="90.2"/>
+		<line class="st21" x1="214.7" y1="90.2" x2="217.4" y2="90.2"/>
+		<polygon class="st8" points="27.2,94.7 27.9,93.9 24,90.2 27.9,86.6 27.2,85.8 22.4,90.2 		"/>
+		<polygon class="st8" points="213.8,94.7 213.1,93.9 217,90.2 213.1,86.6 213.8,85.8 218.6,90.2 		"/>
+		<text transform="matrix(1 0 0 1 99.02 86.8)" class="st8 st9 st20">100%</text>
+		<line class="st18" x1="38.1" y1="324.2" x2="40.6" y2="324.2"/>
+		<line class="st19" x1="42.6" y1="324.2" x2="199.9" y2="324.2"/>
+		<line class="st18" x1="200.9" y1="324.2" x2="203.4" y2="324.2"/>
+		<polygon class="st8" points="41.4,328.2 42.1,327.5 38.5,324.2 42.1,320.8 41.4,320.1 37,324.2 		"/>
+		<polygon class="st8" points="200.1,328.2 199.4,327.5 203.1,324.2 199.4,320.8 200.1,320.1 204.5,324.2 		"/>
+		<text transform="matrix(1 0 0 1 99.3 320.72)" class="st8 st9 st20">100%</text>
+	</g>
+</g>
+</svg>
