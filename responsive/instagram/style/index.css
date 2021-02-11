@@ -1,8 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+}
 .container{
     width: 900px;
     height: 70vh;
     margin: 5vh auto auto auto; 
-    display: flex;
+    display: flex;  
 }
 
 /* ========== MOCKUP ==========  */
@@ -24,26 +28,29 @@
     position: absolute;
     top:100px; right:63px;
     opacity: 0;
-    animation: fade-in-out 15s ease var(--delay) infinite forwards;
+    animation: fade-in-out 20s ease var(--delay) infinite ;
 }
 
 
 /* ========== FORM ==========  */
-
-#login{
+#form{
+    margin-top:5rem ;
+}
+#login, #signup{
     border: 1px solid #dbdbdb; 
     background: white;
     border-radius: 1px;
     padding: 0 4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+
 }
 
-#form  img#logo{
+#login  img#logo{
     width: 175px;
     display: block;
     margin: 3rem auto;
 }
-#form input{
+#login input{
     display: block;
     width:250px;
     background: var(--bg);
@@ -52,11 +59,11 @@
     border-radius: 3px;
     margin-top: 5px;
 }
-#form input::placeholder{
+#login input::placeholder{
     color: #909090; 
 }
 
-#form input[type='submit']{
+#login input[type='submit']{
     background: var(--blue);
     padding: .75rem 1rem;
     border-radius: 5px;
@@ -104,17 +111,9 @@
 }
 
 /* SIGNUP  */
-#signup{
-    border: 1px solid #dbdbdb; 
-    background: white;
-    border-radius: 1px;
-    padding: 3rem 4rem;
-    margin-top: 1rem;
-
-}
 #signup h5{
     width: fit-content;
-    margin:auto;
+    margin:2rem auto;
     font-weight: 400;
 }
 #signup a{
@@ -127,8 +126,18 @@
 @keyframes fade-in-out{
     0%{opacity: 0;}
     5%{opacity: 1;}
-    50%{opacity: 1;}
-    75%{opacity: 0;}
+    25%{opacity: 1;}
+    30%{opacity: 0;}
     100%{opacity: 0;}
+}
 
+/* ========== MEDIA QUERIES ==========  */
+
+@media (max-width: 875px){
+    #mockup{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
 }
