@@ -6,6 +6,8 @@
     display: flex;
 }
 
+/* ========== MOCKUP ==========  */
+
 #mockup{
     
     background: url(../img/bg.png);
@@ -16,19 +18,60 @@
     background-size: 454px 618px;
 }
 
-#form{
+
+/* ========== FORM ==========  */
+
+#login{
     border: 1px solid #dbdbdb; 
     background: white;
     border-radius: 1px;
-    padding: 3rem 4rem;
+    padding: 0 4rem;
+    margin-top: 2rem;
 }
 
-#form img{
+#form  img#logo{
     width: 175px;
+    display: block;
+    margin: 3rem auto;
 }
 #form input{
     display: block;
     width:250px;
+    background: var(--bg);
+    border:1px solid #dbdbdb;
+    padding: 1rem;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+#form input::placeholder{
+    color: #909090; 
+}
+
+#form input[type='submit']{
+    background: var(--blue);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    border:none;
+    margin: 2.5rem auto;
+    
+}
+
+/* FACEBOOK  */
+#fb{
+    display:flex;
+    margin:auto;
+    width:fit-content;
+}
+#fb img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* FORGOT PASS */
+#login h6{
+    font-weight: lighter;
 }
 
 /* DIVISION  */
@@ -44,4 +87,14 @@
 .hr h4{
     color:#9c9c9c;
     padding: 0 1rem;
+}
+
+/* SIGNUP  */
+#signup{
+    border: 1px solid #dbdbdb; 
+    background: white;
+    border-radius: 1px;
+    padding: 3rem 4rem;
+    margin-top: 1rem;
+
 }
