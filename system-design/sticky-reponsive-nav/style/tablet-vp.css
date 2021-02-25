@@ -1,0 +1,8 @@
+@media (max-width: 768px){
+
+/* ==================== SEARCH-BAR ====================  */
+#sticky-nav .search-bar{
+    display: none;
+}
+
+
