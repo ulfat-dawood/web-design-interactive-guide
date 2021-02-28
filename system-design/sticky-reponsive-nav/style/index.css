@@ -73,6 +73,7 @@ aside{
     background: #fff;
     box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 13%);
     padding: 20px 15px;
+    transition: all .25s ease;
 }
 aside ul{
     display: flex;
@@ -86,9 +87,10 @@ aside li{
     margin: 5px 0;
     padding: 15px 20px;
     border-radius: 2px;
+    height: 55px;
 }
 aside.collapse{
-    width: fit-content;
+    width: 102px;
 }
 aside li img{
     width:30px; 
@@ -96,10 +98,8 @@ aside li img{
 aside li h4{
     font-weight: 400;
     padding-left:10px;
+    visibility: visible;
 }
 aside.collapse li h4{
     display: none;
-}
-#menu-checkbox:checked{
-    display: block;
 }
