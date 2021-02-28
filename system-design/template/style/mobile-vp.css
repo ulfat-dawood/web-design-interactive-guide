@@ -1,0 +1,23 @@
+
+@media (max-width: 480px){
+    #sticky-nav .right{
+        display:none;
+    }
+    #sticky-nav .left{
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+    aside{
+        position: relative;
+        right: 100%;
+    }
+    aside.collapse{
+        right: 0;
+    }
+    aside.collapse li h4{
+        display: block;
+    }
+    aside.collapse{
+        width:280px;
+    }
+}
