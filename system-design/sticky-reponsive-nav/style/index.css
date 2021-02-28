@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items: center;
     background: #fff;
+    /* Stick to top  */
+    position: sticky;
+    top:0;
 }
 
 #sticky-nav .left{
@@ -67,6 +70,10 @@
     display: block;
     width:30px;
 }
+
+.container{
+    display: flex;
+}
 aside{
     width:280px;
     height: calc(100vh - 70px);
@@ -74,6 +81,9 @@ aside{
     box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 13%);
     padding: 20px 15px;
     transition: all .25s ease;
+    /* Stick to top  */
+    position: sticky;
+    top:70px;
 }
 aside ul{
     display: flex;
