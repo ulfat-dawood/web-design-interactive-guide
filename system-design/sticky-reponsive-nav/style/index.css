@@ -70,6 +70,7 @@
     display: block;
     width:30px;
 }
+/* ========== ASIDE ==========  */
 
 .container{
     display: flex;
@@ -112,4 +113,10 @@ aside li h4{
 }
 aside.collapse li h4{
     display: none;
+}
+
+/* ========== MAIN ==========  */
+
+main{
+    flex-grow: 1;
 }
