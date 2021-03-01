@@ -26,6 +26,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
 	background: var(--bg);
+	color: var(--text); 
+
 }
 
 /* TYPOGRAPHY  */

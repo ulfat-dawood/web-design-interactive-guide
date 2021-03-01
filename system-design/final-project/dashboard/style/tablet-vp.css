@@ -1,0 +1,21 @@
+@media (max-width: 768px){
+
+/* ==================== SEARCH-BAR ====================  */
+    #sticky-nav .search-bar{
+        display: none;
+    }
+    aside{
+        position: fixed;
+        left:0;
+    }
+    aside.collapse{
+        width:280px;
+        left: -280px;
+    }
+    aside.collapse li h4{
+        display: block;
+    }
+    aside.collapse::after
+
+
+}

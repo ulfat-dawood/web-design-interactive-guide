@@ -7,4 +7,4 @@ checkbox.addEventListener('click', ()=>{
     sidebar.classList.add('collapse')
     :
     sidebar.classList.remove('collapse');
-})
+})                                                                                                                 
