@@ -4,6 +4,8 @@
 
 /* COLORS */
 :root{
+	--text:#707070;
+	--bg:#F6F6F6;
 
 }
 /* RESETTING */
@@ -12,6 +14,8 @@
 	margin:0;
 	box-sizing: border-box;
 	list-style: none;      /* remove bullet point from lists */
+	text-decoration: none;
+	color: var(--text); 
 }
 
 html{
@@ -21,7 +25,7 @@ html{
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
-	background: #F6F6F6;
+	background: var(--bg);
 }
 
 /* TYPOGRAPHY  */
