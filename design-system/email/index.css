@@ -1,6 +1,7 @@
 .email-container{
     background: white;
-    height: 1000px; width: 96%; 
+    /* height: 1000px; */
+     width: 96%; 
     margin: 30px auto;
     box-shadow: 0 0 20px rgb(0 0 0 / 6%);
     display: flex;
@@ -96,10 +97,34 @@
 #main .toolbar div:hover img{
     filter:saturate(100%) invert(100%) ;
 }
+/* custom checkbox  */
+.custom-checkbox{
+    height: 0px; visibility: hidden;
+}
+.custom-checkbox+label{
+    height: 20px; width:20px;
+    border-radius: 50%; border:1px solid grey; 
+    position: relative;
+    cursor: pointer;
+}
+.custom-checkbox+label:active{
+    box-shadow: 0 0 0px 5px var(--purple-dimmed); 
+}
+.custom-checkbox:checked+label{
+    background: var(--purple);
+    border:none; 
+}
+.custom-checkbox:checked+label::before{
+    position: absolute;top:-3px;left:3px;  
+    content: "\2713";
+    color:#fff; 
+    
+}
 
 /* SEARCH BAR  */
 #main .toolbar #search-bar{
-    width:300px;
+    min-width:200px;
+    flex-grow: 1;
     background: url(../img/search-icon.svg) no-repeat;
     background-position: 95% center;
     background-size: 25px;
@@ -112,13 +137,69 @@
 }
 
 /* ========== EMAILS LIST ========== */
+#inbox{
+    height: 550px;
+    overflow: auto;
+}
 #inbox .email{
-    height: 50px;
     border-bottom: 1px solid #dfdfdf ;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+}
+#inbox .email:hover{
+    background: #f5f5f5;
 }
 #inbox .email, #inbox .email div:first-child{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#inbox .email div:first-child{
+    flex-grow: 1;
+    justify-content: flex-start;
+    /* border:2px solid orange;  */
+
+}
+#inbox .email-check + label {
+    margin-right:10px; 
+}
+#inbox .sender{
+    white-space: nowrap; 
+    flex-basis:200px; 
+    min-width: 100px;
+    margin-right: 10px;
+    /* border:2px solid green;  */
+
+}
+#inbox .heading{
+ 
+    min-width: 100px;
+    /* max-width: 300px; */
+    height: 25px;
+    /* border:2px solid red;  */
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 900px){
+    .email-container{
+        flex-direction: column;
+    }
+    #email-nav ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 500px){
+    #main .toolbar{
+        flex-wrap: wrap;
+    }
+    #main .toolbar #search-bar{
+        margin-top:1.5rem;
+    }
 }

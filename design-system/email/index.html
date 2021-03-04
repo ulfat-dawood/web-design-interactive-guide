@@ -114,7 +114,10 @@
 
                 <section id="main">
                     <div class="toolbar">
-                        <div><input type="checkbox"></div>
+                        <div>
+                            <input type="checkbox" class="custom-checkbox" id="checkbox-all">
+                            <label for="checkbox-all"></label>
+                        </div>
                         <div><img src="./img/flag.svg" alt=""></div>
                         <div><img src="./img/forward.svg" alt=""></div>
                         <div><img src="./img/delete.svg" alt=""></div>
@@ -122,25 +125,14 @@
                     </div>
 
                     <div id="inbox">
-                        <div class="email">
-                            <div>
-                                <input type="checkbox" >
-                                <div class="title"><h4>Project Deadline</h4></div>
-                            </div>
-                            <div>
-                                <p class="heading">A maiores possimus, magni aut soluta </p>
-                            </div>
-                            <div>
-                                <p class="date">Dec 25</p>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
             </div>
         </main>
 
     </div>
-
+    <script src="email.js"></script>
     <script src="../app.js"></script>
 </body>
 </html>
