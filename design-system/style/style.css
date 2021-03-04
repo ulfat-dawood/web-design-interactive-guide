@@ -6,6 +6,11 @@
 :root{
 	--text:#707070;
 	--bg:#F6F6F6;
+	--success:#008F7A;
+	--warning:#FF6F91;
+	--purple:#845EC2;
+	--purple-dimmed:#DCB0FFcc; 
+	--pink:#D65DB1;
 
 }
 /* RESETTING */

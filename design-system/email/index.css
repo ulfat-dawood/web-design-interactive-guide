@@ -1,3 +1,112 @@
-h1{
-    color:red; 
+.email-container{
+    background: white;
+    height: 1000px; width: 96%; 
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 6%);
+    display: flex;
+}
+/* ========== SIDEBAR SECTION ========== */
+#sidebar{
+    flex-basis: 250px;
+    border-right:1px solid #dfdfdf ;
+}
+/* COMPOSE  */
+#compose-container{
+    border-bottom: 1px solid #dfdfdf ;
+    padding:1.5rem;
+}
+#compose-button{
+    display: block;
+    background: var(--purple);
+    color:#fff; 
+    text-align: center;
+    /* padding:.5em; */
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px; 
+
+}
+#compose-button:hover{
+    box-shadow: 0 0 0px 5px var(--purple-dimmed); 
+}
+/* ========== NAV ========== */
+#email-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+#email-nav li{
+    display: flex;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#email-nav li:hover{
+    background: var(--purple-dimmed);
+}
+#email-nav h4{
+    font-weight: 400;
+}
+#email-nav img{
+    height: 2rem;
+    margin-right: 2rem;
+}
+#email-nav li:hover > h4{
+    color:#fff; 
+}
+#email-nav li:hover > img{
+    filter:saturate(100%) invert(100%) ;
+}
+
+
+
+/* ========== MAIN SECTION ========== */
+#main{
+    flex-grow: 1;
+
+}
+#main .toolbar{
+    padding:1.5rem; 
+    border-bottom: 1px solid #dfdfdf ;
+    display: flex;
+    cursor: pointer;
+}
+#main .toolbar div{
+    height: 40px; width:40px;
+    border: 1px solid #DFDFDF; 
+    border-radius: 5px;
+    margin:0 10px; 
+
+}
+#main .toolbar div img{
+    height: 20px;
+    margin: 10px; 
+}
+#main .toolbar div:hover{
+    background: var(--purple);
+}
+#main .toolbar div:active{
+    box-shadow: 0 0 0px 5px var(--purple-dimmed); 
+
+}
+#main .toolbar div:nth-child(4):hover{
+    background: var(--warning);
+}
+#main .toolbar div:hover img{
+    filter:saturate(100%) invert(100%) ;
+}
+
+/* SEARCH BAR  */
+#main .toolbar #search-bar{
+    width:300px;
+    background: url(../img/search-icon.svg) no-repeat;
+    background-position: 95% center;
+    background-size: 25px;
+}
+#main .toolbar input[type='text']{
+    height: 20px;
+    margin: 10px; 
+    border: none;
+    outline: none;
 }
