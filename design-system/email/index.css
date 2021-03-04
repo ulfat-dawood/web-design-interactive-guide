@@ -110,3 +110,15 @@
     border: none;
     outline: none;
 }
+
+/* ========== EMAILS LIST ========== */
+#inbox .email{
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf ;
+    padding: 0 2rem;
+}
+#inbox .email, #inbox .email div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
