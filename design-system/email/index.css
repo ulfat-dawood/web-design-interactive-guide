@@ -40,18 +40,18 @@
     display: flex;
     padding: 1rem 2rem;
     margin: 1rem;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     cursor: pointer;
     position: relative;
 }
-#email-nav li.active::before, #email-nav li:hover::before{
-    content:''; 
-    position: absolute; left:0; top:0;
-    height: 100%; width:3px; 
-    background: var(--purple);
+
+#email-nav li.active{
+    border-left: 3px solid var(--purple);
+
 }
 #email-nav li:hover{
     background: var(--purple-dimmed);
+    border-left: 3px solid var(--purple);
 }
 #email-nav h4{
     font-weight: 400;
@@ -72,7 +72,6 @@
 /* ========== MAIN SECTION ========== */
 #main{
     flex-grow: 1;
-
 }
 #main .toolbar{
     padding:1.5rem; 
@@ -102,12 +101,6 @@
     box-shadow: 0 0 0px 5px var(--purple-dimmed); 
 
 }
-#main .toolbar div:first-child{
-    cursor: auto;
-}
-#main .toolbar div:first-child:hover{
-    background: none;
-}
 #main .toolbar div:nth-child(4):hover{
     background: var(--warning);
 }
@@ -120,6 +113,7 @@
 }
 .custom-checkbox+label{
     height: 20px; width:20px;
+    min-height: 20px; min-width:20px;
     border-radius: 50%; border:1px solid grey; 
     position: relative;
     cursor: pointer;
@@ -172,9 +166,11 @@
     align-items: center;
 }
 #inbox .email div:first-child{
-    flex-grow: 1;
     justify-content: flex-start;
-    /* border:2px solid orange;  */
+    flex-shrink: 1;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 #inbox .email-check + label {
@@ -182,19 +178,15 @@
 }
 #inbox .sender{
     white-space: nowrap; 
-    flex-basis:200px; 
-    min-width: 100px;
-    margin-right: 10px;
-    /* border:2px solid green;  */
+    width:150px;
+    /* prevent the item from shrinking  */
+    flex-shrink: 0;
+    margin-right: 30px;
 
 }
 #inbox .heading{
- 
-    min-width: 100px;
-    /* max-width: 300px; */
     height: 25px;
-    /* border:2px solid red;  */
-
+    word-break: break-word;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -219,5 +211,8 @@
     }
     #main .toolbar #search-bar{
         margin-top:1.5rem;
+    }
+    #inbox .heading{
+        display:none; 
     }
 }
