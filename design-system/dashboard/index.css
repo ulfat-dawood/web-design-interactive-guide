@@ -1,3 +1,36 @@
-h1{
-    color:red; 
+#dashboard-container{
+    /* border: 1px solid red; */
+    margin: 30px auto;
+    max-width:88%; 
+
+}
+/* ========= SECTION-ONE ==========  */
+#one{
+ display:flex;
+ justify-content: space-between;
+}
+
+#one .card{
+    flex-basis:23%; 
+    border-radius: 15px;
+    padding:15px;
+}
+#one .card:nth-child(1){background: linear-gradient(to right, #159957 , #155799);}
+#one .card:nth-child(2){background: linear-gradient(to right, #673AB7 , #512DA8);}
+#one .card:nth-child(3){background: linear-gradient(to right, #B24592 , #F15F79);}
+#one .card:nth-child(4){background: linear-gradient(to right, #F00000 , #DC281E);}
+
+#one .info{
+    display: flex;
+    justify-content: space-between;
+}
+#one .title h4{
+    color:white; 
+}
+#one .title h4:first-child{font-weight: 300; margin-bottom: .5rem;}
+#one .progress{
+    margin-top: 20px;
+    height: 5px; width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fff var(--progress) , rgba(100%, 100%,100%, .2) var(--progress)); ;
 }
