@@ -4,7 +4,7 @@
     max-width:88%; 
 
 }
-/* ========= SECTION-ONE ==========  */
+/* ========= SECTION ONE ==========  */
 #one{
  display:flex;
  justify-content: space-between;
@@ -33,4 +33,13 @@
     height: 5px; width: 100%;
     border-radius: 5px;
     background: linear-gradient(to right, #fff var(--progress) , rgba(100%, 100%,100%, .2) var(--progress)); ;
+}
+
+/* ========= SECTION TWO ==========  */
+#two{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
 }
