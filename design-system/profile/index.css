@@ -56,14 +56,59 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+#profile .cta> div:active{
+    box-shadow: 0 0 0px 5px var(--purple-dimmed); 
+
+}
+
 #profile .cta .follow{
     color:#fff;
     background: var(--purple);
 }
 
-#profile .social-media{
-    
+/* SOLICAL MEDIA  */
+#profile ul{
+    width:80%;
 }
+#profile li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    border-bottom:5px solid #fff;
+    padding:.5rem 2rem;
+    transition: all .5s ease; 
+}
+#profile li:hover , #profile li:hover img{
+    background: var(--purple-dimmed);
+
+}
+
+#profile li:first-child{
+    border-radius: 10px 10px 0 0;
+}
+#profile li:last-child{
+    border:none;
+    border-radius: 0 0 10px 10px;
+}
+
+#profile .platform{
+    display: flex;
+    align-items: center;
+
+}
+
+#profile .platform img{
+    background: #fff;
+    border-radius: 50%;
+    padding:.25rem; 
+     height: 30px;
+     width:30px;
+     object-fit: contain;
+     margin-right: 1rem;
+}
+#profile .platform 
 /* ========== DETAILS ==========  */
 #details{grid-area: details;}
 
