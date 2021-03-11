@@ -1,3 +1,72 @@
-h1{
-    color:red; 
+/* ========== CONTAINER ==========  */
+#profile-container{
+    /* border:1px solid red; */
+    padding: 40px 20px;
+    display:grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: auto auto;
+    gap:25px;
+    grid-template-areas: 
+    "profile details" 
+    "profile skills" ;
 }
+#profile-container> div{ 
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
+}
+/* ========== PROFILE ==========  */
+#profile{
+    grid-area: profile;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile figure{
+    height: 100px; width:100px; 
+    border-radius: 50%;
+    border:5px solid var(--purple); 
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+#profile img{
+    height: 100%;
+    width:100%; 
+    object-fit: cover;
+}
+
+#profile h3, #profile h5{
+    /* h3 will have more margin than h5  */
+    margin-bottom: .5em
+}
+
+#profile h5{
+    font-weight: 300;
+}
+#profile .cta{
+    display:flex;
+    justify-content: space-between;
+}
+#profile .cta >div{
+    color:var(--purple);
+    border: 1px solid;
+    padding:.5em;
+    margin:3rem .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#profile .cta .follow{
+    color:#fff;
+    background: var(--purple);
+}
+
+#profile .social-media{
+    
+}
+/* ========== DETAILS ==========  */
+#details{grid-area: details;}
+
+/* ========== SKILLS ==========  */
+#skills{grid-area: skills;}
+
