@@ -99,6 +99,7 @@ aside li{
     align-items: center;
     border: 1px solid #e9e9e9;
     margin: 5px 0;
+    min-width: 70px;
     padding: 15px 20px;
     border-radius: 2px;
     height: 55px;
@@ -107,7 +108,8 @@ aside.collapse{
     width: 102px;
 }
 aside li img{
-    width:30px; 
+    width:30px;
+    min-width:30px; 
 }
 aside li h4{
     font-weight: 400;
