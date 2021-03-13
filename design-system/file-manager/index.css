@@ -33,6 +33,10 @@
     align-items: center;
     padding: .5em;
     border-bottom: 1px solid #dbdbdb;
+    cursor: pointer;
+}
+#dir .sub-dir li:hover{
+    background: var(--purple-dimmed);
 }
 #dir .sub-dir li:last-child{
     padding-bottom: 0;
