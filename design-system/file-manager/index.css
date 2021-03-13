@@ -1,3 +1,49 @@
-h1{
-    color:red; 
+/* ========== CONTAINER ==========  */
+#file-container{
+    /* border:1px solid red; */
+    padding: 40px 5%;
+    display:grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: auto auto;
+    gap:25px;
+    grid-template-areas: 
+    "dir main" 
+    "stat main" ;
+}
+#file-container> div{ 
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
+}
+/* ========== DIRECTORY ==========  */
+#dir{
+    grid-area: dir;
+}
+
+
+/* ========== STAT ==========  */
+#stat{
+    grid-area: stat;
+}
+
+
+/* ========== MAIN ==========  */
+#main{
+    grid-area: main;
+}
+
+
+
+/* ========== MEDIA QUERIES ==========  */
+@media (max-width:980px){
+    #file-container{
+
+    grid-template-areas: 
+    "dir"
+    "stat" 
+    "main" ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    }
 }
