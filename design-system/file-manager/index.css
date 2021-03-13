@@ -21,6 +21,16 @@
     grid-area: dir;
 }
 #dir .add{
+    text-align: center;
+    background: var(--purple);
+    color:#fff;
+    font-size: 18px;
+    padding:.25em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#dir .add:active{
+    box-shadow: 0 0 0px 5px var(--purple-dimmed); 
 
 }
 
@@ -32,12 +42,24 @@
     justify-content: flex-start;
     align-items: center;
     padding: .5em;
-    border-bottom: 1px solid #dbdbdb;
+    border-radius: 0 20px 20px 0;
+    border-left: 2px solid transparent;
     cursor: pointer;
+    transition: background .5s ease;
+}
+#dir .sub-dir li.active{
+    background: #f5f5f5;
+    border-left: 2px solid #dbdbdb;
+
 }
 #dir .sub-dir li:hover{
     background: var(--purple-dimmed);
+    border-left: 2px solid var(--purple);
 }
+#dir .sub-dir li:hover > img{
+    filter:none; 
+}
+
 #dir .sub-dir li:last-child{
     padding-bottom: 0;
     border:none;
