@@ -20,6 +20,32 @@
 #dir{
     grid-area: dir;
 }
+#dir .add{
+
+}
+
+#dir h4{
+    margin:1.5rem 0;
+}
+#dir .sub-dir li{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5em;
+    border-bottom: 1px solid #dbdbdb;
+}
+#dir .sub-dir li:last-child{
+    padding-bottom: 0;
+    border:none;
+}
+#dir .sub-dir img{
+    width:20px;
+    margin-right: 1rem;
+    filter:grayscale(100%)
+}
+#dir .sub-dir h5{
+    font-weight: 400;
+}
 
 
 /* ========== STAT ==========  */
