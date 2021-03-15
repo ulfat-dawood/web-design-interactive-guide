@@ -1,4 +1,5 @@
 
+//////////// ANNUAL PROGRESS ////////////
 const annualProgress= document.querySelector('#annual-progress').getContext('2d');
 gradient = annualProgress.createLinearGradient(0, 0, 0, 450);
 gradient.addColorStop(0.3, 'rgba(220, 176, 255,0.9)');
@@ -46,6 +47,69 @@ let chart= new Chart(annualProgress , {
             xAxes: [{
                gridLines: {display: false},
             }]
-         }
+        }
+    }
+})
+
+//////////// VISITORS STATUS ////////////
+
+const visitorsStatus= document.querySelector('#visitors-status').getContext('2d');
+
+let visitors= new Chart(visitorsStatus, {
+    type: 'bar',
+    data:{
+        labels:['Jan','Feb','Mar','Apr','May','Jun'],
+        datasets:[
+            {
+                label:'New Visitor',
+                data:[2,4,3,4,6,8],
+                backgroundColor: '#845EC2',
+    
+            },
+            {
+                label:'Old Visitor',
+                data:[1,3,1,3,4,6],
+                backgroundColor: '#DCB0FFcc',
+    
+            }],
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+               ticks: {
+                   stepSize: 2,
+                   callback: function(value, index, values) {
+                    return value + 'k';}
+                },
+               gridLines: {display: true},
+            }],
+            xAxes: [{
+               gridLines: {display: false},
+            }]
+        }
+    }
+})
+   
+//////////// DAILY TARGET ////////////
+
+const dailyTarget= document.querySelector('#daily-target').getContext('2d');
+
+let target= new Chart(dailyTarget, {
+    type: 'doughnut',
+    data:{
+        labels:['achieved','not achieved'],
+        datasets:[
+            {
+                label:'New Visitor',
+                data:[80,20],
+                backgroundColor: '#845EC2',
+    
+            }],
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio: false,
     }
 })

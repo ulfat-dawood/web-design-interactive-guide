@@ -35,7 +35,7 @@
 
 /* ========= SECTION TWO ==========  */
 #two{
-    margin-top: 20px;
+    margin-top: 3rem;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
@@ -53,7 +53,27 @@
     /* parent set to relative to allow canvas to be responsive  */
     position: relative;
     flex-grow: 1; 
+    /* border: 2px solid red; */
+    max-width:99%;
 }
 
-#two #annual-progress{
+/* ========= SECTION THREE ==========  */
+#three{
+    display: flex;
+    justify-content: space-between;
+}
+#three > div{
+    margin-top: 3rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
+    width:48%;
+    max-width: 48%;
+    height: 250px;
+}
+#three .parent{
+    position: relative;
+    border:2px solid green;
+    max-width: 99%; height: 100%;
 }
