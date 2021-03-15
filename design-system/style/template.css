@@ -77,7 +77,7 @@
     display: flex;
 }
 aside{
-    width:280px;
+    min-width:280px;
     height: calc(100vh - 70px);
     background: #fff;
     box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 13%);
@@ -105,7 +105,7 @@ aside li{
     height: 55px;
 }
 aside.collapse{
-    width: 102px;
+    min-width: 102px;
 }
 aside li img{
     width:30px;

@@ -1,8 +1,6 @@
 #dashboard-container{
     /* border: 1px solid red; */
-    margin: 30px auto;
-    max-width:88%; 
-
+    padding:4rem 3%;
 }
 /* ========= SECTION ONE ==========  */
 #one{
@@ -42,4 +40,20 @@
     border-radius: 15px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
     padding:20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* width:99.9%; */ 
+}
+#two h4{
+    margin-bottom: 2rem;
+}
+#two .canvas-parent{
+    /* parent set to relative to allow canvas to be responsive  */
+    position: relative;
+    flex-grow: 1; 
+}
+
+#two #annual-progress{
 }
