@@ -79,13 +79,107 @@
     grid-area: stat;
 }
 
+#stat .capacity h3{
+    color: var(--purple);
+}
+#stat .capacity h3 span{
+    font-size: 70%;
+    font-weight: 400;
+}
+#stat .chart{
+    height: 7px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #dbdbdb;
+    display: flex;
+    margin: 2rem 0;
+}
+#stat .chart >div{
+    background: var(--color);
+    flex-basis: var(--width);
+}
+/* LIST  */
+#stat li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+#stat .type{
+    display: flex;
+}
+#stat .img-container{
+    display: flex;justify-content: center;align-items: center;
+    background: var(--color);
+    padding:1rem;
+    border-radius: 5px; 
+    margin-right: 1rem;
+}
+#stat .img-container img{
+    width:20px; height: 20px;
+}
+#stat .desc h5, #stat .occupied{font-weight: 400;}
 
 
 /* ========== MAIN ==========  */
 #main{
     grid-area: main;
 }
-
+/* SEARCH BAR */
+#main .search-bar{
+    border: 1px solid #dbdbdb; 
+    display: flex;
+    height: 50px;
+    border-radius: 5px;
+}
+#main .search-icon{
+    border-right: 1px solid #dbdbdb; 
+    width:60px;
+    background: url(../img/search-icon.svg) no-repeat center center/30px;
+}
+#main .search-bar input{
+    margin-left: 2rem;
+    border:none;
+    outline: none;
+}
+/* SERVICES  */
+#main .services{ display: flex;}
+#main .services > div{
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    padding:2rem;
+    margin-top: 3rem;
+    flex-grow: 1;
+    margin-right: 3rem;
+}
+#main .services > div:last-child{
+    margin-right:0;
+}
+#main .services .img-container{
+    border-radius: 15px;
+    padding:1rem;
+    background: var(--color);
+    width:fit-content;
+}
+#main .services img{
+    width:90px;
+}
+#main .services h3{
+    margin: 2rem 0 3rem 0;
+}
+#main .services .stat{
+    display: flex;
+    justify-content: space-between;
+} 
+#main .services .stat h5{
+ font-weight: 400;
+ margin-bottom: 1rem;
+}
+#main .services .stat-chart{
+    height: 5px;
+    width:100%;
+    background: linear-gradient(to right, var(--color) var(--occupied),#dbdbdb var(--occupied))
+}
 
 
 /* ========== MEDIA QUERIES ==========  */

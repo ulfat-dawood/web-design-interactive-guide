@@ -152,16 +152,120 @@
 
                 <div id="stat">
                     <div class="capacity">
-                        <h4>5GB <span>available of 50 GB</span></h4>
+                        <h3>5GB <span>available of 50 GB</span></h3>
                     </div>
 
                     <div class="chart">
-                        <div style="--color:"></div>
+                        <div style="--color:#FF6F91; --width:10%;"></div>
+                        <div style="--color:#845EC2; --width:30%;"></div>
+                        <div style="--color:#D65DB1; --width:20%;"></div>
                     </div>
+
+                    <ul class="dtl-stat">
+                        <li style="--color:#FF6F9133;">
+                            <div class="type">
+                                <div class="img-container">
+                                    <img src="./img/stat-doc.svg" alt="">
+                                </div>
+    
+                                <div class="desc">
+                                    <h4>Documents</h4>
+                                    <h5>2,340 files</h5>
+                                </div>
+                            </div>
+
+                            <h4 class="occupied">5 GB</h4>
+                        </li>
+                        <li style="--color:#845EC233;">
+
+                            <div class="type">
+                                <div class="img-container">
+                                    <img src="./img/stat-vid.svg" alt="">
+                                </div>
+
+                                <div class="desc">
+                                    <h4>Videos</h4>
+                                    <h5>540 files</h5>
+                                </div>
+                            </div>
+
+                            <h4 class="occupied">31 GB</h4>
+                        </li>
+                        <li style="--color:#D65DB133;">
+                            <div class="type">
+                                <div class="img-container">
+                                    <img src="./img/stat-img.svg" alt="">
+                                </div>
+    
+                                <div class="desc">
+                                    <h4>Images</h4>
+                                    <h5>3,540 files</h5>
+                                </div>
+                            </div>
+
+                            <h4 class="occupied">9 GB</h4>
+                        </li>
+                    </ul>
                 </div>
 
                 <div id="main">
+                    <div class="search-bar">
+                        <div class="search-icon"></div>
+                        <input type="text" placeholder="SEARCH">
+                    </div>
 
+                    <div class="services">
+
+                        <div style="--color:#FF6F91; --occupied:20%;">
+                           <div class="img-container">
+                               <img src="./img/google-drive.svg">
+                           </div> 
+
+                           <h3>Google Drive</h3>
+
+                           <div class="stat">
+                               <h5>34.4</h5>
+                               <h5>64.8</h5>
+                           </div>
+
+                           <div class="stat-chart"></div>
+                        </div>
+                        
+                        
+
+                        <div style="--color:#845EC2; --occupied:80%;">
+                           <div class="img-container">
+                               <img src="./img/drop-box.svg">
+                           </div> 
+
+                           <h3>Drop Box</h3>
+
+                           <div class="stat">
+                               <h5>63.7</h5>
+                               <h5>6.9</h5>
+                           </div>
+
+                           <div class="stat-chart"></div>
+                        </div>
+                        
+
+                        <div style="--color:#D65DB1; --occupied:50%;">
+                           <div class="img-container">
+                               <img src="./img/one-drive.svg">
+                           </div> 
+
+                           <h3>One Drive</h3>
+
+                           <div class="stat">
+                               <h5>98.1</h5>
+                               <h5>40.88</h5>
+                           </div>
+
+                           <div class="stat-chart"></div>
+                        </div>
+                        
+
+                    </div>
                 </div>
             </div>
         </main>
