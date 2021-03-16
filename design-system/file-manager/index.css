@@ -184,12 +184,13 @@
 #main .files .header{
     display: flex;
     justify-content: space-between;
-    padding:.5em
+    padding:.5em 3rem;
+    border-bottom: 1px solid #505050;
 }
 #main .files .header >h5{ font-weight: 600;}
-#main .files .header >h5:first-child{flex-basis: 25%;flex-shrink: 0;}
+#main .files .header >h5:first-child{flex-basis: 20%;flex-shrink: 0;}
 /* files list  */
-#main .files ul{height: 300px; overflow: scroll;}
+#main .files ul{height: 300px; overflow: scroll;overflow-x: hidden}
 #main .files li{
     display: flex;
     border-bottom: 1px solid #dbdbdb;
