@@ -101,7 +101,13 @@ let salesChart= new Chart(monthlySales , {
     }, 
     options: {
         title:{display:false},
-        legend:{display:false},
+        legend:{
+            display:true,
+            position:'bottom',
+            labels:{
+                boxWidth:3, 
+            }
+        },
         responsive:true,
         maintainAspectRatio: false,
 
