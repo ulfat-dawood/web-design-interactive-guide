@@ -74,7 +74,7 @@
 }
 #three .parent{
     position: relative;
-    border:2px solid green;
+    /* border:2px solid green; */
     max-width: 99%; height: 100%;
 }
 
@@ -119,8 +119,33 @@
     flex-shrink: 0;
 }
 #four .gauge-1 .parent,
+#four .countries .parent,
 #four .gauge-2 .parent{
     position: relative;
     /* border:2px solid green; */
     max-width: 99%; height: 100%;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 950px){
+    /* containers  */
+    #one,#three,#four{flex-direction: column;}
+    #four .gauge-group{flex-direction: row;}
+    /* elements  */
+    #one .card{margin-bottom: 1.5rem;}
+    #three > div,#four .countries, #four .gauge-group{
+        width:100%;
+        max-width: 100%;
+    }
+    #four .gauge-1 , #four .gauge-2{
+        width: 46%;
+    }
+
+}
+
+@media (max-width: 450px){
+    #four .gauge-group{flex-direction: column;}
+    #four .gauge-1 , #four .gauge-2{
+        width: 100%;
+    }
 }
