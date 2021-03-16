@@ -77,3 +77,50 @@
     border:2px solid green;
     max-width: 99%; height: 100%;
 }
+
+/* ========= SECTION FOUR ==========  */
+#four{
+    display:flex;
+    justify-content: space-between;
+}
+
+#four .countries{
+    margin-top: 3rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
+    width:70%;
+    max-width: 70%;
+    /* flex-item can't shrink less than 70% : */
+    flex-shrink: 0;
+    height: 400px;
+    
+}
+#four .gauge-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width:26%;
+    max-width: 26%;
+    /* flex-item can't shrink less than 70% : */
+    flex-shrink: 0;
+    height: 400px;
+}
+/* ========= GAUGE ==========  */
+
+#four .gauge-1 , #four .gauge-2{
+    background: #DCB0FFcc;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:20px;
+    max-height: 45%;
+    flex-shrink: 0;
+}
+#four .gauge-1 .parent,
+#four .gauge-2 .parent{
+    position: relative;
+    /* border:2px solid green; */
+    max-width: 99%; height: 100%;
+}

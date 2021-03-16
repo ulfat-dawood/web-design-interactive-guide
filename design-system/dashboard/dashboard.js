@@ -64,16 +64,26 @@ let visitors= new Chart(visitorsStatus, {
                 label:'New Visitor',
                 data:[2,4,3,4,6,8],
                 backgroundColor: '#845EC2',
+                barThickness:15,
     
             },
             {
                 label:'Old Visitor',
                 data:[1,3,1,3,4,6],
                 backgroundColor: '#DCB0FFcc',
+                barThickness:15,
     
             }],
     },
     options:{
+        legend:{
+            display:true,
+            position:'bottom',
+            labels:{
+                boxWidth:15,
+            }
+        },
+
         responsive:true,
         maintainAspectRatio: false,
         scales: {
@@ -92,24 +102,83 @@ let visitors= new Chart(visitorsStatus, {
     }
 })
    
-//////////// DAILY TARGET ////////////
 
-const dailyTarget= document.querySelector('#daily-target').getContext('2d');
 
-let target= new Chart(dailyTarget, {
+
+
+//////////// GAUGE #1 ////////////
+
+const gauge1= document.querySelector('#gauge-1').getContext('2d');
+
+let gauge1Chart= new Chart(gauge1, {
     type: 'doughnut',
     data:{
-        labels:['achieved','not achieved'],
+        labels:['Target'],
         datasets:[
             {
                 label:'New Visitor',
-                data:[80,20],
-                backgroundColor: '#845EC2',
+                data:[40,60],
+                backgroundColor: ['#FF6F91','#fff'],
+                borderColor: 'transparent',
     
             }],
     },
     options:{
         responsive:true,
         maintainAspectRatio: false,
+        legend:{
+            display:true,
+            position:'left',
+            labels:{
+                fontColor:'#fff',
+                boxWidth:20,
+                fontSize:18,
+            }
+        },
+        //turn the doughnut into gauge:
+        maintainAspectRatio: false,
+        circumference: Math.PI + 1,
+        rotation: -Math.PI - 0.5,
+        cutoutPercentage: 64,
+    }
+})
+
+
+//////////// GAUGE #2 ////////////
+
+const gauge2= document.querySelector('#gauge-2').getContext('2d');
+
+let gauge2Chart= new Chart(gauge2, {
+    type: 'doughnut',
+    data:{
+        labels:['Visitors'],
+        datasets:[
+            {
+                label:'Daily Visitors',
+                data:[80,20],
+                backgroundColor: ['#845EC2','#fff'],
+                borderColor: 'transparent',
+                
+            }],
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio: false,
+        legend:{
+            display:true,
+            position:'left',
+            labels:{
+                boxWidth:15,
+                fontColor:'#fff',
+                boxWidth:20,
+                fontSize:18,
+            },
+            
+        },
+        //turn the doughnut into gauge:
+        maintainAspectRatio: false,
+        circumference: Math.PI + 1,
+        rotation: -Math.PI - 0.5,
+        cutoutPercentage: 64,
     }
 })
