@@ -182,7 +182,7 @@ const countries= document.querySelector('#countries').getContext('2d');
 let countriesChart= new Chart(countries, {
     type: 'horizontalBar',
     data:{
-        labels:['KSA','US','UK','India','UAE','Qatar'],
+        labels:['KSA','US','UK','India','UAE','Oman'],
         datasets:[
             {
                 label:'Visitors per Countries',
