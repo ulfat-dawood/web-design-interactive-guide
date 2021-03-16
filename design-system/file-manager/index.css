@@ -60,10 +60,7 @@
     filter:none; 
 }
 
-#dir .sub-dir li:last-child{
-    padding-bottom: 0;
-    border:none;
-}
+
 #dir .sub-dir img{
     width:20px;
     margin-right: 1rem;
