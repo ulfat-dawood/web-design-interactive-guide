@@ -108,10 +108,10 @@ let salesChart= new Chart(monthlySales , {
         scales: {
             yAxes: [{
                ticks: {stepSize: 20},
-               gridLines: {display: false},
+               gridLines: {display: true},
             }],
             xAxes: [{
-               gridLines: {display: false},
+               gridLines: {display: true},
             }],
 
         }
