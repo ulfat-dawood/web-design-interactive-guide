@@ -148,9 +148,8 @@
     border: 1px solid #dbdbdb;
     border-radius: 15px;
     padding:2rem;
-    margin-top: 3rem;
+    margin: 3rem 3rem 7rem 0;
     flex-grow: 1;
-    margin-right: 3rem;
 }
 #main .services > div:last-child{
     margin-right:0;
@@ -181,6 +180,39 @@
     background: linear-gradient(to right, var(--color) var(--occupied),#dbdbdb var(--occupied))
 }
 
+/* FILES  */
+#main .files .header{
+    display: flex;
+    justify-content: space-between;
+    padding:.5em
+}
+#main .files .header >h4{ font-weight: 600;}
+#main .files .header >h4:first-child{flex-basis: 25%;flex-shrink: 0;}
+/* files list  */
+#main .files ul{height: 300px; overflow: scroll;}
+#main .files li{
+    display: flex;
+    border-bottom: 1px solid #dbdbdb;
+    justify-content: space-between;
+    padding: .5em; 
+    cursor: pointer;
+}
+#main .files li:nth-child(odd){
+    background: #eee;
+}
+#main .files li:hover{
+    background: #dbdbdb;
+}
+#main h4{font-weight: 400;}
+#main .files .file{
+    display: flex;
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+#main .files img{
+    width:25px;height: 25px;
+    margin-right:1rem;
+}
 
 /* ========== MEDIA QUERIES ==========  */
 @media (max-width:980px){
