@@ -2,63 +2,75 @@ const files= document.querySelector('#main .files ul');
 const fileData=[
     {
         img:'doc',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Annual Review',
+        members:'Only you',
+        date:'Jan 2, 2020'
     },
     {
         img:'vid',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Opening Ceremony ',
+        members:'Only you',
+        date:'Dec 24, 2021'
     },
     {
         img:'img',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Logo',
+        members:'7 members',
+        date:'Feb 5, 2020'
     },
     {
         img:'img',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Main branch',
+        members:'2 members',
+        date:'Jan 15, 2021'
     },
     {
         img:'doc',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'CV-2020',
+        members:'Only you',
+        date:'Dec 26, 2020'
     },
     {
         img:'img',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'France',
+        members:'Only you',
+        date:'Feb 19, 2020'
     },
     {
         img:'vid',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'New office tour',
+        members:'3 members',
+        date:'Mar 1, 2021'
     },
     {
         img:'doc',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Financial Report 2020',
+        members:'Only you',
+        date:'Oct 9, 2020'
     },
     {
         img:'doc',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Feb Reviews',
+        members:'10 members',
+        date:'Feb 8, 2021'
     },
     {
         img:'doc',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'London branch estimates',
+        members:'1 members',
+        date:'Sep 21, 2021'
     },
     {
         img:'img',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Friends reunion',
+        members:'Only you',
+        date:'Dec 14, 2019'
     },
     {
         img:'vid',
-        fileName:'Annual review',
-        date:'Dec 12, 1995'
+        fileName:'Friends reunion video',
+        members:'Only you',
+        date:'Dec 12, 2019'
     },
 ]
 
@@ -69,12 +81,12 @@ fileData.forEach((file)=>{
 <li>
 <div class="file">
     <img src="./img/stat-${file.img}.svg">
-    <h4>${file.fileName}</h4>
+    <h5>${file.fileName}</h5>
 </div>
 
-<h4 class="members">${file.members}</h4>
+<h5 class="members">${file.members}</h5>
 
-<h4>${file.date}</h4>
+<h5>${file.date}</h5>
 </li>
 `
 })
