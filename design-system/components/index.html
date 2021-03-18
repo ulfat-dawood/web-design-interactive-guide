@@ -139,20 +139,20 @@
                 
                 <h2 class="section-title">Modal</h2>
                 <section id="modal">
-                    <div class="open-modal">Open Modal</div>
-                    <div class="modal-box active">
+                    <div class="open-modal" data-open-modal='#modal-1'>Open Modal</div>
+                    <div class="modal-box" id='modal-1'>
                         <header>
                             <h4>Modal Title</h4>
-                            <div class='close-modal'>&times;</div>
+                            <div class='close-modal' data-close-modal='#modal-1'>&times;</div>
                         </header>
                         <main>
                             <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores illum dolorem necessitatibus perferendis dicta similique perspiciatis corporis quae ab?
                             </p>
-                            <div class="cta">CTA</div>
+                            <div class="cta" data-close-modal='#modal-1'>CTA</div>
                         </main>
                     </div>
-                    <div class="modal-overlay active"></div>
+                    <div class="modal-overlay" data-close-modal='#modal-1'></div>
                 </section>
 
 
@@ -167,7 +167,7 @@
         </main>
 
     </div>
-
+    <script src="./components.js"></script>
     <script src="../app.js"></script>
 </body>
 </html>

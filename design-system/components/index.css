@@ -182,7 +182,7 @@ section{margin-bottom:5rem;}
     display: none;
 }
 
-#modal .modal-overlay.active, #modal .modal-box{
+#modal .modal-overlay.active, #modal .modal-box.active{
     display: block;
 }
     
