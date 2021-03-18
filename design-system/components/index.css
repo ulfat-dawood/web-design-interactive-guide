@@ -1,30 +1,72 @@
 #components-container{
-    padding:4rem 3%; 
+    padding:4rem 7%; 
     border: 1px solid red; 
 }
+#components-container .section-title{
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+section{margin-bottom:5rem;}
 /* ========== CARDS ========== */
 #cards{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #cards .card{
-    flex-basis: 20%;
+    width: 250px;
+    flex-shrink: 0;
     background: #fff;
-    border-radius: 7px;
+    border-radius: 5px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
     padding:2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
+    height: 320px;
 }
 #cards .img-container{
     width:calc( 100% + 4rem);
     margin-top:-2rem;
     margin-left: -2rem;
-    height: 35%;
+    height: 150px;
 }
 #cards img{ 
     width:100%; height: 100%;
     object-fit: cover;
 }
+#cards p{ 
+    font-size: 16px;
+    height: 60px;
+    overflow: hidden;
+}
+
+#cards .button{
+    padding: .25em .5em;
+    background: var(--purple);
+    border-radius: 5px;
+    color:#fff;
+    width: fit-content;
+    min-width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+#cards .button:hover{filter:brightness(.9);}
+#cards .button:active{box-shadow: 0 0 0px 5px var(--purple-dimmed);}
+
+/* ========== BUTTONS ========== */
+
+#buttons{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    padding:2rem;
+}
+
+/* ========== MODAL ========== */
+
+/* ========== ACCORDION ========== */
