@@ -151,6 +151,8 @@ section{margin-bottom:5rem;}
     top:50%; left:50%;
     transform:translate(-50%,-50%);
     overflow: hidden;
+    z-index: 100;
+    display: none;
 }
 
 #modal header{
@@ -172,12 +174,21 @@ section{margin-bottom:5rem;}
 #modal main p{
     padding:1em 0; 
 }
-#modal .overlay{
+#modal .modal-overlay{
     position: fixed;
-    top:0;bottom:0;left:0;right:0;
-    background: rgba(0, 0, 0, .5);
-    
+    top:0; right: 0; bottom: 0; left:0;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+    display: none;
 }
+
+#modal .modal-overlay.active, #modal .modal-box{
+    display: block;
+}
+    
+    
+    
+
 /* ========== ACCORDION ========== */
 
 
