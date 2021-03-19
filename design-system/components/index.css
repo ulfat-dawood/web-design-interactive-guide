@@ -130,7 +130,7 @@ section{margin-bottom:5rem;}
 #buttons .notification:hover:after{
     --scale:1.2;
 }
-/* ========== MODAL4 ========== */
+/* ========== MODAL ========== */
 #modal .open-modal, #modal .cta{
    padding: .5em 1em;
    background: var(--purple); 
@@ -146,7 +146,8 @@ section{margin-bottom:5rem;}
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
-    width:500px; 
+    width:500px;
+    max-width: 80%; 
     position:fixed;
     top:50%; left:50%;
     transform:translate(-50%,-50%);
@@ -184,14 +185,57 @@ section{margin-bottom:5rem;}
 
 #modal .modal-overlay.active, #modal .modal-box.active{
     display: block;
-}
-    
-    
-    
+}  
 
 /* ========== ACCORDION ========== */
+#accordion .accordion-container{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+    overflow: hidden;
+}
 
+#accordion .header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #dbdbdb;
+    cursor: pointer;
+}
 
+#accordion .header .arrow{
+    font-size: 26px;
+    font-weight: 600;
+    transform: rotate(90deg);
+    transition: all .5s ease;
+}
+#accordion .sub-list li{
+    padding-right: 1rem;
+    border-bottom: 1px solid #dbdbdb;
+    height: 0;
+    transform:scaleY(0);
+    transform-origin:  center top;
+    transition: all .25s ease;
+}
+#accordion .sub-list li:hover{background:#f5f5f5;}
+/* remove bottom borders:  */
+#accordion .list:last-child .header,
+#accordion .list:last-child li:last-child{
+    border-bottom: none;
+}
+/* EXPANDED LIST:  */
+#accordion .expand .header{
+    background: var(--purple-dimmed);
+}
+#accordion .expand li{
+    height: auto;
+    padding:1rem 2rem;
+    transform:scaleY(1);
+}
+#accordion .expand .header .arrow{
+    transform: rotate(270deg);
+}
 
 
 /* ========== KEYFRAMES ========== */
@@ -209,3 +253,16 @@ section{margin-bottom:5rem;}
 }
 
 
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 1100px){
+    #cards{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 350px){
+    #buttons{
+        grid-template-columns: auto;
+    }
+}

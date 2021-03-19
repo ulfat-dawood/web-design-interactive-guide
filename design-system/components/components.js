@@ -1,3 +1,4 @@
+////////// MODAL //////////
 const openModal= document.querySelector('[data-open-modal]');
 const closeModal= document.querySelectorAll('[data-close-modal]');
 const modalOverlay= document.querySelector('.modal-overlay');
@@ -13,5 +14,15 @@ closeModal.forEach((btn)=>{
         const modal= document.querySelector(btn.dataset.closeModal);
         modal.classList.remove('active')
         modalOverlay.classList.remove('active')
+    })
+})
+
+////////// ACCORDION //////////
+const accordionHeader= document.querySelectorAll('#accordion .header');
+
+accordionHeader.forEach(header=>{
+    header.addEventListener('click', ()=>{
+        const list= header.closest('.list');
+        list.classList.toggle('expand'); 
     })
 })
