@@ -212,7 +212,6 @@ section{margin-bottom:5rem;}
 }
 #accordion .sub-list li{
     padding-right: 1rem;
-    border-bottom: 1px solid #dbdbdb;
     height: 0;
     transform:scaleY(0);
     transform-origin:  center top;
@@ -229,6 +228,7 @@ section{margin-bottom:5rem;}
     background: var(--purple-dimmed);
 }
 #accordion .expand li{
+    border-bottom: 1px solid #dbdbdb;
     height: auto;
     padding:1rem 2rem;
     transform:scaleY(1);
