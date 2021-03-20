@@ -23,7 +23,7 @@
         <h1 class="title">CSS Variables</h1>
         <section>
             <ul>
-                <li>Variables in CSS allows developers to assign a value to a variable then reuse the variable thoroughout 
+                <li>Variables in CSS allows developers to assign a value to a variable then reuse the variable throughout 
                     the entire application.</li>
                 <li>Variables help provide better maintainability, readability and consistency.</li>
                 <br>
@@ -52,18 +52,37 @@
         </section>
         <h1 class="title">Variables Syntax</h1>
         <section>
+            <h2>Defining a variable:</h2>
+            <code>
+                <div>selector{</div>
+                <div>&nbsp;--variableName: value; </div>
+                <div>}</div>
+            </code>
 
+            <h2>Using the variable:</h2>
+            <code>
+                <div>selector{</div>
+                <div>&nbsp;property: var(--variableName); </div>
+                <div>}</div>
+            </code>
+
+            <h2>Example:</h2>
+            <code>
+                <div>:root{</div>
+                <div>&nbsp;--primaryColor: #ff08c4; </div>
+                <div>}</div>
+            </code>
+<br>
+            <code>
+                <div>button{</div>
+                <div>&nbsp;background-color: var(--primaryColor) </div>
+                <div>}</div>
+            </code>
         </section>
         
 
     </div>
 
-
-
-
-    <div class="border">
-            <div class="box">BOX</div>
-    </div>
 </body>
 
 </html>
