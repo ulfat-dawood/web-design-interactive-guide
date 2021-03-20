@@ -15,217 +15,54 @@
 </head>
 
 <body>
+
     <div class="container">
-        <h1 class="title">Transform</h1>
-        <section>
-            <p>The <code class="highlightt">transform</code> property allows to scale, move, rotate and skew elements.</p>
 
-        </section>
-        <h1 class="title">Traslate</h1>
-        <section>
-            <h2>Moving an element from its original position</h2>
-            <ul>
-                <li><code class="highlight">transform: translateX(n)</code></li>
-                <br>
-                <li>where (n) is a numerical value with a unit, to define the distance by which the element is moving along the
-                    x-axis. </li>
-            </ul>
 
-            <div class="border">
-                <div id="translate-x" class="box">BOX</div>
-            </div>
-        </section>
+
+        <h1 class="title">CSS Variables</h1>
         <section>
             <ul>
-                <li><code class="highlight">transform: translateY(n)</code></li>
+                <li>Variables in CSS allows developers to assign a value to a variable then reuse the variable thoroughout 
+                    the entire application.</li>
+                <li>Variables help provide better maintainability, readability and consistency.</li>
                 <br>
-                <li>Defines the distance by which the element is moving along the
-                    y-axis. </li>
+                <li>Variables in CSS are defined within a scope. Variables can then be accessed inside that scope only.</li>
+
             </ul>
-
-            <div class="border">
-                <div id="translate-y" class="box">BOX</div>
-            </div>
         </section>
+        <h1 class="title">Global scope</h1>
         <section>
-        <ul>
-            <li><code class="highlight">transform: translate(x,y)</code></li>
-            <br>
-            <li>Defines the distance by which the element is moving along the x-axis and
-                y-axis. </li>
-        </ul>
+            <ul>
+                <li><code class="highlight">:root</code> selector defines the global scope (highest-level parent).</li>
+                <li>To be able to access a variable from any scope, it must be defined inside the root selector. <br>
+                    <code class="highlight">:root{...}</code></li>
+                <li>For example, theme colors that will be reused in the entire document must be defined in <code class="highlight">:root{...}</code></li>
+            </ul>
+        </section>
+        <h1 class="title">Local Scope</h1>
+        <section>
+                <p>HTML parent/child structure of elements defines the local scope.</p>
 
-        <div class="border">
-            <div id="translate" class="box">BOX</div>
-        </div>
+            <ul>
+                <li>All children can access a variable defined for the parent element.</li>
+                <li>A parent element can't access value of a variable defined for one of its children elements.</li>
+                <li>Siblings can't access values of a variable defined for any of their other siblings.</li>
+            </ul>
+        </section>
+        <h1 class="title">Variables Syntax</h1>
+        <section>
+
+        </section>
         
 
-        </section>
-        <h1 class="title">Rotate</h1>
-        <section>
-                <ul>
-                    <li><code class="highlight">transform: rotate(angle)</code></li>
-                    <br>
-                    <li>(angle) is the degree by which the element rotates clockwise.</li>
-                    
-                </ul>
-        
-                <div class="border">
-                    <div id="rotate" class="box">BOX</div>
-                </div>
-        </section>
-        <section>
-
-                <ul>
-                        <li>Element rotates counter-clockwise, when degree is negative.</li>
-                        
-                    </ul>
-            
-                    <div class="border">
-                        <div id="rotate-reverse" class="box">BOX</div>
-                    </div>
-                
-        
-                </section>
-   
-    <h1 class="title">Scale</h1>
-    <section>
-                <ul>
-                    <li><code class="highlight">transform: scaleX(n)</code></li>
-                    <br>
-                    <li>where (n) is a unit numerical scale value, 
-                        by which, the element size is increased/decreased 
-                        from its original size by multiplying (n) to the 
-                        original height and width of the element.</li>
-                        <br>
-                        <li><code class="highlight">scaleX(n)</code> increases/decreases the width of the element.</li>
-                    
-                </ul>
-        
-                <div class="border">
-                    <div id="scale-x" class="box">BOX</div>
-                </div>
-
-                <ul>
-                        <li><code class="highlight">scaleX(-n)</code> negative values for (n), flips the element horizontally.</li>
-                </ul>
-                <div class="border">
-                        <div id="scale-x-flip" class="box">Box</div>
-                    </div>
-        </section>
-        <section>
-                <ul>
-                        <li><code class="highlight">transform: scaleY(n)</code></li>
-                        <br>
-                            <li><code class="highlight">scaleY(n)</code> increases/decreases the height of the element.</li>
-                        
-                    </ul>
-            
-                    <div class="border">
-                        <div id="scale-y" class="box">BOX</div>
-                    </div>
-    
-                    <ul>
-                            <li><code class="highlight">scaleY(-n)</code> negative values for (n), flips the element vertically.</li>
-                    </ul>
-                    <div class="border">
-                            <div id="scale-y-flip" class="box">Box</div>
-                        </div>
-        </section>
-        <section>
-            <ul>
-                <li><code class="highlight">transform: scale(x,y)</code></li>
-                <br>
-                <li><code class="highlight">scale(x,y)</code> increases/decreases the width/height of the element.</li> 
-            </ul>
-            
-                <div class="border">
-                    <div id="scale" class="box">BOX</div>
-                </div>
-
-                <h3 class="title left">Shorthand :</h3>
-                <ul>
-                        <li><code class="highlight">transform: scale(xy)</code></li>
-                        <li><code class="highlight">transform: scale(1.5)</code></li>
-                        <br>
-                        <li>The element's both width and height are scaled by <code class="highlight">1.5</code> .</li>
-                </ul>
-        </section>
-
-        <h1 class="title">skew</h1>
-        <section>
-
-            <ul>
-                <li><code class="highlight">transform: skewX(angle)</code></li>
-                <br>
-                <li>(angle) is the degree by which the element is skewed along the
-                    x-axis. </li>
-            </ul>
-
-            <div class="border">
-                <div id="skew-x" class="box">BOX</div>
-            </div>
-        </section>
-        <section>
-            <ul>
-                <li><code class="highlight">transform: skewY(n)</code></li>
-                <br>
-                <li>Defines the degree by which the element is skewed along the
-                    y-axis. </li>
-            </ul>
-
-            <div class="border">
-                <div id="skew-y" class="box">BOX</div>
-            </div>
-        </section>
-        <section>
-        <ul>
-            <li><code class="highlight">transform: skew(x,y)</code></li>
-            <br>
-            <li>Defines the degree by which the element is skewed along the
-                    x-axis and y-axis.  </li>
-        </ul>
-
-        <div class="border">
-            <div id="skew" class="box">BOX</div>
-        </div>
-        <h3 class="title left">Shorthand :</h3>
-        <ul>
-                <li><code class="highlight">transform: skew(xy)</code></li>
-                <li><code class="highlight">transform: skew(20deg)</code></li>
-                <br>
-                <li>The element is skewed along both x-axis and y-axis by <code class="highlight">20deg</code> .</li>
-        </ul>
-
-        </section>
-        <h1 class="title">Transform Origin</h1>
-        <section>
-                <ul>
-                    <li><code>transform-origin: x-axis -y-axis;</code></li>
-                </ul>
-                <div class="grid" style="--grid:5;">
-                    <div>x-axis</div>
-                    <div>[number][unit]</div>
-                    <div>center</div>
-                    <div>left</div>
-                    <div>right</div>
-                    <div>y-axis</div>
-                    <div>[number][unit]</div>
-                    <div>center</div>
-                    <div>top</div>
-                    <div>bottom</div>
-    
-                </div>
-                <br>
-                <div class="border">
-                        <div id="transform-origin" class="box">BOX</div>
-                </div>
-                <br>
-            </section>
+    </div>
 
 
 
 
+    <div class="border">
+            <div class="box">BOX</div>
     </div>
 </body>
 
