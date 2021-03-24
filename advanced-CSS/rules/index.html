@@ -34,19 +34,32 @@
         
         <h1 class="title">@media Rule</h1>
         <section>
+            <p>As discussed in the <a href="../../responsive/media-queries/">responsive design module</a>, <code class="highlight">@media</code> rule
+            defines different styles for different media conditions. </p>
 
         </section>
 
 
         <h1 class="title">@keyframes Rule</h1>
         <section>
-
+            <code class="highlight">@keyframes</code> rule defines the keyframes for CSS animation. <br> More about 
+            <code class="highlight">@keyframes</code> in the <a href="../../animation/keyframes/">next module</a>.
         </section>
 
 
         <h1 class="title">@import Rule</h1>
         <section>
-
+            <ul>
+                <li><code class="highlight">@import</code> rule allows to include CSS styles into the current file.</li>
+                <li><code class="highlight">@import</code> rule must be declared before all other rules <br> except <code class="highlight">@charset</code> .</li>
+                <li>It is important to keep the PRECEDENCE in mind, since the current file's styles will override the imported styles.</li>
+                <br>
+                <li>Example:</li>
+                <ul>
+                    <li><code class="highlight">@import "./media-queries.css";</code></li>
+                    <li><code class="highlight">@import url("./media-queries.css"); ;</code></li>
+                </ul>
+            </ul>
         </section>
 
 
@@ -77,7 +90,13 @@
 
         <h1 class="title">@charset Rule</h1>
         <section>
-
+            <ul>
+                <li><code class="highlight">@charset</code> rule defines the character encoding.</li>
+                <li><code class="highlight">@charset</code> rule must be the first rule defined in a the stylesheet.</li>
+                <br>
+                <li>Example:</li>
+                <ul><li><code class="highlight">@charset "UTF-8";</code></li></ul>
+            </ul>
         </section>
 
 
