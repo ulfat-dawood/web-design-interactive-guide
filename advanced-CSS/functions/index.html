@@ -37,20 +37,42 @@
         </section>
 
         <h1 class="title">url()</h1>
-        <section>
-            
+        <section> 
+            <p><code class="highlight">url()</code> function accepts relative/absolute URL for a resource such as an image, font, stylesheet or a filter.</p>
+            <h2>Example</h2>
+            <ul>
+                <li><code>background-image: url("//http://placekitten.com/200/300");</code></li>
+                <li><code>cursor: url(./mycursor.png);</code></li>
+                <li><code>@import url("../style/mobile-media.css");</code></li>
+            </ul>
         </section>
 
         
         <h1 class="title">var()</h1>
         <section>
-
+            <p><code class="highlight">var()</code> function us used to use the value of an already declared variable. <br>
+                Learn more about <a href="../variables/">variables</a>.</p>
         </section>
 
         
         <h1 class="title">calc()</h1>
         <section>
+                <p><code class="highlight">calc()</code> function allows to make calculation, even for values of different units.</p>
+                <h2>Example:</h2>
+                <code>
+                    .child-box{ width:100%; }
+                </code>
+                <div style="height: 100px; width:100px; background:#abced477;border-radius: 5px; margin: 5px;overflow: hidden;padding-top:1.5rem">
+                    <div style="height: 50px; width:100%; background:#abced4; margin:auto;"></div>
+                </div>
+                <code>
+                    .child-box{ width: calc(100% - 3rem); }
+                </code>
+                <div style="height: 100px; width:100px; background:#abced477;border-radius: 5px; margin: 5px;overflow: hidden;padding-top:1.5rem">
+                    <div style="height: 50px; width:calc(100% - 3rem); background:#abced4; margin:auto;"></div>
+                </div>
 
+            
         </section>
 
         
@@ -81,20 +103,20 @@
                 <li><h2>Linear Gradients:</h2></li>
                 <ul>
                     <li><code class="highlight">linear-gradient(#e4afcb , #e2c58b ,#7edbdc );</code></li>
-                    <div style="background-image: linear-gradient(to right, #e4afcb , #e2c58b ,#7edbdc );height: 2rem; width:50%; margin:10px 0;"></div>
+                    <div style="background-image: linear-gradient(to right, #e4afcb , #e2c58b ,#7edbdc );height: 4rem; width:50%; margin:10px 0;"></div>
 
                     <li><code class="highlight">repeating-linear-gradient( #e4afcb , #e2c58b 10%,#7edbdc 20% );</code></li>
-                    <div style="background-image: repeating-linear-gradient(to right, #e4afcb , #e2c58b 10%,#7edbdc 20% );height: 2rem; width:50%; margin:10px 0;"></div>
+                    <div style="background-image: repeating-linear-gradient(to right, #e4afcb , #e2c58b 10%,#7edbdc 20% );height: 4rem; width:50%; margin:10px 0;"></div>
                 </ul>
                 <br>
                 
                 <li><h2>Radial Gradients:</h2></li>
                 <ul>
                     <li><code class="highlight">radial-gradient( #e4afcb , #e2c58b ,#7edbdc )</code></li>
-                    <div style="background-image: radial-gradient( #e4afcb , #e2c58b ,#7edbdc );height: 6rem; width:30%; margin:10px 0;"></div>
+                    <div style="background-image: radial-gradient( #e4afcb , #e2c58b ,#7edbdc );height: 10rem; width:30%; margin:10px 0;"></div>
 
                     <li><code class="highlight">repeating-radial-gradient( #e4afcb , #e2c58b 20%,#7edbdc 30% );</code></li>
-                    <div style="background-image: repeating-radial-gradient( #e4afcb , #e2c58b 20%,#7edbdc 30% );height: 6rem; width:30%; margin:10px 0;"></div>
+                    <div style="background-image: repeating-radial-gradient( #e4afcb , #e2c58b 20%,#7edbdc 30% );height: 10rem; width:30%; margin:10px 0;"></div>
                 </ul>
 
 
