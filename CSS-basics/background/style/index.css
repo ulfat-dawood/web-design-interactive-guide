@@ -12,7 +12,7 @@
 }
 
 #bg-pos{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-repeat: no-repeat;
     background-position: center center;
     height: 200px;
@@ -20,7 +20,7 @@
 
 }
 #bg-size1{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 90px 90px;
@@ -30,7 +30,7 @@
 }
 
 #bg-size2{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -39,7 +39,7 @@
 
 }
 #bg-origin-padding{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -55,7 +55,7 @@
 
 }
 #bg-origin-border{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-origin: border-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,7 +69,7 @@
     width:200px;
 
 }#bg-origin-content{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -86,7 +86,7 @@
 }
  /* BG CLIP  */
 #bg-clip-content{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-origin: border-box;
     background-clip: content-box;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
 
 }
 #bg-clip-padding{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-clip: padding-box;
 
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@
     width:200px;
 
 }#bg-clip-border{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-origin: border-box;
 
     background-clip: border-box;
@@ -141,7 +141,7 @@
 /* ATTACHMENT  */
 
 #bg-attch-scroll{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center center;
@@ -153,7 +153,7 @@
 }
 
 #bg-attch-fixed{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -163,7 +163,7 @@
 }
 
 #bg-attch-local{
-    background-image: url(../img/img-meduim.png);
+    background-image: url(../img/img-medium.png);
     background-attachment: local;
     background-repeat: no-repeat;
     background-position: center center;
@@ -176,7 +176,7 @@
 /* SHORTHAND  */
 
 #shorthand{
-    background: #ffa05363 url(../img/img-meduim.png) center center/contain no-repeat;
+    background: #ffa05363 url(../img/img-medium.png) center center/contain no-repeat;
 
     height: 200px;
     width:200px;

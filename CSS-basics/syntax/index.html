@@ -34,7 +34,7 @@
 
         <h1 class="title">CSS Syntax</h1>
         <section>
-            <h2>CSS Declerations</h2>
+            <h2>CSS Decelerations</h2>
             <ul>
                 <li><code>property: value;</code><br></li>
                 <ul><li><code>color: red;</code></li><li><code>font-size: 18px;</code></li></ul>
@@ -83,7 +83,7 @@
             <h2>CSS Rules</h2>
             <ul>
                 <li>
-                    <code>seletor{set of declerations}</code>
+                    <code>selector{set of decelerations}</code>
                     <pre><br>
                         h1{
                             color:grey; 
@@ -110,7 +110,7 @@
         <section>
             <h2>Inline CSS</h2>
             <ul>
-                <li>CSS declerations written as a value for the global attribute: <code>style="set of CSS decleratios"</code></li><br>
+                <li>CSS decelerations written as a value for the global attribute: <code>style="set of CSS deceleration"</code></li><br>
                 <li><code>&lt;p style="font-size:18px; color:blue;"&gt; some text &lt;p/&gt;</code></li><br>
             </ul>
             <h4 class="title left">precedence :</h4> 
@@ -146,7 +146,7 @@
             <h2>External CSS</h2>
             <ul>
                 <li>HTML self-closing tag: <code>&lt;link/&gt;</code></li><br>
-                <li>CSS rules written in seprate file that has the extention .css</li><br>      
+                <li>CSS rules written in separate file that has the extension .css</li><br>      
                 <li><code>&lt;link href="./style.css" type="text/css" rel="stylesheet" /&gt; </code></li><br>
             </ul>
             
@@ -162,9 +162,9 @@
             <p><code>p{color: blue; <br>&nbsp;font-weight:bold; <br>&nbsp;text-decoration:underline; <br> }</code></p>
             <p><code>p{ <br> &nbsp; color:red <br> }</code></p>
             <br>
-            <p>Only color property is overriden by the last rule.</p>
+            <p>Only color property is overridden by the last rule.</p>
             <div class="text-box" id="main-p">
-                    Praragraphs color changed
+                    Paragraphs color changed
             </div>
             <p>*If order of rules is reversed, paragraphs appear blue.  </p>
             <div id="p" class="text-box">
@@ -173,13 +173,13 @@
 
         </section>
         <section>
-            <h2>Order of Declerations</h2>
-            <ul><li> The latter CSS declerations override the previous ones.</li></ul>
+            <h2>Order of Decelerations</h2>
+            <ul><li> The latter CSS decelerations override the previous ones.</li></ul>
 
             <p><code>p{color: blue;  &nbsp;&nbsp;&nbsp;&nbsp;/*fallback value*/<br>&nbsp;&nbsp;color: var(--blue);<br> }</code></p>
             <br>
-            <p>The vairable <code>var(--blue)</code> will overeide the value <code>blue</code></p>
-            <p>The previous decleration is used as a fallback value, in case some properties or values have browser compatibility issues or not supported.</p>
+            <p>The variable <code>var(--blue)</code> will override the value <code>blue</code></p>
+            <p>The previous deceleration is used as a fallback value, in case some properties or values have browser compatibility issues or not supported.</p>
 
         </section>
         <h1 class="title">Specificity</h1>

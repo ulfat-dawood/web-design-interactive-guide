@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./style/style.css" rel="stylesheet" type="text/css"/>
-    <title>Document</title>
+    <title>Box Model</title>
 </head>
 <body>
 
 <div class="container">
     <h1 class="title">CSS Box Model</h1>
     <section>
-        <p>All HTML elements follow the Box Modle, which consist of:
+        <p>All HTML elements follow the Box Model, which consist of:
             <ol>
                 <li>Content: where child elements, text, images are placed.</li>
                 <li>Padding: adds extra area around the content, before the border.</li>
@@ -24,7 +24,7 @@
                 <li>Margin: area outside the border.</li>
             </ol>
         </p>
-        <p>Color can be spesified for content background, border and outline. <br>
+        <p>Color can be specified for content background, border and outline. <br>
         Both padding and margin are transparent. </p>
         <br>
         <img src="./img/box-model.svg" width="600" style="display: block; margin:auto">
@@ -60,7 +60,7 @@
         <ul><li><code>border-radius: TL TR BR BL;</code></li></ul>
         <div class="border-radius-shorthand content center">
             This div has rounded corners 
-            <img src="./img/border-raduis.png" width="150" class="center " style="display: block;">
+            <img src="./img/border-radius.png" width="150" class="center " style="display: block;">
         </div>
         <ul><li><code>border-radius: [number][unit];</code></li></ul>
         <div class="border-radius-shorthand-2 content center">This div has unified rounded corners</div>
@@ -84,11 +84,11 @@
         <br><h5 class="title left">Shorthand :</h5>
 
         <ul>
-            <li><code>padding: TopRightBottonLeft</code></li>
+            <li><code>padding: TopRightBottomLeft</code></li>
                 <ul><li><code>padding:10px;</code></li></ul><br>
-            <li><code>padding: Top  RighLeft  Botton;</code></li>
+            <li><code>padding: Top  RightLeft  Bottom;</code></li>
                 <ul><li><code>padding: 5px 10px 5px;</code></li></ul><br>
-            <li><code>padding: TopBotton  RightLeft</code></li>
+            <li><code>padding: TopBottom  RightLeft</code></li>
                 <ul><li><code>padding: 5px 10px;;</code></li></ul>
 
         </ul>
@@ -116,11 +116,11 @@
         <br><h5 class="title left">Shorthand :</h5>
 
         <ul>
-            <li><code>margin: TopRightBottonLeft</code></li>
+            <li><code>margin: TopRightBottomLeft</code></li>
                 <ul><li><code>margin:10px;</code></li></ul><br>
-            <li><code>margin: Top  RighLeft  Botton;</code></li>
+            <li><code>margin: Top  RightLeft  Bottom;</code></li>
                 <ul><li><code>margin: 5px 10px 5px;</code></li></ul><br>
-            <li><code>margin: TopBotton  RightLeft</code></li>
+            <li><code>margin: TopBottom  RightLeft</code></li>
                 <ul><li><code>margin: 5px 10px;;</code></li></ul>
 
         </ul>
@@ -145,11 +145,11 @@
         <ul>
             <li><code>border-top-color: red ;</code></li>
             <li><code>border-right-style: double;</code></li>
-            <li><code>border-botton-width: 3px;</code></li>
+            <li><code>border-bottom-width: 3px;</code></li>
             <li><code>border-left-style: solid;</code></li>
         </ul>
 
-        <div class="border center padding content ">This div has a thic, blue, double and dashed border  </div>
+        <div class="border center padding content ">This div has a thick, blue, double and dashed border  </div>
 
 
         <br><h5 class="title left">Shorthand :</h5>
@@ -188,16 +188,16 @@
         <div class=" shadow-1 center padding content ">This div has shadow with default color, blur and spread</div>
 
         <ul><li><code>box-shadow: x -y blur; </code></li></ul>
-        <div class=" shadow-2 center padding content ">This div has a blured shadow with default color and spread</div>
+        <div class=" shadow-2 center padding content ">This div has a blurred shadow with default color and spread</div>
 
         <ul><li><code>box-shadow: x -y blur spread;</code></li></ul>
-        <div class=" shadow-3 center padding content ">This div has a blured shadow with extra spread and default color</div>
+        <div class=" shadow-3 center padding content ">This div has a blurred shadow with extra spread and default color</div>
 
         <ul><li><code>box-shadow: x -y blur spread color;</code></li></ul>
-        <div class=" shadow-4 center padding content ">This div has a blured shadow with extra spread and lightgray color</div>
+        <div class=" shadow-4 center padding content ">This div has a blurred shadow with extra spread and lightgray color</div>
 
         <ul><li><code>box-shadow: x -y blur spread color inset;</code></li></ul>
-        <div class=" shadow-5 center padding content ">This div has a blured inner shadow with extra spread and lightgray color</div>
+        <div class=" shadow-5 center padding content ">This div has a blurred inner shadow with extra spread and lightgray color</div>
     </section>
 
 
@@ -211,7 +211,7 @@
             <img src="./img/border-box.png" width="300" style="display: block; margin:auto">
 
         
-        <h2>contetn-box</h2>
+        <h2>content-box</h2>
         <p>width and heigh of an element is set while <br> 
             excluding BORDER and PADDING from the width and height.</p>
             <img src="./img/content-box.png" width="300" style="display: block; margin:auto">
